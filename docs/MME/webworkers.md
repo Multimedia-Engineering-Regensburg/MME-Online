@@ -1,0 +1,1 @@
+# Nebenläufigkeit im Browser: Webworker verstehen und einsetzen

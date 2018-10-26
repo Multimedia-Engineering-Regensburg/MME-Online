@@ -1,0 +1,29 @@
+site_name: MME Online
+site_description: Online-Tutorial zum MME-Kurs
+site_author: Alexander Bazo
+copyright: MIT
+theme: 
+  name: yeti
+  custom_dir: mme-template
+plugins: []
+markdown_extensions:
+  - footnotes
+nav:
+  - Start: index.md
+  - MME: 
+    - Übersicht: MME/index.md
+    - Progammatische Manipulation des DOM: MME/dom-introduction.md
+    - Applikationen mit dem Module Pattern gestalten: MME/closures-and-module-pattern.md
+    - Den Event-Loop verstehen und verwenden: MME/event-loop.md
+    - AJAX und das REST-Paradigma: MME/ajax-and-rest.md
+    - Canvas, Video & Audio: MME/canvas-element.md
+    - Nebenläufige Aktionen im Browser: MME/webworkers.md
+    - Einführung in die Node.js-Umgebung: MME/node-js.md
+    - Echtzeit-Kollaboration über Sockets und WebRTC: MME/multi-user-applications.md
+    - Versionsverwaltung mit Git: MME/version-control.md
+    - Anforderungen erhebend und dokumentieren: MME/requirements-for-student-projects.md
+  - Tutorials:
+      - Übersicht: Tutorials/index.md
+  - Ressourcen: resources.md
+  - Autor: author.md
+  - Impressum: about.md

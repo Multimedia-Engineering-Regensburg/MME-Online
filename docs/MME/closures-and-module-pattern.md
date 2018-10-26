@@ -1,0 +1,1 @@
+# Closures: Javascript-Anwendungen mit dem Module-Pattern gestalten
