@@ -3,8 +3,9 @@
 {% block styles %}
     {{ super() }}
     <link rel="stylesheet" type="text/css" href="{{ base_url }}/css/mme-online.css" />
+    <link href="{{ base_url }}/vendors/fontawesome-free-5.4.2-web/css/all.css" rel="stylesheet">
 {% endblock %}
 
 {% block footer %}
-<footer>Universität Regensburg | Lehrstuhl für Medieninformatik</footer>
+<footer><a href="https://www.uni-regensburg.de/">Universität Regensburg</a> | <a href="https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/">Lehrstuhl für Medieninformatik</a><br />Diese Seite wurde mit <a href="https://www.mkdocs.org/">MkDocs</a> erstellt.</footer>
 {% endblock %}
