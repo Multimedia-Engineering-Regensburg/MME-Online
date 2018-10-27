@@ -5,7 +5,7 @@ copyright: MIT
 theme: 
   name: yeti
   custom_dir: mme-template
-plugins: []
+plugins: [search]
 markdown_extensions:
   - footnotes
 nav:
@@ -24,6 +24,10 @@ nav:
     - Anforderungen erhebend und dokumentieren: MME/requirements-for-student-projects.md
   - Tutorials:
       - Übersicht: Tutorials/index.md
+      - Javascript im Browser: Tutorials/javascript-browser.md
+#      - Projektstruktur: Tutorials/project-directory.md
   - Ressourcen: resources.md
-  - Autor: author.md
-  - Impressum: about.md
+  - Impressum:
+    - Autor: author.md
+    - Impressum: impress.md
+    - Lizenz: licence.md

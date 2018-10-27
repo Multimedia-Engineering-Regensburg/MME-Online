@@ -1,1 +1,0 @@
-# Multiuser-Anwendungen mit WebSockets und WebRTC
