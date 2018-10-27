@@ -44,6 +44,7 @@ Wir setzen keine automatische Entscheidungsfindung oder ein Profiling ein.
 ### Bereitstellung unserer Website und Erstellung von Logfiles
 
 Wenn Sie unsere Webseite lediglich informatorisch nutzen (also keine Registrierung und auch keine anderweitige Übermittlung von Informationen), erheben wir nur die personenbezogenen Daten, die Ihr Browser an unseren Server übermittelt. Wenn Sie unsere Website betrachten möchten, erheben wir die folgenden Daten:
+
 - IP-Adresse
 - Internet-Service-Provider des Nutzers
 - Datum und Uhrzeit des Abrufs
@@ -58,16 +59,21 @@ Wenn Sie unsere Webseite lediglich informatorisch nutzen (also keine Registrieru
 
 Eine Speicherung dieser Daten zusammen mit anderen personenbezogenen Daten von Ihnen findet nicht statt. Diese Daten dienen dem Zweck der nutzerfreundlichen, funktionsfähigen und sicheren Auslieferung unserer Website an Sie mit Funktionen und Inhalten sowie deren Optimierung und statistischen Auswertung. Rechtsgrundlage hierfür ist unser in den obigen Zwecken auch liegendes berechtigtes Interesse an der Datenverarbeitung nach Art. 6 Abs. 1 S.1 lit. f) DS-GVO. Wir speichern aus Sicherheitsgründen diese Daten in Server-Logfiles für die Speicherdauer von 180 Tagen. Nach Ablauf dieser Frist werden diese automatisch gelöscht, es sei denn wir benötigen deren Aufbewahrung zu Beweiszwecken bei Angriffen auf die Serverinfrastruktur oder anderen Rechtsverletzungen.
 
+#### Externe Bibliotheken
+
+Zum Betrieb der Webseite werden externe Bibliotheken fremder Hersteller eingebunden. Es handelt sich dabei um die folgenden Produkte, die über unseren eigenen Server integriert werden.
+
+- [Bootstrap](https://getbootstrap.com/)
+- [JQuery](https://jquery.com/)
+- [Font Awesome](https://fontawesome.com/)
+
+Zusätzlich werden die folgenden Bibliotheken über verschiedene *Content Delivery Networks* von fremden Servern bezogen:
+
+- [Highlight.js](https://highlightjs.org/)
 
 ### Cookies
 
-Wir verwenden sog. Cookies bei Ihrem Besuch unserer Website. Cookies sind kleine Textdateien, die Ihr Internet-Browser auf Ihrem Rechner ablegt und speichert. Wenn Sie unsere Website erneut aufrufen, geben diese Cookies Informationen ab, um Sie automatisch wiederzuerkennen. Die so erlangten Informationen dienen dem Zweck, unsere Webangebote technisch und wirtschaftlich zu optimieren und Ihnen einen leichteren und sicheren Zugang auf unsere Website zu ermöglichen. Wir informieren Sie dazu beim Aufruf unserer Website mittels eines Hinweises auf unsere Datenschutzerklärung über die Verwendung von Cookies zu den zuvor genannten Zwecken und wie Sie dieser widersprechen bzw. deren Speicherung verhindern können („Opt-out“). Unsere Website nutzt Session-Cookies, persistente Cookies und Cookies von Drittanbietern:
-
-- Session-Cookies: Wir verwenden sog. Cookies zum Wiedererkennen mehrfacher Nutzung eines Angebots durch denselben Nutzer (z.B. wenn Sie sich eingeloggt haben zur Feststellung Ihres Login-Status). Wenn Sie unsere Seite erneut aufrufen, geben diese Cookies Informationen ab, um Sie automatisch wiederzuerkennen. Die so erlangten Informationen dienen dazu, unsere Angebote zu optimieren und Ihnen einen leichteren Zugang auf unsere Seite zu ermöglichen. Wenn Sie den Browser schließen oder Sie sich ausloggen, werden die Session-Cookies gelöscht.
-
-- Persistente Cookies: Diese werden automatisiert nach einer vorgegebenen Dauer gelöscht, die sich je nach Cookie unterscheiden kann. In den Sicherheitseinstellungen Ihres Browsers können Sie die Cookies jederzeit löschen.
-
-- Cookies von Drittanbietern (Third-Party-Cookies): Entsprechend Ihren Wünschen können Sie können Ihre Browser-Einstellung konfigurieren und z. B. Die Annahme von Third-Party-Cookies oder allen Cookies ablehnen. Wir weisen Sie jedoch an dieser Stelle darauf hin, dass Sie dann eventuell nicht alle Funktionen dieser Website nutzen können. Lesen Sie Näheres zu diesen Cookies bei den jeweiligen Datenschutzerklärungen zu den Drittanbietern.
+Auf dieser Webseite werden, mit Ausnahme eines `csrftoken` zum  Schutz gegen sogenannte [*Cross-Site-Request-Forgery*](https://de.wikipedia.org/wiki/Cross-Site-Request-Forgery), keine Cookies verwendet. Durch die Einbindung externe Bibliotheken (siehe oben) können Cookies von Drittanbietern (Third-Party-Cookies) erstellt werden. Entsprechend Ihren Wünschen können Sie Ihre Browser-Einstellung konfigurieren und z. B. die Annahme von Third-Party-Cookies oder allen Cookies ablehnen. Wir weisen Sie jedoch an dieser Stelle darauf hin, dass Sie dann eventuell nicht alle Funktionen dieser Website nutzen können. Lesen Sie Näheres zu diesen Cookies bei den jeweiligen Datenschutzerklärungen zu den Drittanbietern.
 
 Rechtsgrundlage dieser Verarbeitung ist Art. 6 Abs. 1 S. lit. b) DS-GVO, wenn die Cookies zur Vertragsanbahnung z.B. bei Bestellungen gesetzt werden und ansonsten haben wir ein berechtigtes Interesse an der effektiven Funktionalität der Website, so dass in dem Falle Art. 6 Abs. 1 S. 1 lit. f) DS-GVO Rechtsgrundlage ist. Widerspruch und „Opt-Out“: Das Speichern von Cookies auf Ihrer Festplatte können Sie allgemein verhindern, indem Sie in Ihren Browser-Einstellungen „keine Cookies akzeptieren“ wählen. Dies kann aber eine Funktionseinschränkung unserer Angebote zur Folge haben. Sie können dem Einsatz von Cookies von Drittanbietern zu Werbezwecken über ein sog. „Opt-out“ über diese [amerikanische Website](https://optout.aboutads.info) oder diese [europäische Website](http://www.youronlinechoices.com/de/praferenzmanagement/) widersprechen.
 
