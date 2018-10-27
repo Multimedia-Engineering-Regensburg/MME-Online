@@ -1,6 +1,6 @@
 # Ressourcen
 
-Neben den im Tutorial erwähnten Ressourcen empfiehlt sich die Lektüre die folgenden Seiten, Dokumentationen und Publikationen. Zusätzlich werden hier einige Werkzeuge aufgelistet, die zur Bearbeitung der Übungsaufgaben und Beispiele notwendig oder hilfreich sind.
+Neben den im Tutorial erwähnten Ressourcen empfiehlt sich die Lektüre der folgenden Seiten, Dokumentationen und Publikationen. Zusätzlich werden hier auch einige Werkzeuge aufgelistet, die zur Bearbeitung der Übungsaufgaben und Beispiele notwendig oder hilfreich sind.
 
 ## Werkzeuge
 
@@ -8,6 +8,10 @@ Neben den im Tutorial erwähnten Ressourcen empfiehlt sich die Lektüre die folg
 Für die Entwicklung von Webanwendungen sind ein Texteditor oder eine integrierte Entwicklungsumgebung notwendig. In der Regel reicht ein einfacher Editor aus. Vom Vorteil sind Funktionen wie Syntax-Highlighting, Linting und Refactoring-Tools. 
 
 - [Übersicht über einige populäre Editoren](https://www.sitepoint.com/sitepoint-smackdown-atom-vs-brackets-vs-light-table-vs-sublime-text/)
+
+### Linting
+- [ESLint](https://eslint.org/)-Werkeug für die statische Code-Analyse von *JavaScript*-Code
+- Übersicht über [Möglichkeiten](https://eslint.org/docs/user-guide/integrations) zur Integration von *ESLint* in verschiedene Werkzeuge
 
 ## Literatur und Dokumentationen
 
