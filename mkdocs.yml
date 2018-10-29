@@ -22,8 +22,12 @@ nav:
     - Echtzeit-Kollaboration über Sockets und WebRTC: MME/multi-user-applications.md
     - Versionsverwaltung mit Git: MME/version-control.md
     - Anforderungen erhebend und dokumentieren: MME/requirements-for-student-projects.md
+  - Demos:
+      - Übersicht: Demos/index.md
+      - Kanban-Board: Demos/kanban-board.md
   - Tutorials:
       - Übersicht: Tutorials/index.md
+      - Der Projektordner: Tutorials/project-directory.md
       - Javascript im Browser: Tutorials/javascript-browser.md
 #      - Projektstruktur: Tutorials/project-directory.md
   - Ressourcen: resources.md
