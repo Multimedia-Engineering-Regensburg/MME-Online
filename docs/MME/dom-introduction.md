@@ -48,7 +48,9 @@ Die von der Selektor-Funktion zurückgegebenen Objekte erben von [Element](https
 Jedes Element, sofern es bereits im DOM verankert ist, hat eine feste Postion innerhalb der Baumstruktur des DOMs. Die Position definiert sich durch das jeweiligen Elternelement, also den übergeordneten Knoten, und innerhalb dessen durch die direkten Vorgänger und Nachfolger definiert. Haben Sie ein HTML-Element selektiert, können Sie diese Parameter über die entsprechenden Eigenschaften auslesen:
 
 - Elternelement: [`parentElement`](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement)
+
 - Direkter Vorgänger: [`previousSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Node/previousSibling)
+
 - Direkter Nachfolger: [`nextSibling`](https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling)
 
 Mit Hilfe dieser Eigenschaften können Sie den kompletten DOM-Baum traversieren. Die Positionsangaben sind zusätzlich wichtig, wenn Sie ein existierendes oder neues Element an einer bestimmten Position des DOMs einfügen möchten.
@@ -95,7 +97,9 @@ let newElement = containerElement.firstChild;
 Bei diesem Vorgehen sind einige Dinge zu beachten:
 
 - Der verwendete HTML-String darf nur einen direkten Knoten enthalten, da sich das neue Element sonst nicht mittels `firstChild`-Eigenschaft auslesen lässt.
+
 - Die Methode kann für einige HTML-Elemente, die laut Spezifikation keine Kinderelemente von `div` sein dürfen nicht verwendet werden.
+
 - Der Vorgang ist, vor allem bei komplexen Objekten nicht ressourcenschonend.
 
 Generell sollte bei der dynamischen Erstellung komplexerer HTML-Objekte auf einen [`Templating`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)-Mechanismus zurückgegriffen werden, um die angestrebte Trennung zwischen Struktur bzw. Inhalt (HTML) und Logik (Javascript) beizubehalten.
@@ -133,10 +137,15 @@ Beim Aufruf der registrierten *Callback*-Methoden wird in der Regel ein Paramete
 ## Demos und Übungsaufgaben
 Als erste Fingerübung im Rahmen der DOM-Manipulation mit Javascript können Sie die hier verlinkte [Übungsaufgabe](https://classroom.github.com/assignment-invitations/d84cc63e1f72964722cec4f9c46a6684) bearbeiten. Die Aufgabe wird mittels [Github Classroom](https://classroom.github.com/) bereitgestellt. Für die Bearbeitung benötigen Sie einen (kostenlosen) Account auf der Webseite [github.com](https://github.com/).
 
+Im Rahmen der Präsenzveranstaltung werden die Grundlagen der Softwareentwicklung mit *Javascript* und der DOM-Manipulation an Beispiel eines einfachen [Kanban-Boards](../../Demos/kanban-board) praktisch umgesetzt.
+
 ### Weitere Aufgaben
 - Rufen Sie die [Webseite der Medieninformatik](https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/) auf und öffnen Sie die Javascript-Konsole Ihres Browsers. Nutzen Sie die bekannten Javascript-Befehle um die Überschrift "Aktuelle Meldungen der Medieninformatik" zu selektieren und durch den *String* "Hello World" zu ersetzen.
+
 - Versuchen Sie weitere Bestandteile der Website zu manipulieren: Tauschen Sie z.B. die Quellpfade von angezeigten Bildern aus oder ergänzen Sie weitere Texte bzw. Abschnitte
+
 - Erstellen Sie ein einfaches HTML-Dokument mit einer Überschrift und einer unsortierten Liste. Versuchen Sie, beim Öffnen des Dokuments - über eine integrierte Javascript-Datei - neue Listenelemente mit beliebigem Inhalt hinzuzufügen. 
+
 - Versuchen Sie, Mausklicks auf den hinzugefügten Listenelementen zu registrieren und verändern Sie in der entsprechenden *Callback*-Methode das Erscheinungsbild des angeklickten Elements. Definieren Sie dazu eine CSS-Klasse (in einem ausgelagerten Dokument) und nutzen Sie die entsprechenden API-Methoden um diese Klasse zum angeklickten Element  hinzuzufügen.
 
  [^1]: [WHATWG, DOM - Living Standard](https://dom.spec.whatwg.org/#interface-document)

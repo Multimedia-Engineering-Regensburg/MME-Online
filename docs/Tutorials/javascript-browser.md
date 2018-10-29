@@ -40,7 +40,7 @@ var myApp = myApp || {};
 
 Dadurch wird die Initialisierung mit dem Objekt-Literal nur dann ausgeführt, wenn in `myApp` noch kein Wert gespeichert ist bzw. die Variable noch nicht definiert ist. In beiden Fällen liefert die Ausführung des Ausdrucks vor `||` den Wert `undefined` zurück.
 
-Durch das Anlegen und direkte Ausführen einer anonymer Funktionen lässt sich auch der komplette Code der eigenen Anwendung in einem separaten [*Scope*](https://en.wikipedia.org/wiki/Scope_(computer_science)) ausführen:
+Durch das Anlegen und direkte Ausführen einer anonymer Funktionen lässt sich auch der komplette Code der eigenen Anwendung in einem separaten [*Scope*](https://en.wikipedia.org/wiki/Scope_(computer_science)) ausführen. Der Rumpf der inneren Methode hat dabei Zugriff auf alle Variablen, die im umschließenden Kontext existieren, also auch auf die als globale Variablen bereitgestellten APIs des Browsers.
 
 ``` javascript
 (function() {
