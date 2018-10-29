@@ -38,7 +38,7 @@ Alle Projektdateien werden in einem gemeinsamen Ordner, in der Regel nach dem Pr
 
 1. Die HTML-Datei (`index.html`), die als Einstiegspunkt in die Anwendung dient und die Struktur des UIs vorgibt
 
-2. Ein Ordner `resource` für alle anderen Projektdateien
+2. Ein Ordner `resources` für alle anderen Projektdateien
 
 3. Ein Ordner `vendors` in dem alle externen Bibliotheken in separierten Unterordnern abgelegt werden
 
