@@ -263,9 +263,7 @@ function Observable() {
   	var that = new EventTarget();
 
   	function doStuff() {
-  		that.dispatchEvent({
-  			type: "stuffDone"
-  		});
+  		that.dispatchEvent(new Event("stuffDone"));
   	}
 
   	that.doStuff = doStuff;
