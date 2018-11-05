@@ -6,11 +6,8 @@ Die graphische Benutzeroberfläche einer Webanwendung wird in der Regel durch HT
 
 Im Rahmen des *Parsings* eines HTML-Dokuments erstellt der Browser eine virtuelle Repräsentation der Strukturen und Inhalte, die durch die HTML-Elemente und deren Inhalte und Attribute vorgegeben werden. Diese Repräsentation basiert auf dem [Document Object Model (DOM)](https://en.wikipedia.org/wiki/Document_Object_Model), einem standardisierten Model[^1], das von allen modernen Browser implementiert wird. Das DOM dient als Verbindung zwischen der Webseite oder Webanwendung und Skript- bzw. Programmiersprachen, die dadurch die Möglichkeit erhalten, die dargestellten Inhalte zu manipulieren. In der Regel meint dies Javascript. Javascript selbst, bzw. der ECMAScript-Standard[^2] definieren dabei keine Schnittstellen zum DOM bzw. zur Manipulation von HTML-Dokumenten. Diese Möglichkeit wird durch die Implementierung des DOM-Standards in Form einer [Javascript-API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)bereitgestellt, die im Javascript-Kontext des Browsers bereitgestellt wird. Der oberste Knoten des Dokuments wird dabei durch das globale  `document`-Objekt repräsentiert.
 
----
-
-In dieser Lektion werden die Grundlagen der DOM-Manipulation mit Javascript beschrieben. Es empfiehlt sich, die beschriebene Methoden und Vorgänge direkt auszuprobieren. Erstellen Sie dazu eine einfache HTML-Datei und binden Sie eine leere Javascript-Datei (siehe Beispiel aus der Vorlesung) ein. 
-
----
+!!! note "Hinweis"
+	In dieser Lektion werden die Grundlagen der DOM-Manipulation mit Javascript beschrieben. Es empfiehlt sich, die beschriebene Methoden und Vorgänge direkt auszuprobieren. Erstellen Sie dazu eine einfache HTML-Datei und binden Sie eine leere Javascript-Datei (siehe Beispiel aus der Vorlesung) ein. 
 
 ## Javascript-Objekte als Repräsentation der DOM-Inhalte
 
@@ -120,7 +117,7 @@ Im folgenden Beispiel wird ein *Listener* registriert, um Mausklicks auf einem b
 </html>
 ```
 
-Im Javascript-Code wird zuerst das Element mit der ID `target` selektiert. Anschließend wird der *Listener* für das Mausklick-*Event* (Bezeichner: `click`) registriert. Als *Callback*-Methode dient eine zuvor angelegte *Named Function*, die als Parameter an `addEventListener` übergeben wird. Zur Erinnerung: Funktionen bzw. Methoden werden in Javascript als [*first-class citizen](https://en.wikipedia.org/wiki/
+Im Javascript-Code wird zuerst das Element mit der ID `target` selektiert. Anschließend wird der *Listener* für das Mausklick-*Event* (Bezeichner: `click`) registriert. Als *Callback*-Methode dient eine zuvor angelegte *Named Function*, die als Parameter an `addEventListener` übergeben wird. Zur Erinnerung: Funktionen bzw. Methoden werden in Javascript als [*first-class citizen*](https://en.wikipedia.org/wiki/
 First-class_citizen) behandelt.
 
 ``` javascript

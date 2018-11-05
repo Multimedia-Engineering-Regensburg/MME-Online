@@ -3,10 +3,8 @@
 
 Ein [Kanban Board](https://en.wikipedia.org/wiki/Kanban_board) ist ein, eigentlich physikalisches häufig jedoch auch digitales, Werkzeug zur Visualisierung und Dokumentation von Arbeitsprozessen. Das *Board* ist in mehrere Spalten aufgeteilt, die, von links nach rechts, fortschreitende Phasen in der Bearbeitung einer Aufgabe darstellen. Diese Aufgaben werden durch Karten repräsentiert, die im Laufe ihrer Bearbeitung von links nach rechts über das *Board* wandern. Der aktuelle Status der Aufgabe wird dabei durch die Position der jeweiligen Karte auf dem *Board* repräsentiert. *Kanban Boards* werden auch in der agilen Softwareentwicklung verwendet. Dabei werden durch die Karten z.B. einzelne Features der zu implementierende Software dargestellt. In dieser Demo entwickeln wir ein einfaches, browser-gestütztes *Kanban Board*, das über drei Spalten zur Darstellung *offener*, *aktuell bearbeiteter* und *abgeschlossener* Aufgaben verfügt.
 
----
-**Achtung**: Die Inhalte und Positionen der Karten werden nicht gespeichert. Die Anwendung ist daher nicht realistisch verwendbar. Eine einfache Lösung für dieses Problem ist die Verwendung der [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API). Über diese Funktion können Sie Daten (Texte) dauerhaft im Browser speichern und beim nächsten Aufruf der Webseite bzw. Webanwendung verwenden.
-
----
+!!! warning "Hinweis"
+	Die Inhalte und Positionen der Karten werden nicht gespeichert. Die Anwendung ist daher nicht realistisch verwendbar. Eine einfache Lösung für dieses Problem ist die Verwendung der [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API). Über diese Funktion können Sie Daten (Texte) dauerhaft im Browser speichern und beim nächsten Aufruf der Webseite bzw. Webanwendung verwenden.
 
 ![Screenshot des Kanban-Board](../../img/demos/kanban-board-complete.png)
 

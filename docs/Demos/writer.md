@@ -3,10 +3,7 @@
 
 In dieser Demo implementierten Sie einen einfachen, *browser*-gestützten Text-Editor. Nutzer können diesen verwenden um Texte zu verfassen, die automatisch, lokal und dauerhaft im *Browser* gespeichert werden. Während der Texteingabe werden dem Nutzer Statistiken zum aktuellen Text (Wortanzahl und Lesegeschwindigkeit) angezeigt. Die Architektur der Anwendung basiert auf unterschiedlichen Komponenten, die mit dem [*revealing module pattern*](../../MME/closures-and-module-pattern) strukturiert werden und deren Zuständigkeitsbereiche sich grob entlang des *MVC*-Ansatzes einordnen lassen. 
 
----
 Die Demo dient der praktischen Umsetzung und Einübung des vorgestellten [*Module Patterns*](../../MME/closures-and-module-pattern). Zusätzlich können Sie hier die Grundlagen des bekannten [*model-view-controller*](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)-Ansatzes auffrischen. 
-
----
 
 ![Screenshot der Writer-App](../../img/demos/writer-complete.png)
 

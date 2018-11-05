@@ -8,6 +8,7 @@ theme:
 plugins: [search]
 markdown_extensions:
   - footnotes
+  - admonition
 nav:
   - Start: index.md
   - MME: 

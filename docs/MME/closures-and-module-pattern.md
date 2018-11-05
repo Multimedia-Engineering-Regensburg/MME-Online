@@ -6,10 +6,8 @@ Module sind eine der Möglichkeiten, individuelle Komponenten einer Javascript-A
 
 Komplexere Software besteht in der Regel aus verschiedenen Komponenten, die unabhängig voneinander oder gemeinsam arbeiten um die Funktionen des Gesamtsystems bereitzustellen. Eine gute Software-Architektur versucht diesen Ansatz (Vgl. [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)) auf allen möglichen Ebenen umzusetzen. In Javascript sind die Bausteine für die Gestaltung des Codes die Funktionen, Prototypen und Module. Während die ersten beiden Features feste Bestandteile des Sprachstandards sind, werden Module vom Programmierenden durch die Anwendung dieser grundlegenden Sprachfeatures realisiert. Dadurch lassen sich auch in Javascript bekannte Konzepte wie das [*information hiding*](https://en.wikipedia.org/wiki/Information_hiding) realisieren. Wichtigste Voraussetzung für die Implementierung von Modulen sind dabei *Closures* (Funktionseinschluss).
 
----
-Versuchen Sie die Erläuterungen und Beispiele aus dieser Lektion direkt praktisch umzusetzen. Erstellen Sie dazu ein leeres [Projektverzeichnis](../../Tutorials/project-directory) und implementieren Sie die vorgestellten Beispiele selbstständig.
-
----
+!!! note "Hinweis"
+	Versuchen Sie die Erläuterungen und Beispiele aus dieser Lektion direkt praktisch umzusetzen. Erstellen Sie dazu ein leeres [Projektverzeichnis](../../Tutorials/project-directory) und implementieren Sie die vorgestellten Beispiele selbstständig.
 
 ## Warum Module?
 
@@ -56,6 +54,7 @@ var counter = createCounter();
 counter();
 ``` 
 
+
 Im Beispiel wird ein Zähler `count` als lokale Variable in einer Funktion eingeschlossen. Die Variable überdauert den Zeitpunkt der Ausführung (den Aufruf der Funktion) und ist aus dem umschließenden Kontext der Anwendung nicht zugänglich und damit nicht manipulierbar. Der Zugriff erfolgt nur über die innere Funktion `increase`. Diese wird als Funktionsreferenz aus der Methode zurückgegeben und kann an andere Stelle gespeichert und aufgerufen werden. Dadurch wird eine Schnittstelle zwischen dem inneren Bereich und dem Rest der Anwendung erstellt und somit ein indirekter, abgesicherter Zugriff auf den Zähler ermöglicht. Mit der Hilfe von *Closures* lässt sich dadurch das aus Java bekannte Konzepte der privaten und öffentlichen *Sichtbarkeit* (`private` und  `public`) zur Umsetzung von *information hiding* auch in Javascript verwenden. Zu beachten ist dabei, dass es sich nur um eine konzeptuelle Ähnlichkeit handelt und nicht um ein identisches Sprachfeature.
 
 ### Privileged Functions
@@ -92,7 +91,6 @@ Die anonyme Methode wird direkt ausgeführt. Im Inneren kann auf den umschließe
 In der Regel werden Module nicht vollständig losgelöst vom Rest der Anwendung verwendet. Für die Verknüpfung von Modulen mit dem Rest der Anwendung ergeben sich verschiedene Möglichkeiten. Die einfachste Art und Weise ist dabei die Verwendung gemeinsamer, globaler Objekte. Da alle Teilbereiche einer Anwendung auf diese zugreifen können, existiert ein gemeinsamer Bereich in dem unterschiedliche Module oder andere Komponenten der Anwendung Objekte erstellen, verwenden und kommunizieren können. Um auch hier die Prinzipien des *information hidings* sowie des *seperation of concerns* umzusetzen, empfiehlt sich ein Ansatz, bei dem einem Modul keine unnötigen Informationen über den zu verwendenden Kontext mitgeteilt werden. Dies kann z.B. durch die parametrisierte Übergabe eines Kontext-Objekts erfolgen. Über dieses Objekt werden dem Modul Informationen übergeben, die es zum Ausführen seiner Aufgaben benötigt. Zusätzlich können in dem Objekt Referenzen auf die Methoden gespeichert werden, die von außen zugänglich sein sollen:
 
 ``` javascript
-
 var myContext = {};
 
 (function(context) {
@@ -250,7 +248,6 @@ myNamespace.myModule = (function() {
 
 	return that;
 });
-
 ```
 
 ## Vererbung im Revealing Module Pattern

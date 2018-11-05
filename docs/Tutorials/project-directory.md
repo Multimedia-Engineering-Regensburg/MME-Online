@@ -2,10 +2,9 @@
 
 Für die Entwicklung und Bereitstellung von Webanwendungen auf der Basis von HTML und Javascript ist keine besondere Strukturierung des Projektordners erforderlich oder vorgeschrieben. Da die Verknüpfung der verschiedenen Dateien durch (relative) Verlinkung innerhalb der Dokumente erfolgt können die Projektdateien theoretisch an beliebigen Stellen des Entwicklungsrechners bzw. des Webservers liegen, der die Anwendung an den Nutzer ausliefert. Aus naheliegenden Gründen sollte bei der Arbeit an einer Webanwendungen jedoch ein strukturierter Projektordner verwendet und gepflegt werden. 
 
----
-Der hier vorgestellte und im Kurs verwendete Aufbau des Projektordners beschreibt die Entwicklersicht bzw. die Ordnerstruktur während der Implementierung. Diese kann sich von dem schlussendlich auslieferten und über einen Webserver bereitgestellten Produkt unterscheiden. Auf einige dieser Unterschiede wird im Laufe des Kurses eingegangen. Ein wesentlicher Unterschied sind z.B. die Reduzierung der Anzahl der Einzeldateien durch Konkatenieren der individuellen Javascript- und CSS-Dateien. Dadurch wird die Menge der *Client*-Anfragen zum Übertragen der Webanwendungen minimiert.
+!!! warning "Development vs. Deploying"
+	Der hier vorgestellte und im Kurs verwendete Aufbau des Projektordners beschreibt die Entwicklersicht bzw. die Ordnerstruktur während der Implementierung. Diese kann sich von dem schlussendlich auslieferten und über einen Webserver bereitgestellten Produkt unterscheiden. Auf einige dieser Unterschiede wird im Laufe des Kurses eingegangen. Ein wesentlicher Unterschied sind z.B. die Reduzierung der Anzahl der Einzeldateien durch Konkatenieren der individuellen Javascript- und CSS-Dateien. Dadurch wird die Menge der *Client*-Anfragen zum Übertragen der Webanwendungen minimiert.
 
----
 
 ## Vorüberlegungen
 In der Regel besteht ein Softwareprojekt aus unterschiedlichen Dateien, die im Rahmen des *Build*-Prozesses zu einem ausführbaren Artefakt zusammen gesetzt werden. Unabhängig von der eingesetzten Programmiersprache oder -Plattform können verschiedene Anforderungen an die Organisation dieser Dateien gestellt werden:
