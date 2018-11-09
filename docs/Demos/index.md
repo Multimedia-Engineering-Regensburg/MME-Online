@@ -3,7 +3,7 @@ Im praktischen Teil des Kurses werden wöchentlich beispielhafte Anwendungen imp
 
 ## List der Demo-Anwendungen
 
-Title | Beschreibung | Starterpaket | Lösung | Github
-:-----|:-------------|:------------:|:------:|:-----:
-[Kanban-Board](./kanban-board) | Lokales Kanban-Board zu Verwaltung und Dokumentation von Aufgaben | [GRIPS](https://elearning.uni-regensburg.de/mod/resource/view.php?id=1042483) | [GRIPS](https://elearning.uni-regensburg.de/mod/resource/view.php?id=1042484) | Github
-[Writer](./writer) | Text-Editor mit Wort-Zähler und automatischem Speichern |  [GRIPS](https://elearning.uni-regensburg.de/mod/resource/view.php?id=1042483) | [GRIPS](https://elearning.uni-regensburg.de/mod/resource/view.php?id=1042484) | Github
+Title | Beschreibung | Themen | Code
+:-----|:-------------|:-------|:----:
+[Kanban-Board](./kanban-board) | Lokales Kanban-Board zu Verwaltung und Dokumentation von Aufgaben | DOM | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Kanban-Board)
+[Writer](./writer) | Text-Editor mit Wort-Zähler und automatischem Speichern | Module, MVC | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Writer)

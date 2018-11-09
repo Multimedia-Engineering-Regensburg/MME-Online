@@ -162,7 +162,7 @@ var myModule = (function() {
 myModule.revealedFunction();
 ```
 
-Durch den Einsatz eines expliziten Referenzobjekts ergeben sich zwei Vorteile. Zum einen wird die Zusammenstellung des Objekts bei komplexeren Modulen übersichtlicher. Zum anderen kann innerhalb des Moduls auf das Referenzobjekt Bezug genommen werden. Das ist z.B. von Vorteil, wenn im Rahmen der veröffentlichten Methoden *Chaining* ermöglicht werden soll. [*Chaining*](https://en.wikipedia.org/wiki/Method_chaining) bezeichnet in der objektorientierten Programmierung die Verkettung mehrerer Methodenaufrufe auf der Basis derer Rückgabewerte. D.h. eine Methode liefert als Rückgabewert ein Objekt zurück, auf dem die nächste Methode der Verarbeitungskette aufgerufen werden kann. Häufig finden Sie diesen Ansatz bei Komponenten, die eine schrittweise Verarbeitung von Daten oder internen Vorgängen ermöglichen, an dessen Ende die Rückgabe einer aufbereiteten Datenmenge steht. Im *revealing module pattern* kann dies durch die Rückgabe des `that`-Objektes realisiert werden, auf dem dann die nächste, öffentliche Methode aufgerufen werden kann:
+Durch den Einsatz eines expliziten Referenzobjekts ergeben sich zwei Vorteile. Zum einen wird die Zusammenstellung des Objekts bei komplexeren Modulen übersichtlicher. Zum anderen kann innerhalb des Moduls auf das Referenzobjekt Bezug genommen werden. Das ist z.B. von Vorteil, wenn im Rahmen der veröffentlichten Methoden *chaining* ermöglicht werden soll. [*chaining*](https://en.wikipedia.org/wiki/Method_chaining) bezeichnet in der objektorientierten Programmierung die Verkettung mehrerer Methodenaufrufe auf der Basis derer Rückgabewerte. D.h. eine Methode liefert als Rückgabewert ein Objekt zurück, auf dem die nächste Methode der Verarbeitungskette aufgerufen werden kann. Häufig finden Sie diesen Ansatz bei Komponenten, die eine schrittweise Verarbeitung von Daten oder internen Vorgängen ermöglichen, an dessen Ende die Rückgabe einer aufbereiteten Datenmenge steht. Im *revealing module pattern* kann dies durch die Rückgabe des `that`-Objektes realisiert werden, auf dem dann die nächste, öffentliche Methode aufgerufen werden kann:
 
 ``` javascript
 var dataProcessor = (function() {
@@ -200,6 +200,8 @@ var dataProcessor = (function() {
 var dataSet = [],
 filteredAndSortedData = dataProcessor.set(dataSet).filter().sort().get();
 ```
+
+Inwieweit *chaining* von Methoden ein sinnvolles Muster darstellt, sollte stets im Kontext der Aufgabenstellung abgewogen werden. Eine saubere Implementierung des *patterns* kann zu besser lesbarem und verständlicherem Code bzw. zugänglicheren Schnittstellen führen. Eine fehlerhafte oder nicht-intuitive Implementierung kann jedoch auch Problemen erzeugen. Auf [stackoverflow](https://stackoverflow.com/questions/1103985/method-chaining-why-is-it-a-good-practice-or-not) finden Sie dazu eine interessante Diskussion. Den dort verlinkten Artikel von Martin Fowler können Sie [hier](https://web.archive.org/web/20090604204506/https://martinfowler.com/dslwip/MethodChaining.html) in archivierter Form nachlesen.
 
 ## Module wiederverwenden
 
