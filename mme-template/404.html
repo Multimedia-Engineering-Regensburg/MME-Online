@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    {{ super() }}
+	<style>
+
+		h1:before {
+			content: "404 | ";
+			color: rgb(156,0,75);
+			font-family: "Lucida Console", Monaco, monospace;
+		}
+
+		h1 {
+			margin-bottom: 1em;
+		}
+
+		p {
+			display: inline-block;
+			width: 65%;
+			line-height: 2em;
+			font-size: 1.25em;
+		}
+
+		img {
+			vertical-align: top;
+			display: inline-block;
+			margin: 0 2% 0 0;
+			width: 25%;
+			filter: grayscale(100%);
+		}
+	</style>
+{% endblock %}
+
+{% block site_nav %}
+{% endblock %}
+{% block search_box %}
+{% endblock %}
+
+{% block content %}
+  <h1>Sorry, dieses Seite existiert nicht.</h1>
+  <img id="cat" src="" />
+  <p>Sie haben versucht die Seite <tt id="requested-url">Javascript wird nicht unterstützt oder ist deaktivert - die aktuelle URL kann nicht ausgelesen werden.</tt> aufzurufen. Wir konnten dieses Dokument nicht auf unserem Server finden. Über diesen <a href="https://regensburger-forscher.de/mme">Link</a> können Sie zur Startseite zurückkehren. Als kleine Entschädigung gibt es dieses Katzenbild (Bereitgestellt über die <a href="https://thecatapi.com/">Cat API</a>).</p>
+{% endblock %}
+
+{% block scripts %}
+ 	{{ super() }}
+ 	<script type="application/javascript">
+  		function showURLIn(elSelector) {
+  			let el = document.querySelector(elSelector);
+  			el.innerHTML = window.location.href;
+  		}
+
+  		function showRandomCatImageIn(elSelector) {
+  			let url = "https://api.thecatapi.com/v1/images/search?size=medium&mime_types=png&format=json&order=RANDOM&page=0&limit=1&category_ids",
+  			el = document.querySelector(elSelector);
+  			$.ajax({
+    			url: url,
+    			success: function(result){
+    				el.src = result[0].url;
+    			}
+			});
+  		}
+
+  		document.addEventListener("DOMContentLoaded", function(event) {
+  			showURLIn("#requested-url");
+  			showRandomCatImageIn("#cat");
+  		});
+  </script>
+
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
