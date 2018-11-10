@@ -10,7 +10,7 @@ Woche | Datum | Inhalt | Anmerkung
 2 |22.10.2018 | Crashkurs: Entwicklung von Webanwendungen mit HTML, CSS und Javascript | Präsenzveranstaltung während des Vorlesungs- und Übungs-Slots
 3 |29.10.2018 | [Das Document Object Model: HTML-Dokumente programmatisch verarbeiten und manipulieren](./dom-introduction) | Online-Material und praktische Übung
 4 |05.11.2018 | [Closures: Javascript-Anwendungen mit dem Module-Pattern gestalten](./closures-and-module-pattern) | Online-Material und praktische Übung
-5 |12.11.2018 | Der Event-Loop in Javascript und die Events der Web-APIs | Online-Material und praktische Übung
+5 |12.11.2018 | [Der Event-Loop in Javascript und die Events der Web-APIs](./event-loop) | Online-Material und praktische Übung
 6 |19.11.2018 | Client-Server-Kommunikation: AJAX und das REST-Paradigma | Online-Material und praktische Übung
 7 |26.11.2018 | Das Canvas-Element: dynamische Zeichenoperationen im Browser | Online-Material und praktische Übung
 8 |03.12.2018 | Nebenläufigkeit im Browser: Webworker verstehen und einsetzen | Online-Material und praktische Übung
