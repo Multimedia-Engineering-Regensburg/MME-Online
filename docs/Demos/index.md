@@ -7,3 +7,4 @@ Title | Beschreibung | Themen | Code
 :-----|:-------------|:-------|:----:
 [Kanban-Board](./kanban-board) | Lokales Kanban-Board zu Verwaltung und Dokumentation von Aufgaben | DOM | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Kanban-Board)
 [Writer](./writer) | Text-Editor mit Wort-Zähler und automatischem Speichern | Module, MVC | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Writer)
+[Simon Says](./simon-says) | Reaktionsspiel mit Observer Pattern | Events, Module | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Simon-Says)

@@ -28,6 +28,7 @@ nav:
       - Übersicht: Demos/index.md
       - Kanban-Board: Demos/kanban-board.md
       - Writer: Demos/writer.md
+      - Simon Says: Demos/simon-says.md
   - Tutorials:
       - Übersicht: Tutorials/index.md
       - Der Projektordner: Tutorials/project-directory.md
