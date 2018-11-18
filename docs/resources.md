@@ -30,7 +30,7 @@ Für die Entwicklung von Webanwendungen sind ein Texteditor oder eine integriert
 ### Codequalität
 - [Erich Gamma et al: Design Patterns](https://proquest.tech.safaribooksonline.de/0201633612) (Zugang nur aus Uni-Netz)
 - [Martin Fowler et al: Refactoring](https://proquest.tech.safaribooksonline.de/0201485672) (Zugang nur aus Uni-Netz)
-- [Roberty Nystrom](http://gameprogrammingpatterns.com/contents.html)
+- [Roberty Nystrom: Game Programming Patterns](http://gameprogrammingpatterns.com)
 
 ### Versionskontrolle
 - [Scott Chancon & Ben Straub: Pro Git](https://git-scm.com/book/en/v1)

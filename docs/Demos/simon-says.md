@@ -6,7 +6,7 @@ In dieser Demo planen und implementieren Sie eine einfache *Javascript*-Variante
 !!! warning "Hinweis"
 	Im verlinkten Lösungsvorschlag wird eine Minimalversion des Spiels implementiert. Sinnvolle Möglichkeiten zur Erweiterung der Spielidee sind die kontinuierliche Steigerung des Schwierigkeitsgrads durch komplexere Farbmuster oder verbessertes Feedback an den Nutzer (z.B. durch die Integration von [*Sound*-Ausgabe](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement)). Versuchen Sie, Ihre eigene Lösung entsprechend zu ergänzen.
 
-![Screenshot der Writer-App](../../img/demos/simon-complete.png)
+![Screenshot der Simon-Says-App](../../img/demos/simon-complete.png)
 
 ## Aufbau der Anwendung und Ausgangslage
 
