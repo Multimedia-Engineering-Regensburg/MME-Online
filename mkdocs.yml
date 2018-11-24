@@ -17,7 +17,7 @@ nav:
     - Progammatische Manipulation des DOM: MME/dom-introduction.md
     - Applikationen mit dem Module Pattern gestalten: MME/closures-and-module-pattern.md
     - Den Event-Loop verstehen und verwenden: MME/event-loop.md
-    - AJAX und das REST-Paradigma: MME/ajax-and-rest.md
+    - Client-Server-Kommunikation (AJAX und XMLHttpRequest): MME/ajax.md
     - Canvas, Video & Audio: MME/canvas-element.md
     - Nebenläufige Aktionen im Browser: MME/webworkers.md
     - Einführung in die Node.js-Umgebung: MME/node-js.md

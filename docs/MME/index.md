@@ -12,7 +12,7 @@ Woche | Datum | Inhalt | Anmerkung
 4 |05.11.2018 | [Closures: Javascript-Anwendungen mit dem Module-Pattern gestalten](./closures-and-module-pattern) | Online-Material und praktische Übung
 5 |12.11.2018 | [Der Event-Loop in Javascript und die Events der Web-APIs](./event-loop) | Online-Material und praktische Übung
 6 |19.11.2018 | Praxistipps für die Übungsaufgaben: Codequalität mit ESLint | Praktische Übung
-7 |26.11.2018 | Client-Server-Kommunikation: AJAX und das REST-Paradigma | Online-Material und praktische Übung
+7 |26.11.2018 | [Client-Server-Kommunikation: AJAX und XMLHttpRequest](./ajax) | Online-Material und praktische Übung
 8 |03.12.2018 | Das Canvas-Element: dynamische Zeichenoperationen im Browser | Online-Material und praktische Übung
 9 |10.12.2018 | Nebenläufigkeit im Browser: Webworker verstehen und einsetzen | Online-Material und praktische Übung
 10 |17.12.2018 | Javascript außerhalb des Browser: Einführung in die Verwendung von Node.js | Online-Material und praktische Übung

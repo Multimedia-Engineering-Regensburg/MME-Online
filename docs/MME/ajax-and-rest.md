@@ -1,1 +1,0 @@
-# Client-Server-Kommunikation: AJAX und das REST-Paradigma
