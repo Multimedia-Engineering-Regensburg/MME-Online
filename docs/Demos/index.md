@@ -9,3 +9,4 @@ Title | Beschreibung | Themen | Code
 [Writer](./writer) | Text-Editor mit Wort-Zähler und automatischem Speichern | Module, MVC | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Writer)
 [Simon Says](./simon-says) | Reaktionsspiel mit Observer Pattern | Events, Module | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Simon-Says)
 [Mensa App](./mensa-app) | Aktueller Speiseplan der Uni Mensa | Ajax, Fetch | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-MensaApp)
+[Bundesliga Tabelle](./bundesliga) | Aktueller Tabelle der 1. Bundesliga | Ajax, Pair Programming | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Bundesliga)
