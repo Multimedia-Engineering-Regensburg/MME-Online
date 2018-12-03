@@ -35,7 +35,7 @@ nav:
       - Übersicht: Tutorials/index.md
       - Der Projektordner: Tutorials/project-directory.md
       - Javascript im Browser: Tutorials/javascript-browser.md
-#      - Projektstruktur: Tutorials/project-directory.md
+      - Pair Programming: Tutorials/pair-programming.md
   - Ressourcen: resources.md
   - Impressum:
     - Autor: author.md
