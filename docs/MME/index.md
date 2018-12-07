@@ -14,7 +14,7 @@ Woche | Datum | Inhalt | Anmerkung
 6 |19.11.2018 | Praxissitzung: Tipps für die Übungsaufgaben und Codequalität mit ESLint | Praktische Übung
 7 |26.11.2018 | [Client-Server-Kommunikation: AJAX und XMLHttpRequest](./ajax) | Online-Material und praktische Übung
 8 |03.12.2018 | Praxissitzung: Pair Programming | Praktische Übung
-8 |10.12.2018 | Multimediale Elemente im Browser: Audio-, Video- und Canvas-Elemente | Online-Material und praktische Übung
+8 |10.12.2018 | [Multimediale Elemente im Browser: Audio-, Video- und Canvas-Elemente](./canvas-element) | Online-Material und praktische Übung
 10 |17.12.2018 | Javascript außerhalb des Browser: Einführung in die Verwendung von Node.js | Online-Material und praktische Übung
 11 |14.01.2019 | Multiuser-Anwendungen mit WebSockets und WebRTC| Online-Material und praktische Übung
 12 |21.01.2019 | Anforderungsdokumentation für (studentische) Softwareprojekte | Online-Material und praktische Übung
