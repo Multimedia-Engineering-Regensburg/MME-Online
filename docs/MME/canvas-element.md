@@ -58,7 +58,7 @@ Die aktuelle Abspielposition kann mit Hilfe der Eigenschaft `currentTime` ausgel
 ``` javascript
 let seekbar = document.querySelector("#seekbar");
 
-seekbar.addEventListener("change", function onRangeSliderChanged() {
+seekbar.addEventListener("change", function () {
 	let selectedPosition =  videoPlayer.duration * (seekbar.value / 100));
 	videoPlayer.currentTime = selectedPosition; 
 });
