@@ -11,3 +11,4 @@ Nr | Title | Beschreibung | Themen | Code
 4 | [Mensa App](./mensa-app) | Aktueller Speiseplan der Uni Mensa | Ajax, Fetch | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-MensaApp)
 5 | [Bundesliga Tabelle](./bundesliga) | Aktueller Tabelle der 1. Bundesliga | Ajax, Pair Programming | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Bundesliga)
 6 | [Ambi Player](./ambi-player) | *Ambilight*-Funktion für Video-Elemente | Video, Canvas | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-AmbiPlayer)
+7 | [Writer-Online](./writer-online) | Text-Editor mit Server-seitigem-*Backen* zur dauerhaften Persistierung von Dokumenten | Node.js, HTTP | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Writer-Online)

@@ -17,7 +17,7 @@ Woche | Datum | Inhalt | Anmerkung
 8 |10.12.2018 | [Multimediale Elemente im Browser: Audio-, Video- und Canvas-Elemente](./canvas-element) | Online-Material und praktische Übung
 10 |17.12.2018 | -
 11 |07.01.2019 | Praxissitzung: Code-Katas | Praktische Übung
-12 |14.01.2019 | Javascript außerhalb des Browser: Einführung in die Verwendung von Node.js | Online-Material und praktische Übung
+12 |14.01.2019 | [Javascript außerhalb des Browser: Einführung in die Verwendung von Node.js](./node-js) | Online-Material und praktische Übung
 13 |21.01.2019 | Anforderungsdokumentation für (studentische) Softwareprojekte | Online-Material und praktische Übung
 14 |28.01.2019 | Projektworkshop: Vorstellung und Auswahl von Themen, Definition einer ersten Projektskizze, Einrichten der Repositories | Präsenzveranstaltung während des Vorlesungs- und Übungs-Slots
 15 |04.02.2019 | Projektbesprechungen: Anforderungen definieren und finalisieren | Sprechstunden mit den einzelnen Projektgruppen während des Vorlesungs- und Übungsslots
