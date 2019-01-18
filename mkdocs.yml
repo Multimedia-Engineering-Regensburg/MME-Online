@@ -19,11 +19,11 @@ nav:
     - Den Event-Loop verstehen und verwenden: MME/event-loop.md
     - Client-Server-Kommunikation (AJAX und XMLHttpRequest): MME/ajax.md
     - Canvas, Video & Audio: MME/canvas-element.md
-    - Nebenläufige Aktionen im Browser: MME/webworkers.md
+#    - Nebenläufige Aktionen im Browser: MME/webworkers.md
     - Einführung in die Node.js-Umgebung: MME/node-js.md
-    - Echtzeit-Kollaboration über Sockets und WebRTC: MME/multi-user-applications.md
-    - Versionsverwaltung mit Git: MME/version-control.md
-    - Anforderungen erheben und dokumentieren: MME/requirements-for-student-projects.md
+#    - Echtzeit-Kollaboration über Sockets und WebRTC: MME/multi-user-applications.md
+#    - Versionsverwaltung mit Git: MME/version-control.md
+#    - Anforderungen erheben und dokumentieren: MME/requirements-for-student-projects.md
   - Demos:
       - Übersicht: Demos/index.md
       - Kanban-Board: Demos/kanban-board.md
