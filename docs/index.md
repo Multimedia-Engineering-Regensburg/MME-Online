@@ -1,6 +1,9 @@
 # Multimedia Engineering
 
-Auf dieser Seite finden Sie Tutorials, Begleittexte, Videos und Beispiele zum Multimedia Engineering-Kurs des [Lehrstuhls für Medieninformatik](https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/). Die Inhalte dienen dem kursbegleitenden Selbststudium und ergänzen die wöchentlichen Präsenzveranstaltungen. Organisatorische Hinweise, weitere Inhalte und Verweise erhalten Sie im jeweils aktuellen [GRIPS-Kurs](https://elearning.uni-regensburg.de/course/view.php?id=35216). 
+!!! warning "Aktualisierung der Inhalte für das Sommersemester 2019"
+	Die Inhalte dieser Seite werden aktuell für das Sommersemester 2019 angepasst. Einige Einträge und Seiten sind daher unvollständig und werden bis zum Vorlesungsbeginn (**24. April**) vervollständigt.
+
+Auf dieser Seite finden Sie Tutorials, Begleittexte, Videos und Beispiele zum Multimedia Engineering-Kurs des [Lehrstuhls für Medieninformatik](https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/). Die Inhalte dienen dem kursbegleitenden Selbststudium und ergänzen die wöchentlichen Präsenzveranstaltungen. Organisatorische Hinweise, weitere Inhalte und Verweise erhalten Sie im jeweils aktuellen [GRIPS-Kurs](https://elearning.uni-regensburg.de/course/view.php?id=37438). 
 
 ## Zusammenfassung
 Der Multimedia Engineering-Kurs (MME) richtet sich in erster Linie an Studierende der Medieninformatik. Der Kurs schließt inhaltlich an die beiden Vorlesungen *Einführung in die Objektorientierte Programmierung* und *Anwendungsentwicklung mit Android* an. Sie vertiefen Ihre Kenntnisse im Bereich der Anwendungsentwicklung und Softwaretechnik und lernen neue Methoden und Techniken kennen, die Ihnen bei der Entwicklung und Bewertung komplexer Anwendungssoftware helfen soll. Durch eine erfolgreiche Teilnahme am Kurs und dem abschließenden Entwicklungsprojekt erwerben Sie Kompetenzen, die es Ihnen erlauben, (multimediale) Anwendungen zu konzipieren und auf der Basis aktueller Techniken zu realisieren. Sie lernen den Entwicklungsprozess dabei durch den Einsatz geeigneter Methoden und Werkzeuge zu gestalten und zu dokumentieren. 

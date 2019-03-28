@@ -7,6 +7,8 @@ theme:
   name: yeti
   custom_dir: mme-template
 plugins: [search]
+extra_javascript:
+  - scripts/index.js
 markdown_extensions:
   - footnotes
   - admonition
@@ -41,7 +43,11 @@ nav:
       - Der Projektordner: Tutorials/project-directory.md
       - Javascript im Browser: Tutorials/javascript-browser.md
       - Pair Programming: Tutorials/pair-programming.md
-  - Ressourcen: resources.md
+  - Ressourcen: 
+      - Übersicht: Resources/index.md
+      - Literatur: Resources/reader.md
+      - Hilfe und Dokumentation: Resources/docs.md
+      - Werkzeuge: Resources/tools.md
   - Impressum:
     - Autor: author.md
     - Impressum: impress.md
