@@ -16,19 +16,19 @@ nav:
   - Start: index.md
   - MME: 
     - Übersicht: MME/index.md
-    - Softwareentwicklung mit Javascript: MME/class-introduction.md
-    - Codequalität: MME/code-quality.md
+#    - Softwareentwicklung mit Javascript: MME/class-introduction.md
+#    - Codequalität: MME/code-quality.md
     - Progammatische Manipulation des DOM: MME/dom-introduction.md
     - Javascript-Anwendungen strukturieren und gestalten: MME/closures-and-module-pattern.md
-    - Versionskontrolle mit Git: MME/version-control.md
+#    - Versionskontrolle mit Git: MME/version-control.md
     - Den Event-Loop verstehen und verwenden: MME/event-loop.md
     - Client-Server-Kommunikation (AJAX und XMLHttpRequest): MME/ajax.md
     - Canvas, Video & Audio: MME/canvas-element.md
-    - Datenspeicherung in Webanwendungen: MME/data-storage.md
-    - Nebenläufigkeit im Browser: MME/webworkers.md
+#    - Datenspeicherung in Webanwendungen: MME/data-storage.md
+#    - Nebenläufigkeit im Browser: MME/webworkers.md
     - Einführung in die Node.js-Umgebung: MME/node-js.md
     - Komplexe Webanwendungen: MME/server-client-applications.md
-    - Anforderungen erheben und dokumentieren: MME/requirements-for-student-projects.md
+#    - Anforderungen erheben und dokumentieren: MME/requirements-for-student-projects.md
   - Demos:
       - Übersicht: Demos/index.md
       - Kanban-Board: Demos/kanban-board.md
@@ -45,9 +45,9 @@ nav:
       - Pair Programming: Tutorials/pair-programming.md
   - Ressourcen: 
       - Übersicht: Resources/index.md
-      - Literatur: Resources/reader.md
-      - Hilfe und Dokumentation: Resources/docs.md
-      - Werkzeuge: Resources/tools.md
+#      - Literatur: Resources/reader.md
+#      - Hilfe und Dokumentation: Resources/docs.md
+#      - Werkzeuge: Resources/tools.md
   - Impressum:
     - Autor: author.md
     - Impressum: impress.md
