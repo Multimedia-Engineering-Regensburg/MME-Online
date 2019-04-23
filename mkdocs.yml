@@ -17,7 +17,7 @@ nav:
   - Start: index.md
   - MME: 
     - Übersicht: MME/index.md
-#    - Softwareentwicklung mit Javascript: MME/class-introduction.md
+    - Einführung: MME/class-introduction.md
 #    - Codequalität: MME/code-quality.md
     - Progammatische Manipulation des DOM: MME/dom-introduction.md
     - Javascript-Anwendungen strukturieren und gestalten: MME/closures-and-module-pattern.md

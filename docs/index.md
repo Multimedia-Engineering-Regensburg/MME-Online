@@ -8,6 +8,8 @@ Auf dieser Seite finden Sie Tutorials, Begleittexte, Videos und Beispiele zum Mu
 ## Zusammenfassung
 Der Multimedia Engineering-Kurs (MME) richtet sich in erster Linie an Studierende der Medieninformatik. Der Kurs schließt inhaltlich an die beiden Vorlesungen *Einführung in die Objektorientierte Programmierung* und *Anwendungsentwicklung mit Android* an. Sie vertiefen Ihre Kenntnisse im Bereich der Anwendungsentwicklung und Softwaretechnik und lernen neue Methoden und Techniken kennen, die Ihnen bei der Entwicklung und Bewertung komplexer Anwendungssoftware helfen soll. Durch eine erfolgreiche Teilnahme am Kurs und dem abschließenden Entwicklungsprojekt erwerben Sie Kompetenzen, die es Ihnen erlauben, (multimediale) Anwendungen zu konzipieren und auf der Basis aktueller Techniken zu realisieren. Sie lernen den Entwicklungsprozess dabei durch den Einsatz geeigneter Methoden und Werkzeuge zu gestalten und zu dokumentieren. 
 
+**Eine ausführliche Beschreibung des Kurses finden Sie auch [hier](./MME/class-introduction).**
+
 ## Voraussetzungen
 Für Medieninformatik-Studierende, die ihr Studium vor dem Wintersemester 2017/18 aufgenommen haben, existieren keine formalen Zulassungsvoraussetzungen. Wir empfehlen Ihnen aber dringend sowohl die Einführungsvorlesung zur Objektorientierten Programmierung als auch den Android-Kurs erfolgreich abgeschlossen zu haben. Für Studierende, die nach der neuen Prüfungsordnung studieren (ab Wintersemester 2017/18) sind die beiden genannten Kurse verpflichtende Voraussetzungen.
 
