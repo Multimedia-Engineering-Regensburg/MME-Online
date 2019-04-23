@@ -7,6 +7,13 @@
     <link href="{{ base_url }}/vendors/fontawesome-free-5.4.2-web/css/all.css" rel="stylesheet">
 {% endblock %}
 
+{% block content %}
+	{% if page.meta.revision_date %}
+		<div class="updated_at">Letzte Aktualisierung dieser Seite: <span class="date">{{ page.meta.revision_date }}</span></div>
+	{% endif %}
+	{{ super() }}
+{% endblock content %}
+
 {% block footer %}
 <footer><a href="https://www.uni-regensburg.de/">Universität Regensburg</a> | <a href="https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/">Lehrstuhl für Medieninformatik</a><br />Diese Seite wurde mit <a href="https://www.mkdocs.org/">MkDocs</a> erstellt.</footer>
 {% endblock %}
