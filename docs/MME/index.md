@@ -6,7 +6,7 @@ Der MME-Kurs besteht aus inhaltlichen Abschnitten und praktischen Übungen. Zu j
 
 Woche | Datum | Inhalt | Anmerkung
 :--:|:---------:|:---------------|:-----------------
-1 |24.04.2019 | [Einführung](./class-introduction) (zusätzlich: [DOM](./dom-introduction) | Vorlesung und praktische Übung
+1 |24.04.2019 | [Einführung](./class-introduction) (zusätzlich: [DOM](./dom-introduction)) | Vorlesung und praktische Übung
 2 |01.05.2019 | entfällt
 3 |08.05.2019 | [Javascript-Anwendungen strukturieren und gestalten](./closures-and-module-pattern) | Online-Material und praktische Übung
 4 |15.05.2019 | [Versionskontrolle mit Git](./version-control) | Online-Material und praktische Übung
