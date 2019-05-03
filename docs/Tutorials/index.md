@@ -4,6 +4,7 @@ Ergänzend zu den unter [MME](../MME) vorhandenen Lektionen und Materialien find
 
 Thema | Kategorien |
 :-----|:-----------|
+[Einrichten der Arbeitsumgebung](./work-environment) | Webanwendungen 
 [Aufbau und Inhalt des Projektordners](./project-directory) | Webanwendungen 
 [Die Javascript-Engine und Laufzeitumgebung im Browser](./javascript-browser) | Grundlagen Javascript
 [Pair Programming](./pair-programming) | Methoden

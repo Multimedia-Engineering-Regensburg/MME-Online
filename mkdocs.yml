@@ -42,6 +42,7 @@ nav:
       - Writer-Online: Demos/writer-online.md
   - Tutorials:
       - Übersicht: Tutorials/index.md
+      - Die Arbeitsumgebung: Tutorials/work-environment.md
       - Der Projektordner: Tutorials/project-directory.md
       - Javascript im Browser: Tutorials/javascript-browser.md
       - Pair Programming: Tutorials/pair-programming.md
