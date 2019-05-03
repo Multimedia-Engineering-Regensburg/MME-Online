@@ -8,8 +8,8 @@ Woche | Datum | Inhalt | Anmerkung
 :--:|:---------:|:---------------|:-----------------
 1 |24.04.2019 | [Einführung](./class-introduction) (zusätzlich: [DOM](./dom-introduction)) | Vorlesung und praktische Übung
 2 |01.05.2019 | entfällt
-3 |08.05.2019 | [Javascript-Anwendungen strukturieren und gestalten](./closures-and-module-pattern) | Online-Material und praktische Übung
-4 |15.05.2019 | [Versionskontrolle mit Git](./version-control) | Online-Material und praktische Übung
+3 |08.05.2019 | [Versionskontrolle mit Git](./version-control) | Online-Material und praktische Übung
+4 |15.05.2019 | [Javascript-Anwendungen strukturieren und gestalten](./closures-and-module-pattern) | Online-Material und praktische Übung
 5 |22.05.2019 | [Der Event-Loop in Javascript und die Events der Web-APIs](./event-loop) | Online-Material und praktische Übung
 6 |29.05.2019 | Praxissitzung: Coding-Workshop | Vorlesung und praktische Übung
 7 |05.06.2019 | [Client-Server-Kommunikation: AJAX und XMLHttpRequest](./ajax) | Online-Material und praktische Übung
