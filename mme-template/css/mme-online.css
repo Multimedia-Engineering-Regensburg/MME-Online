@@ -95,6 +95,16 @@ p {
     height: 100%;
 }
 
+/* Add custom rules for image labels */
+
+.img-label {
+	display: block;
+	width: 100%;
+	margin: 0 0 2em 0;
+	text-align: center;
+	font-style: italic;
+}
+
 /* Add custom rules for publish date box */
 
 .updated_at {
