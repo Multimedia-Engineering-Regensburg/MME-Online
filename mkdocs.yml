@@ -7,8 +7,8 @@ theme:
   name: yeti
   custom_dir: mme-template
 plugins: [search, git-revision-date]
-extra_javascript:
-  - scripts/index.js
+#extra_javascript:
+#  - scripts/init.js
 markdown_extensions:
   - footnotes
   - admonition

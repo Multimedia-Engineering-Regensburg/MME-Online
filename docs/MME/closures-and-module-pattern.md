@@ -1,6 +1,6 @@
 # Closures: Javascript-Anwendungen mit dem Module-Pattern gestalten
 
-Module sind eine der Möglichkeiten, individuelle Komponenten einer Javascript-Anwendung zu definieren. Anders als etwa Klassen im Kontext der Programmiersprache Java wird das Modulkonzept in Javascript nicht durch den Sprachstandard vorgegeben. Stattdessen existieren verschiedene Muster (*pattern*) mit deren Hilfe Module aus den vorhandenen Sprachfeatures implementiert werden können. In dieser Lektion lernen Sie zwei dieser Muster kennen. Das *revealing module pattern* wird dabei in Zukunft ein zentraler Baustein für die im Kurs verwendeten Anwendungen sein.[^1]
+Module sind eine der Möglichkeiten, individuelle Komponenten einer Javascript-Anwendung zu definieren. Anders als etwa Klassen im Kontext der Programmiersprache Java wird das Modulkonzept in Javascript nicht durch den Sprachstandard vorgegeben. Stattdessen existieren verschiedene Muster (*pattern*) und APIs mit deren Hilfe Module aus den vorhandenen Sprachfeatures implementiert werden können. In dieser Lektion lernen Sie mit dem *revealing module pattern* und den *ES6 Modules* zwei dieser Möglichkeiten kennen. Die von allen modernen Browsern unterstützten *ES6 Modules* werden dabei in Zukunft der zentraler Baustein für die im Kurs verwendeten Anwendungen sein.[^1]
 
 ## Einleitung
 
@@ -9,14 +9,12 @@ Komplexere Software besteht in der Regel aus verschiedenen Komponenten, die unab
 !!! note "Hinweis"
 	Versuchen Sie die Erläuterungen und Beispiele aus dieser Lektion direkt praktisch umzusetzen. Erstellen Sie dazu ein leeres [Projektverzeichnis](../../Tutorials/project-directory) und implementieren Sie die vorgestellten Beispiele selbstständig.
 
-## Warum Module?
+## Der Modulbegriff in Javascript
 
 Im Wesentlichen wird durch die Verwendung von Modulen eine bessere Gestaltung der Systemarchitektur erreicht. Module erlauben uns, separierte Bereiche der Software zu definieren, die eine klar definierte Aufgabe zu erfüllen haben. Statt den gesamten Code unserer Anwendung im globalen Kontext der Laufzeitumgebung zu definieren und auszuführen, schaffen wir in sich geschlossene Teilbereiche, die aus dem sie umschließenden *Scope* nicht manipuliert werden können. Diese *Module* sind in der Regel für die Durchführung oder das Bereitstellen von klar definierten Funktionen unserer Software zuständig, z.B. die Anbindung an eine Datenbank oder die Verwaltung der Benutzeroberfläche (*Views*). Eine systematische Trennung von Zuständigkeitsbereichen in Form von Modulen und die klare Definition der Kommunikationsschicht zwischen diesen sorgt für eine verständlichere, robustere, besser wartbare und damit qualitativ hochwertigere Gesamtarchitektur des Systems. 
 
-
-## Der Modulbegriff in Javascript
-
-Im Umfeld von Javascript existieren unterschiedliche Definitionen oder Verwendungen des Modulbegriffs. Wir bezeichnen im Folgenden die unter Verwendung des *Closure*-Prinzip konstruierten Teilkomponenten einer Anwendung als Module. Im Rahmen des [CommonJS-Projektes](https://en.wikipedia.org/wiki/CommonJS), das die Laufzeitumgebung für Javascript-Anwendungen außerhalb des Browsers standardisieren will, existiert eine eigene Definition für die Konstruktion und Verwendung von Modulen, die zum Teil auf APIs und Sprachelementen beruht, die nicht flächendeckend in allen Browsern zur Verfügung stehen. Von modernsten Browsern werden diese *CommonJS*-Module, die auch die Grundlage für die modularisierte Entwicklung von Anwendungen mit der [Node.js](https://nodejs.org/en/)-Umgebung sind, bereits vollständig oder zumindest in Teilen unterstützt.
+Im Umfeld von Javascript existieren unterschiedliche Definitionen oder Verwendungen des Modulbegriffs. Wir bezeichnen im Folgenden die unter Verwendung des *Closure*-Prinzip konstruierten Teilkomponenten einer Anwendung als Module. Im Rahmen des [CommonJS-Projektes](https://en.wikipedia.org/wiki/CommonJS), das die Laufzeitumgebung für Javascript-Anwendungen außerhalb des Browsers standardisieren will, existiert eine eigene Definition für die Konstruktion und Verwendung von Modulen, die zum Teil auf APIs und Sprachelementen beruht, die nicht flächendeckend in allen Browsern zur Verfügung stehen. In modernen Browsern können diese *CommonJS*-Module, die auch die Grundlage für die modularisierte Entwicklung von Anwendungen mit der [Node.js](https://nodejs.org/en/)-Umgebung sind, durch den Einsatz von Bibliotheken wie z.B. [browserify](http://browserify.org/) eingesetzt werden. Zusätzlich existiert seit der sechsten Version des *ECMAScript*-Standards eine [Modul-Referenz](https://www.ecma-international.org/ecma-262/6.0/#sec-modules), die 
+aktuell von den wichtigsten Browsern implementiert und unterstützt wird ([hier](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Browser_compatibility) am Beispiel des `import`-Befehls).
 
 ## Closures
 
@@ -75,7 +73,7 @@ function createCounter() {
 }
 ```  
 
-## Einfache Module mit anonymen Funktionen
+### Einfache Module mit anonymen Funktionen
 
 Auf der Basis des *Closure*-Prinzip lassen sich nun erste Module konstruieren. Im einfachsten Fall sind dies anonyme, direkt ausgeführte Funktionen:
 ``` javascript
@@ -203,7 +201,7 @@ filteredAndSortedData = dataProcessor.set(dataSet).filter().sort().get();
 
 Inwieweit *chaining* von Methoden ein sinnvolles Muster darstellt, sollte stets im Kontext der Aufgabenstellung abgewogen werden. Eine saubere Implementierung des *patterns* kann zu besser lesbarem und verständlicherem Code bzw. zugänglicheren Schnittstellen führen. Eine fehlerhafte oder nicht-intuitive Implementierung kann jedoch auch Problemen erzeugen. Auf [stackoverflow](https://stackoverflow.com/questions/1103985/method-chaining-why-is-it-a-good-practice-or-not) finden Sie dazu eine interessante Diskussion. Den dort verlinkten Artikel von Martin Fowler können Sie [hier](https://web.archive.org/web/20090604204506/https://martinfowler.com/dslwip/MethodChaining.html) in archivierter Form nachlesen.
 
-## Module wiederverwenden
+### Module wiederverwenden
 
 Module müssen nicht automatisch erstellt werden. Sie können die Funktionen, die zum Erstellen der Module verwendet werden auch in Form von *named functions* erstellen und das Modul zur Laufzeit durch den Aufruf der Funktion erstellen. Nachstehend sehen Sie ein einfaches Beispiel für ein Modul, das zur Verwaltung einer Spardose (engl. *piggy bank*) verwendet wird. Das tatsächliche Modul bzw. der *Closure* wird erst durch den Aufruf der Methode (`var myPiggyBank = PiggyBank();`) erstellt. Auch wenn es sich hier nicht wirklich um eine *constructor function* handelt, hat es sich als *best practice* etabliert, eine solche *Modulfunktione* ebenfalls durch Großschreibung zu kennzeichnen. Beim Erstellen des Moduls ist die Verwendung des `new`-Schlüsselworts weder erforderlich noch vorgesehen. Durch die Verwendung einer *named function* für die Konstruktion des Moduls lassen sich zur Laufzeit mehrere Module auf der Basis der gleichen Funktion erstellen. Im hier gezeigten Beispiel können mehrere Spardosen *repräsentiert* werden.
 
@@ -252,9 +250,9 @@ myNamespace.myModule = (function() {
 });
 ```
 
-## Vererbung im Revealing Module Pattern
+### Vererbung im Revealing Module Pattern
 
-Im Rahmen des *revealing module pattern* ist auch die rudimentäre Vererbung von Funktionen oder Eigenschaften möglich. Dazu wird das Referenzobjekt (`that`) nicht als leeres Objekt erzeugt, sondern auf der Basis eines bestehenden Prototypen konstruiert. Dies ist vor allem dann sinnvoll, wenn die geerbten Funktionalitäten ebenfalls veröffentlicht werden sollen. Häufig ist dies der Fall, wenn das Modul dem Rest der Anwendung als *Observable* zur Verfügung gestellt werden soll. Die Laufzeitumgebung stellt einen globalen Prototypen, das [`EventTarget`](https://developer.mozilla.org/de/docs/Web/API/EventTarget) bereit, das alle notwendigen Funktionen zur Bereitstellung eines *Observable* enthält. Im folgenden Beispiel wird das `that`-Objekt des Moduls auf der Basis diesen Prototypen erstellt. Dadurch werden die bekannten Funktionen, wie z.B. `addEventListener` bereitgestellt und können über das zurückgegebene Referenzobjekt von außerhalb des Moduls verwendet werden. Zusätzlich können die so *geerbten* Methoden auch im Inneren des Moduls (siehe `doStuff`-Methode im Beispiel) verwendet werden. Beachten Sie, dass hier keine Vererbung im klassischen Sinne erfolgt, da nicht das gesamte Modul eine spezialisierte Variante des Ursprungsobjekts (hier `EventTarget`) darstellt, sondern nur das Referenzobjekt (`that`) in einer entsprechenden Beziehung zum Prototypen steht.
+Im Rahmen des *revealing module pattern* ist auch die rudimentäre Vererbung von Funktionen oder Eigenschaften möglich. Dazu wird das Referenzobjekt (`that`) nicht als leeres Objekt erzeugt, sondern auf der Basis eines bestehenden Prototypen konstruiert. Dies ist vor allem dann sinnvoll, wenn die geerbten Funktionalitäten ebenfalls veröffentlicht werden sollen. Häufig ist dies der Fall, wenn das Modul dem Rest der Anwendung als *Observable* zur Verfügung gestellt werden soll. Die Laufzeitumgebung stellt einen globalen Prototypen, das [`EventTarget`](https://developer.mozilla.org/de/docs/Web/API/EventTarget) bereit, das alle notwendigen Funktionen zur Bereitstellung eines *Observable* enthält. Im folgenden Beispiel wird das `that`-Objekt des Moduls auf der Basis diesen Prototypen erstellt. Dadurch werden die bekannten Funktionen, wie z.B. `addEventListener` bereitgestellt und können über das zurückgegebene Referenzobjekt von außerhalb des Moduls verwendet werden. Zusätzlich können die so *geerbten* Methoden auch im Inneren des Moduls (siehe `doStuff`-Methode im Beispiel) verwendet werden. Beachten Sie, dass hier keine Vererbung im klassischen Sinne erfolgt, da nicht das gesamte Modul eine spezialisierte Variante des Ursprungsobjekts (hier `EventTarget`) darstellt, sondern nur das Referenzobjekt (`that`) in einer entsprechenden Beziehung zum Prototypen steht.                    
 
 ``` javascript
 function Observable() {
@@ -274,11 +272,104 @@ myObservable.addEventListener("stuffDone", function(){});
 myObservable.doStuff();
 ```
 
+## Module in modernen Browsern: ES6-Module
+
+Die aktuellste Möglichkeit, modularisierte Anwendungen für den Browser zu realisieren, stellen die ES6-Module dar. Hierbei handelt es sich um eine direkte in moderne Browser integrierte API zur Definition und Verwendung modulare Javascript-Komponenten. Wesentliche Teile der Modul-Implementierung und -Bereitstellung, die im Rahmen des *revealing module pattern* noch selbst durchgeführt werden mussten, werden hier von eingebauten Funktionen des Browsers übernommen. Grundlagen für diese API ist der entsprechende Teil der [ECMAScript-Spezifikation](https://www.ecma-international.org/ecma-262/9.0/#sec-modules). Gegenüber dem manuellen Ansatz des *revealing module patterns* ergeben sich durch die Verwendung der ES6-Module bestimmte Vor- und Nachteile:
+
+**Nachteile**
+
+- Da ES6-Module bestimmten Sprachelementen und APIs voraussetzten, die nicht in allen Javascript-Umgebungen (z.B. älteren Browsern) verfügbar sind, kann es an solchen Stellen zu Kompatibilitätsproblemen kommen. Die Bausteine des *revealing module patterns* basieren dagegen auf elementaren Möglichkeiten der Javascript-Sprache, die auch in älteren oder speziellen Umgebungen (z.B. *Web Views* älterer Frameworks oder *Embedded*-Geräten) verfügbar sind.
+- Der korrekte Umgang mit ES6-Modulen setzt zusätzliches Wissen über die neuen Sprachelemente und den damit verbundenen Syntax von Javascript voraus.
+
+**Vorteile**
+
+- ES6-Module sind weitestgehend mit dem *CommonJS*-Syntax kompatible, der z.B. in der *Node.js*-Umgebung zur Gestaltung von Modulen verwendet wird. Module können zwischen solchen Umgebungen, sofern intern nicht Plattform-spezifische APIs verwendet werden, weitestgehend austauschbar genutzt werden.
+- ES6-Module werden über den `import`-Befehl bei Bedarf geladen. Die Javascript-Bestandteile einer Webanwendungen müssen nicht mehr vollständig beim Start der Anwendung - durch entsprechende `<script>`-Tags im HTML-Dokument - eingebunden werden, sondern können zur Laufzeit dort wo nötig geladen und verwendet werden. Die Verwendung von gleichen Modulen an verschiedenen Stellen des Codes wird dabei vom Browser gesteuert und verwaltet.
+
+Für aktuelle, Client-seitige Webanwendungen sollte die Verwendung von ES6-Modulen das Mittel der Wahl sein. Ausnahmen bestehen dann, wenn z.B. *Frameworks* eingesetzt werden, die einen eigenen Modulmechanismus verwenden. Abwärtskompatibilität kann durch die Verwendung des `nomodule`-Attributs des [`script`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)-Tags sichergestellt werden.
+
+### Grundkonzept
+
+ES6-Module werden in separaten Dateien erstellt. Wird ein Modul innerhalb der Anwendung benötigt, wird der Code der Datei als *Closure* ausgeführt. D.h., von keiner anderen Stelle des Codes kann auf den Inhalt des Moduls direkt zugegriffen werden. Innerhalb der Modul-Datei können mit Hilfe des `export`-Befehls gezielt einzelne Bestandteile des Moduls (z.B. Funktionen) nach Außen gegeben werden (Vgl. *revealing module pattern*). Diese Inhalte werden über den `import`-Befehl an anderer Stelle geladen und können dann verwendet werden. Der Code einer Modul-Datei wird explizit durch die Verlinkung der Datei im HTML-Dokument oder implizit beim erstmaligen importieren des Modules ausgeführt. Bei der Einbindung der Module über das HTML-Dokument muss als `type`-Attribut der Wert `module` verwendet werden. Innerhalb eines Moduls können Sie alle APIs des Browser (z.B. das `document`-Objekt verwenden).
+
+### Beispiel: Mathematische Funktionen
+
+Wir erstellen ein Modul, in dem verschiedene Funktionen für mathematische Operationen bereitgestellt werden. Diese sollen an anderen Stellen unserer Anwendung verwendet werden:
+
+`utils.js`:
+
+``` javascript
+function sum(numbers) {
+	let sum = 0;
+	for(let i = 0; i < numbers.length; i++) {
+		sum += numbers[i];
+	}
+	return sum;
+}
+
+function average(numbers) {
+	let tmp = sum(numbers);
+	return tmp/numbers.length;
+}
+
+export {average};
+```
+
+Mit Hilfe des [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)-Befehls wird die Funktionen zur Berechnung des *Durchschnittswerts* (`average`) aus dem Modul herausgegeben und kann an anderer Stelle importiert werden. Die Funktion `sum` wird nicht exportiert und ist nur innerhalb des Moduls zugänglich.
+
+`app.js`:
+
+``` javascript 
+import {average} from "./utils.js";
+
+let result = average([1,2,3,4,5]);
+console.log(result);
+```
+
+Die Datei `app.js` wird über einen `<script>`-Tag geladen (`<script type="module" src="app.js" ></script>`). Die  `average`-Funktion wird über den [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)-Befehl importiert und kann anschließend verwendet werden. Die Datei `utils.js` muss dafür nicht beim Start der Anwendung über das HTML-Dokument geladen werden. Der Inhalt wird zur Laufzeit, beim Ausführen des `import`-Befehls, vom Server angefordert und ausgeführt. Benutzen Sie diesen Mechanismus mit Bedacht: Während Sie auf der einen Seite den initial übertragen Code gering halten und zusätzliche Funktionalitäten nur bei Bedarf nachladen können, kann es beim dynamischen Nachladen größerer Module zu merkbaren Verzögerungen im Programmablauf kommen. Ein einmal geladenes Modul wird beim erneuten Importieren an anderer Stelle nicht erneut ausgeführt bzw. initialisiert. Das gilt auch für dynamisch vom Server nachgeladene Dateien.
+
+### Default-Export
+
+Aus einem Modul können mehrere Bestandteile exportiert werden. Dazu wird der oben gezeigte Klammer-Syntax (`export {NAME}`) verwendet. Es handelt sich um einen *named*-Export. Beim Import dieser Bestandteile muss der hier festgelegte Name zur Spezifizierung des benötigten Bestandteils verwendet werden. Zusätzlich besteht die Möglichkeit, pro Modul einen sogenannten *default*-Export zu definieren. Dieser wird über das entsprechende Schlüsselwort `default` gekennzeichnet:
+
+``` javascript
+class Task {
+
+  constructor(description) {
+    this.description = description;
+    this.id = Date.now().toString();
+    this.completed = false;
+  }
+  
+  setDescription(description) {
+    this.description = description;
+  }
+
+  toggleStatus() {
+    this.completed = !this.completed;
+    return this.completed;
+  }
+
+}
+
+export default Task;
+```
+
+Beim Importieren des *default*-Exports kann jetzt eine Kurzschreibweise und ein beliebiger Bezeichner verwendet werden, letzteres ist mit Hilfe des [`as`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Syntax)-Schlüsselwortes auch bei *named*-Exports möglich:
+
+``` javascript
+import TaskItem from "./Task.js";
+
+let myTask = new TaskItem("Javascript lernen");
+```
+
 ## Übungsaufgaben
 
-1. Erstellen Sie ein Modul, das bei Konstruktion innerhalb eines übergebenen DOM-Elements ein leeres Kindelement (`div`) erzeugt und bei jedem Mausklick auf diesen Element die Hintergrundfarbe zufällig verändert.
+1. Erstellen Sie ein Modul (*revealing module pattern*), das bei Konstruktion innerhalb eines übergebenen DOM-Elements ein leeres Kindelement (`div`) erzeugt und bei jedem Mausklick auf diesen Element die Hintergrundfarbe zufällig verändert.
 
-2. Erstellen Sie ein Modul, das eine Liste an Personen (auf der Basis eines einfachen Prototypen mit Namen und einer eindeutigen ID) verwaltet. Das Modul bietet öffentliche Methoden zur Suche nach bestimmten Personen anhand z.B. des Namens an. Befüllen Sie das Modul mit Informationen, die Sie über Eingabefelder vom Benutzer eingeben lassen.
+2. Erstellen Sie ein Modul (ES6), das eine Liste an Personen (auf der Basis eines einfachen Prototypen mit Namen und einer eindeutigen ID) verwaltet. Das Modul bietet öffentliche Methoden zur Suche nach bestimmten Personen anhand z.B. des Namens an. Befüllen Sie das Modul mit Informationen, die Sie über Eingabefelder vom Benutzer eingeben lassen.
+
+3. Vervollständigen Sie die Implementierung der [*ToDo-Liste*](../../Demos/todo-list) und verwende Sie bei der Umsetzung der unterschiedlichen Bestandteile der Anwendung das ES6-Modulschema.
 
 [^1]: Weitere Informationen zum Modul-Begriff in Javascript finden Sie bei [Haverbeke (Eloquent Javascript)](http://eloquentjavascript.net/10_modules.html9)
 [^2]: Douglas Crockford, [Private Members in JavaScript](http://www.crockford.com/javascript/private.html)
