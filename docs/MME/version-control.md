@@ -40,16 +40,6 @@ Eric Raymon fasst die zentralen Möglichkeiten von Versionskontrollsystemen (VC-
 
 3. VC-Systeme sind Grundlage für die sinnvolle, kollaborative und gleichzeitige Arbeit an einer gemeinsamen Code-Base. Sie verwalten die Beiträge unterschiedlicher Autoren und stellen Möglichkeiten zum Austausch von Änderungen (Revisionen) bereit. Vorgehensmodelle oder *Workflows*, die Richtlinien und Abläufe für diese gemeinsame Arbeit vorgegeben, können durch VC-Systeme implementiert werden.
 
-<!--
-### Begrifflichkeiten
-
-Begriff | Erklärung 
-:--|:---------
-*Repository* | Ein Archiv mit allen Versionen der Dateien eines Projekts
-*Branch* | Eine unabhängiger Strang in der Versionsgeschichte einer Branch
-*Revision* | Eine spezifische Version Versionsgeschichte einer Branch
-*Commit* | Das Erstellen einer neuen Revision -->
-
 ## Git
 
 Für die konkrete Umsetzung von Versionskontrolle existieren verschiedene Softwarelösungen. Ein wesentliches Unterscheidungsmerkmal ist dabei das grundlegende Architekturmodell. Neben verteilten Systemen (z.B. *git*) existieren sowohl rein lokale (z.B. [Revision Control System](https://en.wikipedia.org/wiki/Revision_Control_System)) als auch zentral aufgebaute System wie z.B. [Subversion](https://en.wikipedia.org/wiki/Apache_Subversion). Lokale Systeme sind nur für die Verwendung innerhalb eines isolierten Systems gedacht und unterstützen im Zweifelsfall keine kollaborative Verwendung. Zentral aufgebaute Systeme basieren auf einer servergestützten Speicherung des Quellcodes sowie der vollständigen Versionsgeschichte. Nutzer beziehen von dieser zentralen Quelle in der Regel nur die für die eigene Entwicklung benötigten Bestandteile des Repository und laden im Anschluss an die lokale Bearbeitung die veränderten Bestandteile wieder auf den zentralen Server hoch. Verteilte Systeme bestehen aus gleichwertigen, im Bedarfsfall vollständigen lokalen Repositorys, die über zentrale oder direkte Verbindungen zwischen den Entwicklern und Entwicklerinnen ausgetauscht und synchronisiert werden können. Sowohl für zentrale als auch verteile Systeme existieren sinnvolle Anwendungsfelder. Entscheidende Auswahlkriterien sind die zugrundeliegende Problemstellung, die Zusammenstellung des Teams und die ausgewählten Prozessmodelle. Am häufigsten werden heutzutage dezentrale Systeme eingesetzt, die sich gut für die vorherrschenden, kollaborativen und Feature-orientierten Arbeitsweisen im Bereich der Anwendungsentwicklung einsetzen lassen.

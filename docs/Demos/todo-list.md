@@ -5,7 +5,7 @@ In dieser Demo implementieren Sie eine einfache Javascript-Anwendung in Form ein
 
 ## Aufbau der Anwendung
 
-Die Anwendung besteht aus HTML- und CSS-Dateien, in denen der Aufbau und die Gestaltung der Benutzeroberfläche definiert wird. Die Logik zum dynamischen Hinzufügen und Editieren der einzelnen Aufgaben wird in Javascript implementiert. Die einzelnen Komponenten dieser Programmlogik werden - in Form von Modulen - in separaten Javascript-Dateien verfasst. Die HTML-Datei dient als Einstiegspunkt in den Anwendungsablauf. Hier werden sowohl die notwendigen CSS-Dateien zur korrekten Darstellung der Oberfläche als auch die zentrale Javascript-Datei zur Initialisierung der Anwendung eingebunden. 
+Die Anwendung besteht aus HTML- und CSS-Dateien, in denen der Aufbau und die Gestaltung der Benutzeroberfläche definiert wird. Die Logik zum dynamischen Hinzufügen und Editieren der einzelnen Aufgaben wird in Javascript implementiert. Die einzelnen Komponenten dieser Programmlogik werden - in Form von Modulen - in separaten Javascript-Dateien verfasst. Die HTML-Datei dient als Einstiegspunkt in den Anwendungsablauf. Hier werden sowohl die notwendigen CSS-Dateien zur korrekten Darstellung der Oberfläche als auch die zentrale Javascript-Datei zur Initialisierung der Anwendung eingebunden.
 
 ## Ausgangslage
 
