@@ -27,32 +27,19 @@ Im `header`-Bereich der Anwendung wird ein *Button* zum Erstellen einer neuen Ka
 
 ## Ausgangslage
 
-Sowohl das HTML-Dokument (`index.html`) als auch die CSS-Dateien (`style.css` und `app.css`) sind vollständig vorgegeben. Für die Lösung der Aufgabenstellung ist nur die Bearbeitung der ebenfalls beigefügten *Javascript*-Dateien erforderlich. Die *Javascript*-Dateien werden bereits über das HTML-Dokument eingebunden. Beim Laden des Dokuments wird automatisch die `init`-Methode ausgeführt, die sich in der Datei `app.js` befindet. Die globale Variable `KanbanApp` wird als [Namespace](../../Tutorials/javascript-browser#namespacing) verwendet. Der Code der eigenen Anwendung wird innerhalb einer anonymen Funktion ausgeführt, die das *Namespace*-Objekt als Parameter übergeben bekommt:
-
-``` javascript 
-var KanbanApp = KanbanApp || {};
-
-(function(app) {
-  "use strict";
-
-  function init() {
-    console.log("Starting Kanban App");
-  }
-
-  init();
-
-}(KanbanApp));
-```
+Sowohl das HTML-Dokument (`index.html`) als auch die CSS-Dateien (`style.css` und `app.css`) sind vollständig vorgegeben. Für die Lösung der Aufgabenstellung ist nur die Bearbeitung der ebenfalls beigefügten *Javascript*-Dateien erforderlich. Die *Javascript*-Dateien werden bereits über das HTML-Dokument eingebunden. Beim Laden des Dokuments wird automatisch die `init`-Methode ausgeführt, die sich in der Datei `app.js` befindet. Diese Datei wird als Modul geladen und ausgeführt.
 
 ## Aufgabenstellung
 
-1. Erstellen Sie in der Datei `Card.js` einen Prototyp für die logische Repräsentation einer Karte. In den Objekten sollen eine ID (`Number`), ein Text (`String`) sowie der Name der Liste (`String`), in der die Karte aktuell abgelegt ist gespeichert werden.
+1. Erweitern Sie den Prototyp (erstellt mit der `class`-Syntax) `Card` in der Datei/dem Modul `Card.js` . Er dient zur logische Repräsentation einer Karte. In den entsprechenden Objekten sollen eine ID (`Number`), ein Text (`String`) sowie der Name der Liste (`String`), in der die Karte aktuell abgelegt ist gespeichert werden. (`Card` wird aus dem Modul exportiert)
 
-2. Erstellen Sie in der Datei `Board.js` einen Prototyp für die logische Repräsentation des *Boards*. Das *Board* speichert eine Liste aller Karten und erlaubt das Erstellen neuer, leerer Karten in der ersten Spalte (*Open*), das Aktualisieren von Kartentexten, sowie das Verschieben von Karten nach links bzw. rechts. Für die manipulativen Operationen der Karten werden dem *Board* jeweils die Karten-ID sowie die ggf. notwendigen, neuen Werte übergeben. Das *Board* ist ein *Observable* und sendet an geeigneter Stelle Informationen über neu erstellte oder verschobene Karten an registrierte *Observer*.
+2. Erstellen Sie in der Datei/dem Modul `Board.js` einen Prototyp für die logische Repräsentation des *Boards*. Das *Board* speichert eine Liste aller Karten und erlaubt das Erstellen neuer, leerer Karten in der ersten Spalte (*Open*), das Aktualisieren von Kartentexten, sowie das Verschieben von Karten nach links bzw. rechts. Für die manipulativen Operationen der Karten werden dem *Board* jeweils die Karten-ID sowie die ggf. notwendigen, neuen Werte übergeben. Das *Board* ist ein *Observable* und sendet an geeigneter Stelle Informationen über neu erstellte oder verschobene Karten an registrierte *Observer*. (`Board` wird aus dem Modul exportiert)
 
-3. Erstellen Sie in der Datei `BoardView.js` einen Prototyp, der als *View Controller* die Darstellung des *Boards* und die Interaktion des Nutzers mit den Karten realisiert. Dem *View* wird bei Erstellung das Elternelement (hier: `#board`) übergeben. Über eine Methode des Objekts kann eine als Parameter übergebene Karte im *UI* dargestellt bzw. aktualisiert werden. Der *View* fängt alle Interaktionen des Nutzers mit den dargestellten Karten ab und leitete diese über eine Implementierung des *Observer Pattern* an registrierte *Listener* weiter.   
+3. Erstellen Sie in der Datei/dem Modul `BoardView.js` einen Prototyp, der als *View Controller* die Darstellung des *Boards* und die Interaktion des Nutzers mit den Karten realisiert. Dem *View* wird bei Erstellung das Elternelement (hier: `#board`) übergeben. Über eine Methode des Objekts kann eine als Parameter übergebene Karte im *UI* dargestellt bzw. aktualisiert werden. Der *View* fängt alle Interaktionen des Nutzers mit den dargestellten Karten ab und leitete diese über eine Implementierung des *Observer Pattern* an registrierte *Listener* weiter. (`BoardView` wird aus dem Modul exportiert)   
 
-4. Verwenden Sie die Datei `app.js` um die Anwendung zu initialisieren, die vorbereiteten Objekte zu erstellen und zwischen diesen zu vermitteln (*Events*).
+4. Verwenden Sie die Datei/dem MOdul `app.js` um die Anwendung zu initialisieren, die vorbereiteten Objekte zu erstellen und zwischen diesen zu vermitteln (*Events*). Importieren und verwenden Sie dazu `Board` und `BoardView`.
+
+5. Überarbeiten Sie den Code und versuchen Sie funktionale Ähnlichkeiten, z.B. hinsichtlich der *Observable*-Tätigkeit von `Board` und `BoardView` aus den Modulen zu extrahieren, an zentralen Stelle zu definieren und über den `extends`-Mechanismus wieder in die jeweiligen Prototypen zu integrieren.
 
 ## Starterpaket und Lösung
 
