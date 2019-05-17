@@ -101,8 +101,124 @@ function onClick(event) {
 
 Auf dem existierenden Elternelement `#parent` wird ein einzelner *Listener* für das Klick-*Event* registriert. Anschließend werden über die Schleife Kindelemente zum `#parent`-Container hinzugefügt. Klickt der Nutzer anschließend auf eines dieser Elemente, wird im *Callback* des registrierten *Listeners* das angeklickt Ziel identifiziert und dessen `id`-Attribut auf der Konsole ausgegeben. Damit können über einen einzigen *Listener* alle Klicks auf die individuellen Kindelemente unterscheidbar verarbeitet werden.
 
+## Binding von Funktionen
+
+Im Kontext von Event-Callbacks tritt häufig dieses Problem auf: Sie Registrieren einen *Callback* für einen spezifischen *Browser Event* und können innerhalb der verknüpften Methode bestimmte Eigenschaften und Funktionen nicht verwenden (Fehlermeldung: `TypeError: this.FUNCTION is not a function`). Der Grund hierfür liegt in der Art und Weise, in der Javascript das Schlüsselwort `this` verwendet. `this` verweist immer auf den Objektkontext, in dem eine Funktion ausgeführt wird - dieser kann sich zur Laufzeit ändern. Registrieren Sie innerhalb eines Objekts eine interne *Callback*-Methode, wird diese beim Auslösen des entsprechenden *Events* nicht zwangsläufig im Kontext des ursprünglichen Objektes ausgeführt. Für die meisten der *DOM Events* wird vom Browser stattdessen das Element, auf dem das Ereignis ausgelöst wurde, als Kontext gesetzt. Dieses Beispiel verdeutlicht das Problem:
+
+**HTML-Datei**
+``` html
+<div id="target"></div>
+<script type="application/javascript" src="index.js"></script>
+
+```
+**index.js**
+``` javascript
+class Observer {
+
+	constructor() {
+		this.el = document.querySelector("#target");
+		el.addEventListener("click", this.onElementClicked);
+	}
+
+	updateElement() {
+		this.el.innerHTML = "Element updated";
+	}
+
+	onElementClicked(event) {
+		// this verweist auf das <div>-Element, nicht auf das Observer-Objekt
+		// Die udpateElement-Funktion wird im aktuellen Kontext nicht gefunden
+		this.updateElement();
+	}
+
+}
+```
+
+Die Funktion `onElementClicked` wird nicht, wie möglicherweise angenommen, im Kontext des `Observer`-Objektes ausgeführt. Tritt der Klick-*Event* auf, setzt der Browser (bzw. genauer die *Javascript Runtime*) den Auslöser des Ereignisses als Ausführungskontext für den registrierten *Callbacks* fest. In diesem Fall wird `onElementClicked` also im Kontext des selektierten `<div>`-Elements bzw. dessen Javascript-Repräsentation ausgeführt. Über den `this`-Verweis kann daher nicht mehr auf die Methoden und Eigenschaften des `Observer`-Objekts zugegriffen werden. 
+
+In der Regel ist es in diesen Fällen notwendig, den gewünschten `this`-Kontext in die *Callback*-Methode zu *retten*. Eine der Möglichkeiten dazu ist die [`bind`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)-Methode. Diese kann auf einer beliebigen Javascript-Methode (zur Erinnerung: In Javascript sind Funktionen Objekte mit [eigenen Methoden](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)) aufgerufen werden und erzeugt ein Duplikat von dieser. Dabei können der `bind`-Methode mehrere Parameter übergeben werden. Das als erster Wert übergebene Objekt wird dabei beim Ausführen des Methodenduplikats als Kontext verwendet, die übrigen Werte werden bei Aufruf der neuen Methode als Parameter verwendet.
+
+``` javascript
+function add(x,y) {
+	return x + y;
+}
+
+var addToTen = add.bind(this, 10);
+
+let result = addToTen(32); // result beinhaltet jetzt den Wert 42
+```
+
+Die Funktion `add` verfügt über zwei Parameter `x` und `y`. Mit Hilfe der `bind`-Methode wird ein Methodenduplikat erzeugt das immer im Kontext des Objektes ausgeführt wird, das zum Zeitpunkt des *Bindings* über `this` referenziert wird und dessen erster Parameter (`x`) stets durch den Wert `10` ersetzt wird. Dieses Prinzip, die Anzahl der Parameter einer Funktion durch Vorbelegung einzelner Parameter zu reduzieren, nennt man [Currying](https://en.wikipedia.org/wiki/Currying). Vor allem im Bereich der funktionalen Programmierung wird diese Technik häufig verwendet.
+
+Das bewusste Setzen des Ausführungskontext (erster Parameter von `bind`) kann z.B. verwendet werden, um eine einzelne Methoden in mehreren Objekten zu verwenden:
+
+``` javascript
+function identify() {
+  // Zum einbetten der name-Eigenschaft wird hier ein Template-Literal verwendet:
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+  console.log(`I am ${this.name}`);
+}
+
+let anna = {
+    name: "Anna"
+  },
+  ben = {
+    name: "Ben"
+  };
+
+identify.bind(anna)(); // gibt 'I am Anna' aus
+identify.bind(ben)(); // gibt 'I am Ben' aus
+```
+
+Im Beisiel werden zwei Duplikate der `identify`-Methode erzeugt. In beiden Fällen wird jeweils ein anderes Objekt als Kontext übergeben. Die so erstellten Methoden werden direkt ausgeführt (`identify.bind(anna)`**`()`**). `this` im Rumpf der `identify`-Methode zeigt beim Aufruf der Funktion auf das jeweilige Objekt. Mit diesem Mechanismus kann das ursprüngliche Probleme des verlorenen Kontext in den *Callback*-Methoden  umgangen werden:
+
+``` javascript
+class Observer {
+
+	constructor() {
+		this.el = document.querySelector("#target");
+		// Mittels bind wird eine neue Version der Methode erstellt,
+		// in der this auf den hier aktuellen Objektkontext verweist.
+		el.addEventListener("click", this.onElementClicked.bind(this));
+	}
+
+	updateElement() {
+		this.el.innerHTML = "Element updated";
+	}
+
+	onElementClicked(event) {
+		this.updateElement();
+	}
+
+}
+```
+
+### Die korrekte Verwendung der bind-Methode und Alternativen
+
+Bei der Verwendung der `bind`-Methode wird stets eine neue Methode erzeugt. D.h., dass der frequentierte Einsatz dieses Mechanismus theoretisch zu Speicher- und Performanzproblemen führen kann. Wird *Binding* im Kontext von *Callbacks* bewusst und im Idealfall zusammen mit dem *Delegation*-Prinzip verwendet, kommt es auf modernen Systemen in der Regel nicht zu negativen Auswirkungen. Trotzdem sollte diese Möglichkeit mit Bedacht verwendet werden. Mit den Methoden [call](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call) und [apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) stehen ähnlich funktionierende Alternativen zur Verfügung, bei denen keine Kopien erzeugt werden und statt dessen Kontext und Parameter für einen individuellen Methodenaufruf angepasst werden können.
+
+Weitere mögliche Ansätze zur Lösung des Problems sind die Verwendung von [Arrow-Funktionen](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), die über kein eigenes `this`-*Binding* verfügen oder das Zwischenspeichern der *korrekten* Referenz an einem entsprechend zugänglichen Ort:
+
+``` javascript
+let el = document.querySelector("#target"),
+// Die aktuelle this-Referenz wird in der Variable self gespeichert
+self = this;
+// Als Callback dient eine anonyme Funktion, die im Kontext des Elements 
+// ausgeführt wird, aber Zugriff auf den Scope hat, in dem sie definiert
+// wurde. Über die self-Variable (im umschließenden Scope der anonymen
+// Funktion) wird der dort gespeicherte this-Kontext zugänglich gemacht.
+el.addEventListener("click", function(event) {
+	self.onClick(event);
+});
+
+function onClick(event) {
+	// Handle event
+}
+```
+
 ## Übungsaufgaben
 
-1. Erstellen Sie eine einfache HTML-Struktur mit zwei ineinander verschachtelten Block-Elementen. Sorgen Sie mit Hilfe von unterschiedlichen Größen und Farben dafür, dass die Elemente im Browser unterschieden werden können. Registrieren Sie auf beiden Elementen einen *Click*-Listener und geben Sie in den Callback-Methoden jeweils das `target` und `currentTarget` aus. Sorgen Sie durch Veränderung des optionalen Parameter der `addEventListener`-Methode dafür, dass das Ereignis im übergeordneten Element zuerst in der *Bubbling* und anschließend bereits in der *Capture*-Phase abgefangen wird. Versuchen Sie die unterschiedlichen Verhaltensweisen nachzuvollziehen.
+1. Erstellen Sie eine einfache HTML-Struktur mit zwei ineinander verschachtelten Block-Elementen. Sorgen Sie mit Hilfe von unterschiedlichen Größen und Farben dafür, dass die Elemente im Browser unterschieden werden können. Registrieren Sie auf beiden Elementen einen *Click*-Listener und geben Sie in den *Callback*-Methoden jeweils das `target` und `currentTarget` aus. Sorgen Sie durch Veränderung des optionalen Parameter der `addEventListener`-Methode dafür, dass das Ereignis im übergeordneten Element zuerst in der *Bubbling* und anschließend bereits in der *Capture*-Phase abgefangen wird. Versuchen Sie die unterschiedlichen Verhaltensweisen nachzuvollziehen.
 
 2. Erstellen Sie eine einfache HTML-Struktur mit mehreren quadratischen Block-Elementen, die in einem gemeinsamen Elternelement angeordnet sind. Beim Klick auf eines der Element wird dessen Hintergrundfarbe zufällig verändert. Verwenden Sie nur einen *Listener* für die *Event*-Verarbeitung (*Delegation*).
+
+3. Vervollständigen Sie Ihre Lösung des [Kanban-Board](../../Demos/kanban-board) und achten Sie insbesondere auf die Stellen, an denen *Events* und *Callbacks* eingesetzt werden. Versuchen Sie, die Prinzipien *Delegation* und *Binding* zur Verbesserung Ihrer Lösung einzusetzen.
