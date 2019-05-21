@@ -34,8 +34,8 @@ nav:
       - Übersicht: Demos/index.md
       - ToDo-Liste: Demos/todo-list.md
       - Kanban-Board: Demos/kanban-board.md
-      # - Writer: Demos/writer.md
-      # - Simon Says: Demos/simon-says.md
+#      - Writer: Demos/writer.md
+      - Simon Says: Demos/simon-says.md
       # - Mensa App: Demos/mensa-app.md
       # - Bundesliga-Tabelle: Demos/bundesliga.md
       # - Ambi Player: Demos/ambi-player.md
