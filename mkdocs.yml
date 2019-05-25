@@ -40,7 +40,9 @@ nav:
       # - Bundesliga-Tabelle: Demos/bundesliga.md
       # - Ambi Player: Demos/ambi-player.md
       # - Writer-Online: Demos/writer-online.md
-  - Aufgaben: Aufgaben/index.md
+  - Aufgaben: 
+      - Übersicht: Aufgaben/index.md
+      - 01 | Countdown: Aufgaben//SS19-01-Countdown.md
   - Tutorials:
       - Übersicht: Tutorials/index.md
       - Die Arbeitsumgebung: Tutorials/work-environment.md
