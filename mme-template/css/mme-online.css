@@ -185,3 +185,10 @@ a[href*='//']:not(.button):after{
 	font-size: 0.75em;
 	content: "\f0c1";
 }
+
+/* Customized tables */
+
+thead {
+	background-color: rgb(50,50,50);
+	color: rgb(255,255,255);
+}
