@@ -8,7 +8,7 @@ Die Bearbeitung der Übungsaufgaben ist für alle Studierenden, die ihr Medienin
 
 Im **Sommersemester 2019** werden die Übungsaufgaben in den folgenden Zeiträumen bearbeitet:
 
-- **Aufgabe 1**: 27. Mai bis 10. Juni (Link zu Github Classroom folgt)
+- **Aufgabe 1: Countdown**: 27. Mai bis 10. Juni ([Handout](./SS19-01-Countdown))
 - **Aufgabe 2**: 17. Juni bis 1. Juli (Link zu Github Classroom folgt)
 - **Aufgabe 3**: 15. Juli bis 29. Juli (Link zu Github Classroom folgt)
 
