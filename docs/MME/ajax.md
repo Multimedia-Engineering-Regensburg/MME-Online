@@ -236,6 +236,7 @@ Die Antwort auf die Anfrage `https://de.wiktionary.org/w/api.php?action=query&ti
 {"batchcomplete":"","query":{"pages":{"-1":{"ns":0,"title":"Programmiehrsprache","missing":""}}}}
 ```
 
+
 ### Ajax Library
 Extrahieren und abstrahieren Sie den Code, den Sie für die AJAX-Anfrage geschrieben haben. Erstellen Sie ein wiederverwendbares Modul, dass den vollständigen Vorgang kapselt und die HTTP-Funktionalität (für `GET`-Anfragen)für beliebige Dokumente über eine einfache Schnittstelle anbietet. Ihr Modul soll über eine einzige öffentliche Methode (`get`) verfügen, der eine URL sowie eine Callback-Methode übergeben wird. Das Ergebnis der Anfrage an diese URL wird als Parameter in die Callback-Methode zurückgegeben. 
 
