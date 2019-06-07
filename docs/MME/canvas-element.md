@@ -291,7 +291,7 @@ Das folgende Video zeigt ein einfaches Anwendungsbeispiel für die oben beschrie
 
 ## Übungsaufgaben
 
-1. Erstellen Sie einen einfachen *video player*: Über ein Text-Eingabefeld kann der Benutzer nacheinander verschiedene Video-URLs eingeben (z.B. URLs aus [dieser](https://gist.github.com/jsturgis/3b19447b304616f18657) Liste). Die Videos ergeben eine *Playlist*, deren Inhalte nacheinander in einem `<video>`-Element mit angezeigten Standard-Steuerelementen abgespielt wird. Nutzen Sie entsprechende Eigenschaften bzw. *Events* des [`<video>`-Elements](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement) um das automatische Abspielen des jeweils nächsten Eintrags zu realisieren.
+1. Erstellen Sie einen einfachen *video player*: Über ein Text-Eingabefeld kann der Benutzer nacheinander verschiedene Video-URLs eingeben (z.B. URLs aus [dieser](https://gist.github.com/jsturgis/3b19447b304616f18657) Liste). Die Videos ergeben eine *Playlist*, deren Inhalte nacheinander in einem `<video>`-Element mit angezeigten Standard-Steuerelementen abgespielt wird. Nutzen Sie entsprechende Eigenschaften bzw. *Events* des [`<video>`-Elements](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement) um das automatische Abspielen des jeweils nächsten Eintrags zu realisieren. Beispiel-Videos zum Testen der Anwendung finden Sie z.B. [hier](http://techslides.com/sample-webm-ogg-and-mp4-video-files-for-html5).
 
 2. Ergänzen Sie den erstellen *video player* mit eigenen Schaltflächen für das Starten und Stoppen des aktuellen Videos sowie das Auswählen des nächsten Eintrags der *Playlist*.
 

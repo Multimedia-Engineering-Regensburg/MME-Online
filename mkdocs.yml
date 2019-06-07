@@ -24,7 +24,7 @@ nav:
     - Javascript-Anwendungen strukturieren und gestalten: MME/closures-and-module-pattern.md
     - Den Event-Loop verstehen und verwenden: MME/event-loop.md
     - Client-Server-Kommunikation (AJAX und XMLHttpRequest): MME/ajax.md
-#    - Canvas, Video & Audio: MME/canvas-element.md
+    - Canvas, Video & Audio: MME/canvas-element.md
 #    - Datenspeicherung in Webanwendungen: MME/data-storage.md
 #    - Nebenläufigkeit im Browser: MME/webworkers.md
 #    - Einführung in die Node.js-Umgebung: MME/node-js.md
@@ -39,7 +39,7 @@ nav:
       - Time Tracker: Demos/time-tracker.md
       - Mensa App: Demos/mensa-app.md
       # - Bundesliga-Tabelle: Demos/bundesliga.md
-      # - Ambi Player: Demos/ambi-player.md
+      - Ambi Player: Demos/ambi-player.md
       # - Writer-Online: Demos/writer-online.md
   - Aufgaben: 
       - Übersicht: Aufgaben/index.md
