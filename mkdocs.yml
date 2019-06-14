@@ -44,6 +44,7 @@ nav:
   - Aufgaben: 
       - Übersicht: Aufgaben/index.md
       - 01 | Countdown: Aufgaben//SS19-01-Countdown.md
+      - 02 | Video Assistant: Aufgaben//SS19-02-Video-Assistant.md
   - Tutorials:
       - Übersicht: Tutorials/index.md
       - Die Arbeitsumgebung: Tutorials/work-environment.md
