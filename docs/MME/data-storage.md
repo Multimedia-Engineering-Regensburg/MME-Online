@@ -104,12 +104,11 @@ function loadUser(id) {
 
 ```
 
-
 ### IndexedDB
 
-### Limitierungen
+Die komplexeste Lösung für die lokale Datenspeicherung im Browser stellt die [*IndexedDB-API*](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) dar. Mit dieser Schnittstelle lassen sich auch größere Mengen von Daten dauerhaft in objektorientierten Datenbanken speichern und abrufen. Dabei können durch die Verwendung des [*structured clone algorithm*](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm) theoretisch alle in Javascript verwendeten Objekttypen verwendet werden, u.a. auch [File](https://developer.mozilla.org/en-US/docs/Web/API/File)- und [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob)-Objekte. Die Implementierung der Datenbank innerhalb einer eigenen Anwendung erfolgt auf sehr niedrigem Level. Grundsätzlich sollte daher über die Verwendung einer Bibliothek nachgedacht werden, die den Umgang mit der API erleichtert (Vgl. [MDN](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)).
 
-Alle vorgestellten Lösungen sind hinsichtlich der Dauer der Datenspeicherung dem Nutzerverhalten unterworfen. Dieser kann die durch die Anwendung erstellten Daten bewusst oder unbewusst entfernen. Cookies und *Local Storage*werden in der Regel beim Leeren des Browser-Cache entfernt. Die Persistenz erstellter Datenbanken hängt von der jeweiligen Implementierung des Browserherstellers bzw. dessen Interpretation des [Standards](https://w3c.github.io/IndexedDB/#user-tracking) ab. Grundsätzlich sollten Sie eine *Fallback*-Strategie für den Fall des Datenverlust einplanen. Diese sollte die Reinitialisierung der benötigten Speicherstrukturen und ggf. auch entsprechendes Feedback an den Nutzer bzw. die Nutzerin beinhalten. 
+Sowohl die Initialisierung und Bereitstellung als auch alle Datenbanktransaktionen erfolgen asynchron. Innerhalb einer Webanwendung können beliebig viele, unabhängige Datenbanken angelegt und verwendet werden. Auch die *IndexedDB-API* arbeitet domainenspezifisch. Auf die erstellten Datenbanken kann daher nur aus dem Kontext der jeweiligen Anwendung heraus zugegriffen werden. Eine Übersicht über die Verwendung der API finden Sie [hier](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB).
 
 ### Vergleich der Lösungen
 
@@ -122,25 +121,33 @@ Alle vorgestellten Lösungen sind hinsichtlich der Dauer der Datenspeicherung de
 | **Sinnvolle Anwendungsfälle** | Benutzer-IDs, Flags zur Erkennung wiederkehrender Nutzer| Sitzungsinformationen (*Timestamps*, Serverantworten, etc.) | Unkritische, aber längerfristig benötigte Inhalte wie z.B. Progammeinstellungen  | Dauerhaft benötigte Inhalte, z.B. *user generated content* |
 | **Komplexität** | gering | gering | gering | hoch |
 
+### Limitierungen der vorgestellten Lösungen.
+
+Alle vorgestellten Lösungen sind hinsichtlich der Dauer der Datenspeicherung dem Nutzerverhalten unterworfen. Dieser kann die durch die Anwendung erstellten Daten bewusst oder unbewusst entfernen. Cookies und *Local Storage*werden in der Regel beim Leeren des Browser-Cache entfernt. Die Persistenz erstellter Datenbanken hängt von der jeweiligen Implementierung des Browserherstellers bzw. dessen Interpretation des [Standards](https://w3c.github.io/IndexedDB/#user-tracking) ab. Grundsätzlich sollten Sie eine *Fallback*-Strategie für den Fall des Datenverlust einplanen. Diese sollte die Reinitialisierung der benötigten Speicherstrukturen und ggf. auch entsprechendes Feedback an den Nutzer bzw. die Nutzerin beinhalten. 
+
+### Offline-Anwendungen mit dem Application Cache
+
+Eine weitere, indirekte Möglichkeit der Datenspeicherung stellt die HTML5-Funktionalität des [*Application Cache*](https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache) dar. Anders als bei den vorher vorgestellten Lösungen werden hier keine individuellen Daten persistiert, sondern konkrete Ressourcen in Form von Dateien zur Speicherung vorgemerkt. Es handelt sich dabei um solche Inhalte, die im Normalfall zur Laufzeit von der serverseitigen Komponenten einer Anwendung bezogen und dynamisch in die clientseitige Anwendung integriert werden. Das können HTML- und CSS-Dokumente, Grafiken oder andere Ressourcen (z.B. JSON-Dokumente sein). Die Persistierung dieser Inhalte auf Client-Seite erfolgt durch explizite Caching-Anweisungen in einer Manifest-Datei. Die lokale Datenspeicherung dient als *Fallback* für den Fall, dass die Anwendung bei fehlender Internetverbindung *offline* betrieben wird und ersetzt kurzfristig die Server-Client-Kommunikation. Der *Application Cache* wird in der Regel parallel zu einer anderen Speicherstrategie verwendet. 
+
 ## Allgemeine Strategien
 
-Überlegen Sie sich bei der Umsetzung, unabhängig von der verwendeten Technologie, an welchen Stellen die Persistenz- bzw. Datenschicht der Anwendung mit dem Rest Ihrer Software in Berührung kommt und in welchen Phasen der Laufzeit Sie Operationen im Kontext der DAtenspeicherung durchführen müssen. Denken Sie dabei u.A. über die folgenden Punkte nach:
+Überlegen Sie sich bei der Implementierung einer Persistenzschicht - unabhängig von der verwendeten Technologie -, an welchen Stellen die Komponente zur Datenspeicherung mit dem Rest Ihrer Anwendung in Berührung kommt bzw. mit dieser kommunizieren muss. Stellen Sie fest, in welchen Phasen der Laufzeit Sie Operationen im Kontext der Schicht durchführen müssen. Denken Sie dabei u.A. über die folgenden Punkte nach:
 
 ### Initialisierung des Speichers
 
-In der Regel müssen Sie die verwendeten Speicher zu einem geeinten Zeitpunkt initialisieren. In diesem Zusammenhang kann z.B. das Vorbereiten der verwendeten Datenbanken notwendig sein. Überlegen Sie sich, wie und wann Sie die implementierten *Setup*-Vorgänge ggf. wiederholen müssen.
+In der Regel müssen Sie die verwendeten Speicher zu einem geeigneten Zeitpunkt initialisieren. In diesem Zusammenhang kann z.B. das Vorbereiten der verwendeten Datenbanken notwendig sein. Überlegen Sie sich, wie und wann Sie die implementierten *Setup*-Vorgänge ggf. wiederholen müssen.
 
 ### Einlesen gespeicherter Werte
 
-Häufig werden Sie die Datenspeicher zum Abbilden und Wiederherstellen des Anwendungszustandes verwenden. Überlegen Sie sich, welche Inhalte bereits beim Anwendungsstart benötigt werden und implementieren Sie einen strukturierten Prozess zur Reinitalisierung Ihrer Anwendung auf Basis der in vorangegangenen Sitzungen gespeicherten Informationen
+Häufig werden Sie die Datenspeicher zum Abbilden und Wiederherstellen des [Anwendungszustandes](https://en.wikipedia.org/wiki/State_(computer_science)) verwenden. Überlegen Sie sich, welche Inhalte bereits beim Anwendungsstart benötigt werden und implementieren Sie einen strukturierten Prozess zur Reinitalisierung Ihrer Anwendung auf Basis der in vorangegangenen Sitzungen gespeicherten Informationen.
 
 ### Zeitpunkt der Speicherung
 
-Überlegen Sie sich, zu welchem Zeitpunkt Sie Inhalte speichern müssen. Während unkritische Inhalte beim Schießend der Anwendung in den jeweiligen *Storage* überführt werden können, sollten kritische Inhalte möglichst zeitnah persistiert werden.
+Überlegen Sie sich, zu welchem Zeitpunkt Sie Inhalte speichern müssen. Während unkritische Inhalte beim Schließen der Anwendung in den jeweiligen *Storage* überführt werden können, sollten kritische Inhalte möglichst zeitnah zu ihrer Erstellung bzw. Manipulation persistiert werden.
 
 ### Abstraktion der Persistenzschicht
 
-Trennen Sie die *Model*-Schicht Ihrer Anwendung (d.h. die zur Laufzeit benötigten Daten und Datenstrukturen) von der eingesetzten Speicherlösung. Abstrahieren Sie den Datenzugriff soweit wie möglich und achten Sie insbesondere bei parallelen Zugriff durch unterschiedliche Komponenten auf eine einheitliche Schnittstelle, die auch die Datenintegrität sicher stellt.
+Trennen Sie die *Model*-Schicht Ihrer Anwendung (d.h. die zur Laufzeit benötigten Daten und Datenstrukturen bzw. den daraus resultierenden *State*) von der eingesetzten Speicherlösung. Abstrahieren Sie den Datenzugriff soweit wie möglich und achten Sie insbesondere bei parallelen Zugriff durch unterschiedliche Komponenten auf eine einheitliche Schnittstelle, die auch die Datenintegrität sicher stellt.
 
 
 [^1]: Mit der [File and Directory Entries API](https://developer.mozilla.org/en-US/docs/Web/API/File_and_Directory_Entries_API/Introduction) existiert eine - aktuell nicht standardisierte - Möglichkeit, lokale Dateisysteme zu emulieren und zur Datenspeicherung zu verwenden. Die gespeicherten Inhalte werden im lokalen Dateisystem des Geräts abgelegt. Die verwendeten Bereiche sind jedoch vom restlichen Dateisystem getrennt, eine Möglichkeit zum direkten Zugriff auf die Festplatte des Nutzers/der Nutzerin besteht auch hier nicht.
