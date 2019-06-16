@@ -14,7 +14,7 @@ Woche | Datum | Inhalt | Anmerkung
 6 |29.05.2019 | Praxissitzung: Coding-Workshop | Vorlesung und praktische Übung
 7 |05.06.2019 | [Client-Server-Kommunikation: AJAX und XMLHttpRequest](./ajax.md) | Online-Material und praktische Übung
 8 |12.06.2019 | [Multimediale Elemente im Browser: Audio-, Video- und Canvas-Elemente](./canvas-element.md) | Online-Material und praktische Übung
-8 |19.06.2019 | Datenspeicherung in Webanwendungen | Online-Material und praktische Übung
+8 |19.06.2019 | [Datenspeicherung in Webanwendungen](./data-storage.md) | Online-Material und praktische Übung
 10 |26.06.2019 | Nebenläufigkeit im Browser: Webworker verstehen und einsetzen | Online-Material und praktische Übung
 11 |03.07.2019 | Javascript außerhalb des Browser: Einführung in die Verwendung von Node.js | Online-Material und praktische Übung
 12 |10.07.2019 | Praxissitzung: Coding-Workshop (dazu: Komplexe Webanwendungen) | Vorlesung und praktische Übung
