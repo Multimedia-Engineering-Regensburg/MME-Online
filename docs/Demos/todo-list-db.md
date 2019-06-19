@@ -33,7 +33,6 @@ Implementieren Sie die Datenbankfunktionalität in einem neuen Modul `DBManager`
 
 4. Verwenden Sie das zentrale Modul aus der `index.js`-Datei um die implementierte Datenbank mit dem Rest der Anwendung zu verknüpfen. Versuchen Sie dabei, die einzelnen Datenbankoperationen (siehe Punkt 3) nacheinander zu implementieren. D.h. integrierten Sie jede der fertiggestellten Funktionen vollständig in die restliche ANwendung, bevor Sie mit der Implementierung weiterer Datenbankoperationen beginnen (Vgl. [*Vertical slice*](https://en.wikipedia.org/wiki/Vertical_slice)).
 
-
 ## Starterpaket und Lösung
 
 Ein vorbereitetes Starterpaket zur selbständigen Implementierung der Aufgabe sowie einen Lösungsvorschlag finden Sie auf [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-ToDo-List-DB). Die Lösung findet sich im `master`-Branch des verlinkten Repositories. Das Starterpaket im `starter`-Branch.
