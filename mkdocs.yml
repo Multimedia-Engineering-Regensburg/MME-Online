@@ -26,7 +26,7 @@ nav:
     - Client-Server-Kommunikation (AJAX und XMLHttpRequest): MME/ajax.md
     - Canvas, Video & Audio: MME/canvas-element.md
     - Datenspeicherung in Webanwendungen: MME/data-storage.md
-#    - Nebenläufigkeit im Browser: MME/webworkers.md
+    - Nebenläufigkeit im Browser: MME/webworkers.md
 #    - Einführung in die Node.js-Umgebung: MME/node-js.md
 #    - Komplexe Webanwendungen: MME/server-client-applications.md
 #    - Anforderungen erheben und dokumentieren: MME/requirements-for-student-projects.md
@@ -46,6 +46,8 @@ nav:
       - Übersicht: Aufgaben/index.md
       - 01 | Countdown: Aufgaben//SS19-01-Countdown.md
       - 02 | Video Assistant: Aufgaben//SS19-02-Video-Assistant.md
+  - Projekte:
+      - Übersicht: Projekte/index.md
   - Tutorials:
       - Übersicht: Tutorials/index.md
       - Die Arbeitsumgebung: Tutorials/work-environment.md
