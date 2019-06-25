@@ -18,6 +18,9 @@ nav:
   - MME: 
     - Übersicht: MME/index.md
     - Einführung: MME/class-introduction.md
+    - Die Arbeitsumgebung: MME/work-environment.md
+    - Der Projektordner: MME/project-directory.md
+    - Javascript im Browser: MME/javascript-browser.md
     - Progammatische Manipulation des DOM: MME/dom-introduction.md
     - Versionskontrolle mit Git: MME/version-control.md
 #    - Codequalität: MME/code-quality.md
@@ -27,9 +30,11 @@ nav:
     - Canvas, Video & Audio: MME/canvas-element.md
     - Datenspeicherung in Webanwendungen: MME/data-storage.md
     - Nebenläufigkeit im Browser: MME/webworkers.md
+    - Code Kata: MME/code-kata.md
 #    - Einführung in die Node.js-Umgebung: MME/node-js.md
 #    - Komplexe Webanwendungen: MME/server-client-applications.md
 #    - Anforderungen erheben und dokumentieren: MME/requirements-for-student-projects.md
+#    - Pair Programming: MME/pair-programming.md
   - Demos:
       - Übersicht: Demos/index.md
       - ToDo-Liste: Demos/todo-list.md
@@ -48,17 +53,7 @@ nav:
       - 02 | Video Assistant: Aufgaben//SS19-02-Video-Assistant.md
   - Projekte:
       - Übersicht: Projekte/index.md
-  - Tutorials:
-      - Übersicht: Tutorials/index.md
-      - Die Arbeitsumgebung: Tutorials/work-environment.md
-      - Der Projektordner: Tutorials/project-directory.md
-      - Javascript im Browser: Tutorials/javascript-browser.md
-      - Pair Programming: Tutorials/pair-programming.md
-  - Ressourcen: 
-      - Übersicht: Resources/index.md
-#      - Literatur: Resources/reader.md
-#      - Hilfe und Dokumentation: Resources/docs.md
-#      - Werkzeuge: Resources/tools.md
+  - Reader: Reader/index.md
   - Impressum:
     - Autor: author.md
     - Impressum: impress.md

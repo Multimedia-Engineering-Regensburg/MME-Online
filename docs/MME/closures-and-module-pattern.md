@@ -7,7 +7,7 @@ Module sind eine der Möglichkeiten, individuelle Komponenten einer Javascript-A
 Komplexere Software besteht in der Regel aus verschiedenen Komponenten, die unabhängig voneinander oder gemeinsam arbeiten um die Funktionen des Gesamtsystems bereitzustellen. Eine gute Software-Architektur versucht diesen Ansatz (Vgl. [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)) auf allen möglichen Ebenen umzusetzen. In Javascript sind die Bausteine für die Gestaltung des Codes die Funktionen, Prototypen und Module. Während die ersten beiden Features feste Bestandteile des Sprachstandards sind, werden Module vom Programmierenden durch die Anwendung dieser grundlegenden Sprachfeatures realisiert. Dadurch lassen sich auch in Javascript bekannte Konzepte wie das [*information hiding*](https://en.wikipedia.org/wiki/Information_hiding) realisieren. Wichtigste Voraussetzung für die Implementierung von Modulen sind dabei *Closures* (Funktionseinschluss).
 
 !!! note "Hinweis"
-	Versuchen Sie die Erläuterungen und Beispiele aus dieser Lektion direkt praktisch umzusetzen. Erstellen Sie dazu ein leeres [Projektverzeichnis](../../Tutorials/project-directory) und implementieren Sie die vorgestellten Beispiele selbstständig.
+	Versuchen Sie die Erläuterungen und Beispiele aus dieser Lektion direkt praktisch umzusetzen. Erstellen Sie dazu ein leeres [Projektverzeichnis](./project-directory) und implementieren Sie die vorgestellten Beispiele selbstständig.
 
 ## Der Modulbegriff in Javascript
 
@@ -236,7 +236,7 @@ yourPiggyBank.addMoney(10);
 
 Eine solche, mehrfache Verwendung der selben Modulfunktion für die Erstellung unabhängiger Module sollte jedoch gut überlegt sein, da sich im direkten Vergleich mit Prototypen Nachteile ergeben. Bei der Erstellung von Modulen wird stets ein *Closure* erzeugt. Alle inneren Methoden oder Variablen werden neu erstellt. Für Objekte, die auf Prototypen basieren, wird nur der spezialisierte Teilbereich, also die Menge an Eigenschaften, die nicht durch die Prototypen-Kette vererbt wird, neu erstellt. Prototypen-Eigenschaften existieren nur einmalig und werden von allen abgeleiteten Objekten geteilt. Module eignen sich daher vor allem für Komponenten der Anwendung, die nur einmalig erstellt und verwendet werden. Sie sollten dort wo nötig und sinnvoll durch prototypisch erstellte Objekte ergänzt werden.
 
-Der oben dargestellt Ansatz lässt sich leicht mit den [*namespace objects*](../../Tutorials/javascript-browser) kombinieren um eine zu starke Verwendung des globalen Namensraums zu vermeiden:
+Der oben dargestellt Ansatz lässt sich leicht mit den [*namespace objects*](./javascript-browser) kombinieren um eine zu starke Verwendung des globalen Namensraums zu vermeiden:
 
 ``` javascript
 var myNamespace = myNamespace || {};

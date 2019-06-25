@@ -150,7 +150,7 @@ wird z.B.
 
 - Blenden Sie das Textfeld aus und verwenden Sie den im *Worker* erstellten HTML-String zum Erstellen und Anzeigen eines entsprechenden DOM-Elements.
 
-[^1]: Eine kurze Beschreibung der Arbeitsweise der *Javascript Runtime* können Sie [hier](../Tutorials/javascript-browser) nachlesen. Detailtiere Informationen finden Sie im [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop).
+[^1]: Eine kurze Beschreibung der Arbeitsweise der *Javascript Runtime* können Sie [hier](./javascript-browser) nachlesen. Detailtiere Informationen finden Sie im [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop).
 
 [^2]: Denken Sie daran, dass die Verarbeitung der Statusaktualisierungen im *UI Thread* erfolgt. Zu häufige Aktualisierungen oder zu aufwendige Darstellung des Fortschritts können den *UI Thread* blockieren und damit die Vorteile des *Workers* zunichte machen.
 

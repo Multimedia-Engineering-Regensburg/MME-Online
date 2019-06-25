@@ -19,7 +19,7 @@ Die dauerhafte **Speicherung** des eingegebenen Texts erfolgt in einem weiteren 
 
 ## Ausgangslage
 
-Sowohl das HTML-Dokument (`index.html`) als auch die CSS-Regeln (`style.css`) sind vollständig vorgegeben. Für die Lösung der Aufgabenstellung ist nur die Bearbeitung der ebenfalls beigefügten *Javascript*-Dateien erforderlich. Alle *Javascript*-Dateien sind bereits über das HTML-Dokument eingebunden. Beim Laden des Dokuments wird automatisch die `init`-Methode des `Writer`-Moduls ausgeführt, das in der Datei `Writer.js` implementiert wird. Die globale Variable `Writer` wird als [Namespace](../../Tutorials/javascript-browser#namespacing) für alle Module verwendet.
+Sowohl das HTML-Dokument (`index.html`) als auch die CSS-Regeln (`style.css`) sind vollständig vorgegeben. Für die Lösung der Aufgabenstellung ist nur die Bearbeitung der ebenfalls beigefügten *Javascript*-Dateien erforderlich. Alle *Javascript*-Dateien sind bereits über das HTML-Dokument eingebunden. Beim Laden des Dokuments wird automatisch die `init`-Methode des `Writer`-Moduls ausgeführt, das in der Datei `Writer.js` implementiert wird. Die globale Variable `Writer` wird als [Namespace](./javascript-browser#namespacing) für alle Module verwendet.
 
 ## Aufgabenstellung
 

@@ -1,7 +1,7 @@
 <a class="github-button button" href="https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Bundesliga"></a> 
 # Bundesliga-Tabelle
 
-In dieser Demo implementieren Sie eine Bundesliga-Tabelle. Datengrundlage sind die Informationen, die frei über die *JSON*-API der [OpenLigaDB-Website](https://www.openligadb.de/) bezogen werden können. Für den Zugriff auf die API wird [AJAX](../../MME/ajax) verwendet. In dieser Übung werden keine neuen Inhalte vermittelt. Statt dessen sollen Sie die Methode des [*Pair Programming*](../../Tutorials/pair-programming) ausprobieren. Folgen Sie dazu den hier bereitgestellten Anweisungen.
+In dieser Demo implementieren Sie eine Bundesliga-Tabelle. Datengrundlage sind die Informationen, die frei über die *JSON*-API der [OpenLigaDB-Website](https://www.openligadb.de/) bezogen werden können. Für den Zugriff auf die API wird [AJAX](../../MME/ajax) verwendet. In dieser Übung werden keine neuen Inhalte vermittelt. Statt dessen sollen Sie die Methode des [*Pair Programming*](./pair-programming) ausprobieren. Folgen Sie dazu den hier bereitgestellten Anweisungen.
 
 ![Screenshot der Bundesliga-App](../../img/demos/bundesliga-app-complete.png)
 
