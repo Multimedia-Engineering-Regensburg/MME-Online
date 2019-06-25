@@ -16,12 +16,12 @@ markdown_extensions:
 nav:
   - Lektionen: 
     - Übersicht: MME/index.md
-    - Einführung: MME/class-introduction.md
-    - Die Arbeitsumgebung: MME/work-environment.md
-    - Der Projektordner: MME/project-directory.md
+    - Multimedia Engineering: MME/class-introduction.md
     - Javascript im Browser: MME/javascript-browser.md
-    - Progammatische Manipulation des DOM: MME/dom-introduction.md
+    - Einrichten der Arbeitsumgebung: MME/work-environment.md
+    - Das Projektverzeichnis: MME/project-directory.md
     - Versionskontrolle mit Git: MME/version-control.md
+    - Progammatische Manipulation des DOM: MME/dom-introduction.md
 #    - Codequalität: MME/code-quality.md
     - Javascript-Anwendungen strukturieren und gestalten: MME/closures-and-module-pattern.md
     - Den Event-Loop verstehen und verwenden: MME/event-loop.md
@@ -52,6 +52,7 @@ nav:
       - 02 | Video Assistant: Aufgaben//SS19-02-Video-Assistant.md
   - Projekte:
       - Übersicht: Projekte/index.md
+      - Sommer 2019: Projekte/sommer-2019.md
   - Reader: Reader/index.md
   - Impressum:
     - Autor: author.md
