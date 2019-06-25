@@ -36,6 +36,16 @@
 	background-color: rgb(142,142,141);
 }
 
+/* Increase font size in navbar */
+
+.navbar {
+	font-size: 16px;
+}
+
+.navbar-brand {
+	font-size: 22px;
+}
+
 /* Customize sidebar */
 
 .bs-sidebar {

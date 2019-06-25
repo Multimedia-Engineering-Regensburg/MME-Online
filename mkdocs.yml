@@ -7,15 +7,14 @@ theme:
   name: yeti
   custom_dir: mme-template
 plugins: [search, git-revision-date]
-# extra_javascript:
-#  - scripts/init.js
+extra_javascript:
+  - scripts/init.js
 markdown_extensions:
   - footnotes
   - admonition
   - attr_list
 nav:
-  - Start: index.md
-  - MME: 
+  - Lektionen: 
     - Übersicht: MME/index.md
     - Einführung: MME/class-introduction.md
     - Die Arbeitsumgebung: MME/work-environment.md
