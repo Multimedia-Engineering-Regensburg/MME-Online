@@ -42,6 +42,35 @@ Im Rahmen der letzten beiden Vorlesungswochen werden die Projekt vorbereitet. Di
 
 **Abgabe**: Das fertige Projekt wird am Ende der Bearbeitungszeit eingereicht. Dazu wird der letzte *Commit* in den `master`-Branch berücksichtigt, den Sie am Abgabetag vornehmen. 
 
+## Zeitlicher Aufwand
+
+Für den Abschluss des Moduls **MEI-BA-M07: Multimedia Engineering** erhalten Sie insgesamt sechs Leistungspunkte. Für diese Punkte sollten Sie insgesamt **180 Stunden** Arbeit in den Kurs investieren. Während der Vorlesungszeit erarbeiten Sie dazu die folgenden Leistungen:
+
+- 30 Stunden für die selbstständige Vorbereitung der Übung
+
+- 30 Stunden Präsenzzeit in den praktischen Übungen
+
+- 30 Stunden für die Nachbereitung der Sitzungen 
+
+- Jeweils 8 Stunden für die Bearbeitung der drei Übungsaufgaben/Studienleistungen
+
+Mit dem Ende der Vorlesungszeit sind daher bereits mindestens **114 Stunden** Aufwand erbracht worden. Im Rahmen der Gruppen- und Themenfindung und der Projektvorbereitung fallen inklusive der Besprechungen weitere 6 Stunden Arbeitslast an. Für den eigentlichen Entwurf und die Umsetzung Ihres Projektes verbleiben pro Teilnehmer **60 Stunden**, was in etwa 1,5 vollen Arbeitswochen entspricht. Versuchen Sie Ihr Projekt innerhalb dieses Zeitrahmens zu absolvieren. Am Ende muss Ihre Software einen Zustand erreicht haben, der diesen Aufwand angemessen repräsentiert. Im Rahmen der Anforderungserhebung werden wir versuchen, einen Funktionsumfang festzulegen, der innerhalb dieser Zeit gut umsetzbar ist. Unverhältnismäßiger Mehraufwand bei der Umsetzung des Projekts wird von Ihnen nicht verlangt.
+
+Um den verfügbaren Zeitraum optimal zu nutzen und Ihnen während der vorlesungsfreien Zeit Raum für andere Projekte oder Aktivitäten zu ermöglichen, beachten Sie bitte die folgenden Hinweise:
+
+- Nehmen Sie die Möglichkeiten zur iterativen Zusammenstellung und Besprechung der Features wahr. Die verantwortlichen Lehrpersonen haben Erfahrungswerte, die es erlauben, den tatsächlichen Arbeitsaufwand für Ihr Projekt gut einschätzen zu können.
+
+- Schaffen Sie Raum für regelmäßige Begutachtungen und Tests der Software bzw. des Quellcodes. Je früher Sie funktionale oder qualitative Mängel feststellen, desto schneller können Sie diese beheben. Kurz vor Ende des Projekts ist es eher unwahrscheinlich, tief verwurzelte Probleme zufriedenstellend zu lösen. Unterstützen Sie sich gegenseitig und finden Sie Wege, die Beiträge der anderen Teammitglieder zu bewerten und sinnvolle Verbesserungsvorschläge zu geben.
+
+- Stellen Sie möglichst früh ein funktionierendes Grundgerüst der Anwendung fertig. Je später Sie diesen *proof of cocept* liefern, desto schwieriger wird es auftretende technische Probleme rechtzeitig zu beheben. Dazu gehört auch die Bereitstellung einer selbst-gehosteten und online verfügbaren Version der Software.
+Sollten Sie bei diesem Schritt Hilfe benötigen, nehmen Sie bitte rechtzeitig Kontakt auf.
+
+- Konzentrieren Sie sich auf wenige aber wichtige Funktionen. Planen Sie Zeit ein, um Ihre Anwendung hinsichtlich der Gestaltung und Benutzerfreundlichkeit zu optimieren. Testen Sie regelmäßig die Funktionsfähigkeit der Anwendung. Legen Sie dazu zu Beginn exemplarische Anwendungsfälle (*Walktroughs*) fest und spielen Sie diese nach jeder größeren Änderung durch.
+
+- Arbeiten Sie gemeinsam, nicht nur parallel zueinander. Maximieren Sie die Häufigkeit, mit der Sie die Beiträge der einzelnen Teammitglieder zusammenführen. So stellen Sie sicher, dass Ihre Änderungen kompatibel zueinander sind und keine Konflikte erzeugen. Dazu ist es wichtig, vor Beginn der Implementierung die Schnittstellen zwischen den einzelnen Komponenten gemeinsam zu besprechen und zu dokumentieren.
+
+- Planen Sie mindestens einen vollen Arbeitstag für abschließende Arbeiten, wie z.B. das Ergänzen von Dokumentationen oder die Überarbeitung von Readme-Dateien ein. Schließen Sie die Implementierung der eigentlichen Funktionalität bereits einige Tage vor dem von Ihnen angestrebten Projektende ab. Konzentrieren Sie sich danach auf das ausgiebige Testen der Anwendung, das Beheben von *Bugs* und dem Vervollständigen der Dokumentation.
+
 ## Abgabe
 
 Am Abgabetag muss Ihr Repository die folgenden Inhalte vorweisen:
