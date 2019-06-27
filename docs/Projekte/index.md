@@ -62,7 +62,7 @@ Um den verfügbaren Zeitraum optimal zu nutzen und Ihnen während der vorlesungs
 
 - Schaffen Sie Raum für regelmäßige Begutachtungen und Tests der Software bzw. des Quellcodes. Je früher Sie funktionale oder qualitative Mängel feststellen, desto schneller können Sie diese beheben. Kurz vor Ende des Projekts ist es eher unwahrscheinlich, tief verwurzelte Probleme zufriedenstellend zu lösen. Unterstützen Sie sich gegenseitig und finden Sie Wege, die Beiträge der anderen Teammitglieder zu bewerten und sinnvolle Verbesserungsvorschläge zu geben.
 
-- Stellen Sie möglichst früh ein funktionierendes Grundgerüst der Anwendung fertig. Je später Sie diesen *proof of cocept* liefern, desto schwieriger wird es auftretende technische Probleme rechtzeitig zu beheben. Dazu gehört auch die Bereitstellung einer selbst-gehosteten und online verfügbaren Version der Software.
+- Stellen Sie möglichst früh ein funktionierendes Grundgerüst der Anwendung fertig. Je später Sie diesen *proof of concept* liefern, desto schwieriger wird es auftretende technische Probleme rechtzeitig zu beheben. Dazu gehört auch die Bereitstellung einer selbst-gehosteten und online verfügbaren Version der Software.
 Sollten Sie bei diesem Schritt Hilfe benötigen, nehmen Sie bitte rechtzeitig Kontakt auf.
 
 - Konzentrieren Sie sich auf wenige aber wichtige Funktionen. Planen Sie Zeit ein, um Ihre Anwendung hinsichtlich der Gestaltung und Benutzerfreundlichkeit zu optimieren. Testen Sie regelmäßig die Funktionsfähigkeit der Anwendung. Legen Sie dazu zu Beginn exemplarische Anwendungsfälle (*Walktroughs*) fest und spielen Sie diese nach jeder größeren Änderung durch.
