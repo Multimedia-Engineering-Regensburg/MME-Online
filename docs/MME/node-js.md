@@ -35,7 +35,7 @@ printTime();
 
 Beim Aufruf der Datei per `node time.js` in der Kommandozeile wird das aktuelle Datum ausgegebenen, z.B. so:
 
-```
+``` plain
 1969-20-07T20:17:40.000Z
 ```
 
