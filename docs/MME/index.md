@@ -16,7 +16,7 @@ Woche | Datum | Inhalt | Anmerkung
 8 |12.06.2019 | [Multimediale Elemente im Browser: Audio-, Video- und Canvas-Elemente](./canvas-element.md) | Online-Material und praktische Übung
 9 |19.06.2019 | [Datenspeicherung in Webanwendungen](./data-storage.md) | Online-Material und praktische Übung
 10 |26.06.2019 | [Nebenläufigkeit im Browser: Webworker verstehen und einsetzen](./webworkers.md) | Online-Material und praktische Übung
-11 |03.07.2019 | Javascript außerhalb des Browser: Einführung in die Verwendung von Node.js | Online-Material und praktische Übung
+11 |03.07.2019 | [Javascript außerhalb des Browser: Einführung in die Verwendung von Node.js](./node-js.md) | Online-Material und praktische Übung
 12 |10.07.2019 | Praxissitzung: Coding-Workshop (dazu: Komplexe Webanwendungen) | Vorlesung und praktische Übung
 13 |17.07.2019 | Anforderungsdokumentation für (studentische) Softwareprojekte | Online-Material und praktische Übung
 14 |24.07.2019 | Projektworkshop: Vorstellung und Auswahl von Themen, Definition einer ersten Projektskizze, Einrichten der Repositories | Vorlesung und praktische Übung

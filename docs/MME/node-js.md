@@ -36,7 +36,7 @@ printTime();
 Beim Aufruf der Datei per `node time.js` in der Kommandozeile wird das aktuelle Datum ausgegebenen, z.B. so:
 
 ```
-2019-01-11T10:48:42.762Z
+1969-20-07T20:17:40.000Z
 ```
 
 Unter Node.js erfolgt die Ausgabe des `console.log`-Befehls auf der [Standardausgabe](https://en.wikipedia.org/wiki/Standard_streams) Ihres Betriebssystems (`stdout`). In der Regel ist dies die Kommandozeile.
@@ -70,7 +70,7 @@ let fileContent = fs.readFileSync("helloworld.txt")
 
 ### Modularisierung
 
-Wie auch bei den Browser-basierten Anwendungen sollten Sie *Node.js*-Anwendungen möglichst modularisiert gestalten. D.h., dass Sie z.B. unterschiedliche Funktionalität in unabhängigen Komponenten der Anwendung implementieren und diese - soweit möglich - auch auf separate Dateien aufteilen. *Node.js*  unterstützt dabei ein Modul-Konzept, das sich vom bisher verwendeten *Revealing Module Pattern* unterscheidet. Zentraler Baustein für die modularisierte Implementierung von *Node.js*-Anwendungen ist die `require`-Funktion, mit deren Hilfe Inhalte aus anderen Dateien importiert werden können.
+Wie auch bei den Browser-basierten Anwendungen sollten Sie *Node.js*-Anwendungen möglichst modularisiert gestalten. D.h., dass Sie z.B. unterschiedliche Funktionalität in unabhängigen Komponenten der Anwendung implementieren und diese - soweit möglich - auch auf separate Dateien aufteilen. *Node.js*  unterstützt dabei ein Modul-Konzept, das sich an einigen Stellen vom bisher [verwendeten Konzept der ES6-Module](../closures-and-module-pattern) unterscheidet. Zentraler Baustein für die modularisierte Implementierung von *Node.js*-Anwendungen ist die `require`-Funktion, mit deren Hilfe Inhalte aus anderen Dateien importiert werden können.
 
 **require** 
 
