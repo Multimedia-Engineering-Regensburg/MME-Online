@@ -1,1 +1,0 @@
-# Code-Qualität mit ESLint prüfen und verbessern

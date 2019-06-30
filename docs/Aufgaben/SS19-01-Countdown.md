@@ -17,7 +17,7 @@ Erstellen Sie für jedes neue Modul eine eigene Datei im Ordner `resources/js`. 
 **Formatierung und ESLint:** 
 Sie finden im Starterprojekt bereits Dateien mit Formatvorgaben für [JS-Beautify](https://github.com/beautify-web/js-beautify) bzw. Regeldateien für [ESLint](http://eslint.org/). Ihr eingereichter Programmcode darf bei Überprüfung gegen die ESLint-Datei keine Fehler erzeugen. 
 
-![Screenshot der finalen Anwendung](../img/tasks/screenshot-start.png)
+![Screenshot der finalen Anwendung](img/screenshot-start.png)
 
 <div class="img-label">Screenshot des Menübildschirms</div>
 
@@ -45,14 +45,14 @@ Zu Beginn des Spiels wird der Menübildschirm (`#menu-screen`) eingeblendet. Ein
 
 **Hinweis:** In der TV-Vorlage wird der Stapel an Buchstaben, aus denen die zufälligen neun Buchstaben gewählt werden, unter Berücksichtigung der [Vorkommenshäufigkeit der Zeichen in der englischen Sprache](https://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of_letters_in_the_English_language) zusammensetzt und gemischt. Das heißt, dass im Ausgangsstapel ein `e` z.B. wesentlich häufiger vorkommt als ein `x` oder ein `z`. Beim Lösen der Aufgabe müssen Sie diesen Teil des Originalspiels nicht beachten und können von einer statistischen Gleichverteilung der Wahrscheinlichkeiten ausgehen. Wenn Sie die Vorkommenshäufigkeit trotzdem berücksichtigen wollen, können Sie sich an dem oben verlinkten Wikipediaartikel orientieren. Als zusätzliche, nicht bewertete, Erweiterung können Sie einmal *gezogene* Buchstaben für die aktuelle Runde aus dem fiktiven Stapel entfernen.
 
-![Screenshot der finalen Anwendung](../img/tasks/screenshot-letter-input.png)
+![Screenshot der finalen Anwendung](img/screenshot-letter-input.png)
 
 <div class="img-label">Screenshot der finalen Anwendung während der Auswahl der Buchstaben</div>
 
 ## Animation der Uhr
 Die durch HTML-Elemente dargestellte und über CSS gestaltete Uhr kann animiert werden. Dabei wird der Sekundenzeiger kontinuierlich innerhalb von jeweils einer Minute einmal um dessen eigene Achse rotiert (0° bis 360°). In der mitgelieferten CSS-Datei finden Sie eine definierte CSS-Regel `.hand-animated` mit allen benötigten Eigenschaften. Durch Hinzufügen dieser Regel zum `class`-Attribut des Sekundenzeiger-Elements (`.clock .hand`) starten Sie die Animation des Uhrzeigers. Wenn die Klasse wieder entfernt wird, setzen Sie damit die Position des Uhrzeigers zurück und beenden die Animation.
 
-![Screenshot der finalen Anwendung](../img/tasks/screenshot-in-game.png)
+![Screenshot der finalen Anwendung](img/screenshot-in-game.png)
 
 <div class="img-label">Screenshot der finalen Anwendung während des Spiels</div>
 

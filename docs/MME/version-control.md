@@ -10,13 +10,13 @@ Der häufig verwendete Begriff *Tools* (Werkzeug) beschreibt in der Regel konkre
 
 Im täglichen Umgang mit digitalen Systemen begegnen uns viele Anwendungen, die auf den ersten Blick eine große Ähnlichkeit mit Versionskontrollsystemen haben. Viele *Cloud*-Speicher, wie z.B. *Dropbox* oder *Seafile*, speichern unterschiedliche Versionen von Dateien. Dabei werden neben dem Änderungszeitpunkt auch Informationen zum Autor der jeweiligen Dateiversion abgespeichert. Der wesentliche Unterschied zu einem Versionskontrollsystem ist, dass die verschiedenen Varianten einer Datei indirekt, durch das Bearbeiten und Abspeichern der Datei versioniert werden und neben den automatisch erfassten Aspekten (Autor, Zeitpunkt) keinerlei inhaltliche Beschreibung zu konkreten Änderungen der Datei erfasst werden können. Diese Anwendungen versionieren automatisch den Bearbeitungsverlauf einer Datei und erlauben in der Regel auch die Revision von Änderungen bzw. die Betrachtung archivierter Varianten. Sie erlauben dem Benutzer jedoch nicht die selbstständige Kontrolle des Versionierungsprozesses oder die semantische Beschreibung einer konkreten Revision.
 
-![Screenshot des Seafile-Clients](../../img/lessons/vc-seafile-example.png) 
+![Screenshot des Seafile-Clients](img/vc-seafile-example.png) 
 
 <div class="img-label">Beispiel für Versionierung in der Seafile-Webanwendung</div>
 
 Die manuelle Versionskontrolle, insbesondere die Dokumentation der vorgenommenen Änderungen sind essentieller Bestandteil von Versionskontrollsystemen wie z.B. *git*. Hier hat der Nutzer die Möglichkeit, die zu versionierende Variante einer oder mehrerer Dateien bewusst zu wählen (Zusammenstellen und Durchführen eines *Commits* in *git*) und dabei zusätzliche Informationen anzugeben, um die konkreten Änderungen gegenüber der vorangegangenen Version inhaltlich zu beschreiben. Änderungen an mehreren Dateien lassen sich zu einem gemeinsamen Versionseintrag zusammenfassen. Insbesondere in der Softwareentwicklung, in der inhaltlicher Fortschritt (z.B. die Implementierung eines bestimmten Features) in der Regel die Änderungen von mehreren Dateien erfordert, kann dieser so besser und verständlicher dokumentiert werden. 
 
-![Screenshot der Github-Website](../../img/lessons/vc-github-example.png)
+![Screenshot der Github-Website](img/vc-github-example.png)
 
 <div class="img-label">Beispiel für Versionskontrolle in der Github-Webanwendung</div>
 
@@ -48,7 +48,7 @@ Für die konkrete Umsetzung von Versionskontrolle existieren verschiedene Softwa
 	Eine Dokumentation der Funktionen von *git* finden Sie [hier](https://git-scm.com/docs). Ein ausführliche Anleitung zur grundlegenden und fortgeschrittenen Anwendung von *git* finden Sie [hier](https://git-scm.com/book/en/v2)
 
 
-![Graphische Gegenüberstellung von zentralen und verteilten VC-Systemen](../../img/lessons/vc-systeme.png)
+![Graphische Gegenüberstellung von zentralen und verteilten VC-Systemen](img/vc-systeme.png)
 
 <div class="img-label">Graphische Gegenüberstellung von zentralen und verteilten VC-Systemen</div>
 
@@ -74,7 +74,7 @@ Neben dem Kommandozeilenbefehl existieren zahlreiche *GUI*-Programme. Diese erm�
 
 Mit dem Befehl `git init` erstellen Sie ein neues *Git*-Repository im aktuellen Verzeichnis. Dabei wird der versteckte `.git`-Ordner erzeugt. Möglicherweise vorhanden Dateien werden nicht automatisch zum Repository hinzugefügt.
 
-![Initialisieren eines neuen Repositorys](../../img/lessons/git-terminal-init.png){: class="center"}
+![Initialisieren eines neuen Repositorys](img/git-terminal-init.png){: class="center"}
 
 <div class="img-label">Initialisieren eines neuen Repositorys</div>
 
@@ -88,20 +88,20 @@ Das Erstellen einer Revision geschieht in zwei Schritte:
 
 2. **Commit**: Mit dem `commit` Befehl wird der aktuellen Inhalt der *Stage* in eine neue Revision überführt. Diese besteht dabei aus der vorangegangene Revision sowie den durch die *Stage* hinzugefügten Änderungen (hinzugefügte, entfernte oder manipulierte Dateien). Nach Eingabe von `git commit` leitet *git* Sie in den eingerichteten Standardeditor weiter. Hier haben Sie die Möglichkeit, die sogenannte *Commit Message* zu verfassen. Dabei handelt es sich um eine textuelle Beschreibung der mit der neuen Revision eingeführten Änderungen. Viele Programme interpretieren beim Anzeigen einer *Git*-Versionsgeschichte die erste Zeile dieser Nachricht als Überschrift und die folgenden Zeilen als eigentlichen Inhalt. Gewöhnen Sie sich an, in der ersten Zeile eine kurze Zusammenfassung der vorgenommenen Änderungen zu verfassen und diese in den folgenden Zeilen genauer zu erklären. Insbesondere in der kollaborativen Softwareentwicklung sind [einheitliche, aussagekräftige und verständliche](https://chris.beams.io/posts/git-commit/) *Commit Messages* notwendig und Zeichen guten Softwareengineerings. Ein *Commit* muss nicht zwangsweise alle aktuell erkennbaren Änderungen im Repository umfassen. Bündeln Sie in einem einzelnen *Commit* - über das gezielte Zusammenstellen der *Stage* - immer nur inhaltlich zusammenhängende Änderungen. Modifikationen am Code die zwei unabhängige Komponenten oder Funktionen betreffen, sollten auch in unabhängigen *Commits* dokumentiert werden.
 
-![Erstellen der Commit-Message](../../img/lessons/git-terminal-commit.png){: class="center"}
+![Erstellen der Commit-Message](img/git-terminal-commit.png){: class="center"}
 
 <div class="img-label">Erstellen der Commit-Message</div>
 
 Den aktuellen Zustand des Repositorys und den Inhalt der *Stage* können Sie über den Befehl `git status` anzeigen lassen. 
 
-![Ausgabe des aktuellen Repository-Status](../../img/lessons/git-terminal-status.png){: class="center"}
+![Ausgabe des aktuellen Repository-Status](img/git-terminal-status.png){: class="center"}
 
 <div class="img-label">Ausgabe des aktuellen Repository-Status</div>
 
 
 Den aktuellen Versionsverlauf Ihres Repositorys können Sie mit dem Befehl `git log` anzeigen lassen.
 
-![Ausgabe der Versionsgeschichte](../../img/lessons/git-terminal-log.png){: class="center"}
+![Ausgabe der Versionsgeschichte](img/git-terminal-log.png){: class="center"}
 
 <div class="img-label">Ausgabe der Versionsgeschichte</div>
 
@@ -121,7 +121,7 @@ Beim Initialisieren eines Repository wird automatisch der sogenannte *Master Bra
 
 Inhalte der Versionsgeschichte einer *Branch* können über den `merge`-Befehl in eine andere *Branch* überführt werden. Dazu wird in der ausgecheckten Ziel-*Branch* der Befehl `git merge SOURCE` ausgeführt. *Git* versucht nun die Versionsgeschichte aus der Quell-*Branch* (hier: `TARGET`) in die aktuelle *Branch* zu integrieren, d.h. im Idealfall, dass alle in `TARGET` neu erstellen Einträge an die Versionsgeschichte der Ziel-*Branch* angehängt werden. Häufig kommt es dabei zu sogenannten *Merge*-Konflikten: In einem oder mehreren Dateipaaren tritt das Problem auf, dass die selben Stellen (Zeilen) editiert wurden und *git* keine automatische Lösung für diesen Synchronisierungskonflikte finden kann. In diesem Fall müssen die kritischen Stellen im Rahmen des *Merge* manuell angepasst werden. In der Regel leitet *git* Sie dazu in einen Texteditor weiter, in dem die entsprechende Datei angezeigt wird. Die relevanten Zeilen werden von *git* über ein *Markup* gekennzeichnet. Sie haben dann die Möglichkeit, eine *korrekte* Version der Datei zu erstellen, in dem Sie die in Konflikt stehenden Zeilen manuell zusammenführen. Nach dem Speichern der Datei wird der eigentliche *Merge*-Vorgang fortgesetzt. 
 
-![Graphische Darstellung von Branches](../../img/lessons/git-branches-overview.png){: class="center"}
+![Graphische Darstellung von Branches](img/git-branches-overview.png){: class="center"}
 
 <div class="img-label">Vereinfachte, graphische Darstellung eines <i>Branching</i>-Baums. Die Branches <i>b1</i> und <i>b2</i> wurden von unterschiedlichen Einträgen der Versionsgeschichte des <i>Master Branch</i> abgezweigt. Die in <i>b2</i> vorgenommenen und versionierten Änderungen wurden zurück in den <i>Master Branch</i> gespielt. <i>b1-1</i> wurde nicht direkt vom <i>Master</i> sondern von <i>b1</i> abgezweigt.</div>
 
@@ -129,7 +129,7 @@ Inhalte der Versionsgeschichte einer *Branch* können über den `merge`-Befehl i
 
 *Branches* werden eingesetzt, um bestimmte Arte der Arbeit am Quellcode zu repräsentieren. Dazu gehört z.B. die parallel Arbeit an unterschiedlichen Funktionen der Anwendung oder das Testen neuer *Features*. Die technischen Möglichkeiten von *git* dienen dabei der Unterstützung einer bestimmten Arbeitsweise. Ein gutes Beispiel dafür ist die Verwendung einer sogenannte *dev*-Branch.
 
-![Vereinfache Darstellung einer *dev*-Branch](../../img/lessons/git-branches-dev.png){: class="center"}
+![Vereinfache Darstellung einer *dev*-Branch](img/git-branches-dev.png){: class="center"}
 
 <div class="img-label">Vereinfachte Darstellung einer <i>dev</i>-Branch</div>
 

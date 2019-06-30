@@ -5,7 +5,7 @@ In dieser Demo implementierten Sie einen einfachen, *browser*-gestützten Text-E
 
 Die Demo dient der praktischen Umsetzung und Einübung des vorgestellten [*Module Patterns*](../../MME/closures-and-module-pattern). Zusätzlich können Sie hier die Grundlagen des bekannten [*model-view-controller*](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)-Ansatzes auffrischen. 
 
-![Screenshot der Writer-App](../../img/demos/writer-complete.png)
+![Screenshot der Writer-App](img/writer-complete.png)
 
 ## Aufbau der Anwendung
 

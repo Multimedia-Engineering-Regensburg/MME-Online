@@ -3,7 +3,7 @@
 
 In dieser Aufgabe planen und implementieren Sie eine Anwendung zur Zeiterfassung. Der Schwerpunkt liegt dabei auf dem gemeinsamen Entwurf eines geeigneten Software Designs sowie der anschließenden kollaborativen Implementierung der Anwendung. Im Rahmen der Aufgabe trainieren Sie das Skizzieren und Diskutieren von Anforderungen und Architekturen, das planvolle Vorgehen bei der Implementierung und vor allem die gemeinsame Arbeit an einer gemeinsamen Problemstellung.
 
-![Screenshot der Simon-Says-App](../../img/demos/time-tracker-complete.png)
+![Screenshot der Simon-Says-App](img/time-tracker-complete.png)
 
 ## Aufgabenbeschreibung
 

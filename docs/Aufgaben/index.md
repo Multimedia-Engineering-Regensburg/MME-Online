@@ -29,7 +29,7 @@ Spezifische Anforderungen und Bewertungskriterien werden im Handout der jeweilig
 
 3. Stellen Sie Ihre Lösung spätestens am Abgabetag bereit. *Pushen* Sie die Änderungen Ihres lokalen Repositorys dazu auf Github. Bewertet wird der jeweils letzte *Commit*, der am Abgabetag im Remote-Repository (auf Github) bereitgestellt wurde. Es empfiehlt sich, lokale Änderungen bereits während der Bearbeitung regelmäßig in das Remote-Repository zu *pushen*. Anhand der Weboberfläche von Github können Sie direkt im Browser prüfen, ob das Bereitstellen Ihrer Lösung erfolgreich war. 
 
-![Übersicht über die Verwendung von Github Classroom](../img/tasks/classroom-overview.png)
+![Übersicht über die Verwendung von Github Classroom](img/classroom-overview.png)
 
 Mit Hilfe [dieser Testaufgabe](https://classroom.github.com/assignment-invitations/d84cc63e1f72964722cec4f9c46a6684) können Sie den Vorgang vor der ersten Übungsaufgabe testen.
 

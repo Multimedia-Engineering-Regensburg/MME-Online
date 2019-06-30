@@ -3,7 +3,7 @@
 
 In dieser Demo erstellen Sie eine *Ambilight*- bzw. [*bias lighting*](https://en.wikipedia.org/wiki/Bias_lighting)-Funktion für Video-Elemente im Browser. Entwerfen und Implementieren Sie dazu eine *Library*, die beliebige DOM-Elemente mit einem farbigen *Glow*-Effekt umgibt. Das Setzen der Leuchtfarbe erfolgt über eine öffentliche Funktion, der entweder ein *String* ([CSS-Farbwert](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)), ein `Image`-Objekt oder ein `<video>`-Element übergeben wird. In den beiden letzten Fällen wird die Leuchtfarbe aus der Durchschnittsfarbe des Bildes bzw. des aktuellen Inhalts (*Frames*) des `<video>`-Elements bestimmt. Verwenden Sie die erstellte *Library*, um den vorhandenen *Video Player* mit einem *Ambilight* zu versehen, das sich während der Videowiedergabe dynamisch an dessen aktuellen Inhalt anpasst. 
 
-![Screenshot des AmbiPlayer](../../img/demos/ambi-player-complete.png)
+![Screenshot des AmbiPlayer](img/ambi-player-complete.png)
 
 ## Aufbau der Anwendung und Ausgangslage
 
@@ -15,7 +15,7 @@ Auch die grundlegende Funktionalität zum Import von Video-Dateien und dem Abspi
 
 Die fertige Anwendung soll in etwa so aussehen:
 
-![Screenshot des AmbiPlayer](../../img/demos/ambi-player-demo.gif)
+![Screenshot des AmbiPlayer](img/ambi-player-demo.gif)
 
 ## Aufgabenstellung
 

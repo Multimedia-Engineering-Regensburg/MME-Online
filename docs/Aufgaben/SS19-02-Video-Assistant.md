@@ -7,7 +7,7 @@ Seit dem 7. Juni 2019 läuft in Frankreich die Endrunde der [Fußball-Weltmeiste
 Fragen zur Übungsaufgabe können Sie in das [GRIPS-Forum](https://elearning.uni-regensburg.de/mod/forum/view.php?id=1098788) *posten* oder per Mail (mi.mme@mailman.uni-regensburg.de) stellen.
 
 
-![Screenshot der finalen Anwendung](../img/tasks/video-assistant-complete.png)
+![Screenshot der finalen Anwendung](img/video-assistant-complete.png)
 
 <div class="img-label">Screenshot des finalen Anwendung</div>
 
@@ -23,7 +23,7 @@ Erstellen Sie für jedes neue Modul eine eigene Datei im Ordner `resources/js` u
 Sie finden im Starterprojekt bereits Dateien mit Formatvorgaben für [JS-Beautify](https://github.com/beautify-web/js-beautify) bzw. Regeldateien für [ESLint](http://eslint.org/). Ihr eingereichter Programmcode darf bei Überprüfung gegen die ESLint-Datei keine Fehler erzeugen. 
 
 <video controls>
-  <source src="../../videos/video-assistant-demo.mp4" type="video/mp4">
+  <source src="../videos/video-assistant-demo.mp4" type="video/mp4">
   	Ihr Browser unterstützt die Wiedergabe dieses Videos leider nicht.
 </video> 
 

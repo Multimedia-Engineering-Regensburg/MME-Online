@@ -6,9 +6,14 @@ copyright: MIT
 theme: 
   name: yeti
   custom_dir: mme-template
-plugins: [search, git-revision-date]
+plugins: 
+  - git-revision-date
+  - search:
+      lang: ["de", "en"]
+      prebuild_index: true
 extra_javascript:
-  - scripts/init.js
+  - scripts/init.js  
+#  - scripts/quiz.js
 markdown_extensions:
   - footnotes
   - admonition
@@ -30,22 +35,22 @@ nav:
     - Datenspeicherung in Webanwendungen: MME/data-storage.md
     - Nebenläufigkeit im Browser: MME/webworkers.md
     - Code Kata: MME/code-kata.md
-#    - Einführung in die Node.js-Umgebung: MME/node-js.md
+    - Einführung in die Node.js-Umgebung: MME/node-js.md
 #    - Komplexe Webanwendungen: MME/server-client-applications.md
 #    - Anforderungen erheben und dokumentieren: MME/requirements-for-student-projects.md
-#    - Pair Programming: MME/pair-programming.md
+    - Pair Programming: MME/pair-programming.md
   - Demos:
       - Übersicht: Demos/index.md
       - ToDo-Liste: Demos/todo-list.md
       - Kanban-Board: Demos/kanban-board.md
-#      - Writer: Demos/writer.md
+#     - Writer: Demos/writer.md
       - Simon Says: Demos/simon-says.md
       - Time Tracker: Demos/time-tracker.md
       - Mensa App: Demos/mensa-app.md
-      # - Bundesliga-Tabelle: Demos/bundesliga.md
+#     - Bundesliga-Tabelle: Demos/bundesliga.md
       - Ambi Player: Demos/ambi-player.md
       - ToDo-Liste mit Datenbank: Demos/todo-list-db.md
-      # - Writer-Online: Demos/writer-online.md
+#     - Writer-Online: Demos/writer-online.md
   - Aufgaben: 
       - Übersicht: Aufgaben/index.md
       - 01 | Countdown: Aufgaben//SS19-01-Countdown.md

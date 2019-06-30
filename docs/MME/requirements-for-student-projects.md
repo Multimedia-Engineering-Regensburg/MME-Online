@@ -1,1 +1,0 @@
-# Anforderungsdokumentation für (studentische) Softwareprojekte

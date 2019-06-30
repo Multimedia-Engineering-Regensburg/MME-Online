@@ -23,7 +23,7 @@ Mit der Datei `app.js` ist eine erste Quellcodedatei für den Javascript-Teil de
 
 3. Importieren Sie die beiden erstellten Prototypen in der Datei `apps.js`. Erstellen Sie dort eine Initialisierungsmethode, die beim Programmstart aufgerufen wird. Hier werden zuerst die beiden Schaltflächen der Anwendung selektiert und anschließend *Listener* auf die *Click*-Events beider Element registriert. Erstellen Sie in der Initialisierungsmethode eine [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) zum Speichern der einzelnen *Tasks*. Implementieren Sie die weitere Logik der Anwendung: Beim Klick auf die Schaltfläche zum Hinzufügen einer Aufgabe wird eine neues `Task`-Objekt erstellt und zur *Map* hinzugefügt. Anschließen wird auf Basis des *Tasks* ein `TaskView` erstellt und als Kindelement zum entsprechenden HTML-Element (`<ul class="task-list">`) hinzugefügt. Beim Klick auf die zweite Schaltfläche werden alle abgeschlossenen Aufgaben aus der *Map* und aus der Benutzeroberfläche entfernt. 
 
-![Screenshot der ToDo-Liste](../../img/demos/todo-list-complete.png){: class="center"}
+![Screenshot der ToDo-Liste](img/todo-list-complete.png){: class="center"}
 
 ## Starterpaket und Lösung
 

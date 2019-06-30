@@ -6,7 +6,7 @@ In dieser Demo implementieren Sie eine einfache Anwendung, die den aktuellen Spe
 !!! warning "Hinweis"
 	Diese Aufgabenstellung und die bereitgestellte Lösung stellen nur eine Minimalversion der Anwendung dar. Experimentieren Sie in Ihrer eigenen Lösung mit den ungenutzten Daten, die Ihnen die API bereitstellt und ergänzen Sie die Funktionalität bzw. das *User Interface* um weiteren Mehrwert für den Nutzer zu schaffen.
 
-![Screenshot der Simon-Says-App](../../img/demos/mensa-app-complete.png)
+![Screenshot der Simon-Says-App](img/mensa-app-complete.png)
 
 
 ## Mensa-API

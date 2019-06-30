@@ -43,7 +43,7 @@ Die nun folgenden Beispiele beziehen sich auf ein HTML-Dokument mit diesem (Teil
 
 Die Schaltflächen werden durch *Icons* aus dem [Font Awesome](https://fontawesome.com/)-Projekt realisiert. Mit entsprechenden CSS-Regeln verknüpft wird das Element mit der ID `player` im Browser dann in dieser Form dargestellt:
 
-![Screenshot des Video-Player](../../img/lessons/video-player.png)
+![Screenshot des Video-Player](img/video-player.png)
 
 Die Wiedergabe und das Pausieren des aktuellen Videos erfolgt durch den Aufruf der entsprechenden [Methoden](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#Methods):
 
@@ -111,7 +111,7 @@ context.fillRect(50,50,100,100);
 
 Das Resultat sieht im Browser so aus:
 
-![Screenshot des Canvas](../../img/lessons/canvas-box.png)
+![Screenshot des Canvas](img/canvas-box.png)
 
 Neben Rechtecken stellen [*Pfade*](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#Drawing_rectangles) die zweite primitive Form dar, die mittels der Canvas-API gezeichnet werden können. Pfade bestehen aus [Linien](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#Lines) und [Bögen](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#Arcs). Im oben gezeigten Screenshot wurden Linien verwendet, um das Koordinatensystem des *Canvas* zu visualisieren.
 
@@ -226,7 +226,7 @@ context.putImageData(imageData, 0, 0);
 
 Auf dem folgenden Screenshot sehen Sie ein Beispiel für die Anwendung des oben skizzierten Codes. Im linken *Canvas* wurde ein Bild (Quelle: *Lucas V. Barbosa*, [The Gunk](https://commons.wikimedia.org/wiki/File:The_Gunk.png))  eingezeichnet. Der Inhalt dieses *Canvas*wurde anschließend in Form eines `ImageData`-Objekts ausgelesen, in eine Graustufen-Repräsentation umgewandelt und in dieser Form in den rechten *Canvas* übertragen.
 
-![Beispiel für Graustufen-Effekt im Canvas](../../img/lessons/canvas-effect.png)
+![Beispiel für Graustufen-Effekt im Canvas](img/canvas-effect.png)
 
 **Export des Canvas-Inhalts**
 
@@ -287,7 +287,7 @@ Die tatsächliche *frame rate* eines Videos kann im Browser und mit *Javascript*
 
 Das folgende Video zeigt ein einfaches Anwendungsbeispiel für die oben beschriebenen Echtzeit-Video-Effekte. Links sehen Sie ein Video-Element. Die Einzelbilder werden regelmäßig auf den *Canvas* (rechts) übertragen. Die Farbwerte der Pixel des `ImageData`-Objekts werden manipuliert, um ein *Threshold*-Bild zu erzeugen (Alle Pixel, deren Graustufe einen bestimmten Wert überschreiten, werden mit der Farbe Weiß (`255,255,255`) überschrieben, alle anderen Pixel mit der Farbe Schwarz (`0,0,0`)). Die modifizierten Pixel werden zurück in den *Canvas* geschrieben:
 
-![Beispiel für Graustufen-Effekt im Video](../../img/lessons/canvas-effect-player.gif)
+![Beispiel für Graustufen-Effekt im Video](img/canvas-effect-player.gif)
 
 ## Übungsaufgaben
 

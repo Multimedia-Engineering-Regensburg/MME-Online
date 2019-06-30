@@ -6,7 +6,7 @@ Ein [Kanban Board](https://en.wikipedia.org/wiki/Kanban_board) ist ein, eigentli
 !!! warning "Hinweis"
 	Die Inhalte und Positionen der Karten werden nicht gespeichert. Die Anwendung ist daher nicht realistisch verwendbar. Eine einfache Lösung für dieses Problem ist die Verwendung der [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API). Über diese Funktion können Sie Daten (Texte) dauerhaft im Browser speichern und beim nächsten Aufruf der Webseite bzw. Webanwendung verwenden.
 
-![Screenshot des Kanban-Board](../../img/demos/kanban-board-complete.png)
+![Screenshot des Kanban-Board](img/kanban-board-complete.png)
 
 ## Aufbau der Anwendung
 Alle Bestandteile der Anwendung werden durch DOM-Elemente dargestellt. Die Listen des *Boards* werden durch `ul`-Elemente mit der CSS-Klasse `list` repräsentiert. Der Name der Liste, bzw. der jeweilige Prozesschritte wird durch eine zusätzliche CSS-Klasse (`open`, `processing` und `closed`) definiert. Innerhalb der Liste werden einzelne Aufgaben durch `li`-Elemente dargestellt. Jedes dieser Elemente hat den folgenden Aufbau:
