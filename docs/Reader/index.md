@@ -4,10 +4,15 @@ Grundsätzlich können Sie alle Themen des Kurses mit den auf dieser Seite berei
 
 # Javascript
 
-Die folgenden Tutorials, E-Books und Dokumentationen können parallel zum Kurs zur Aneignung bzw. Auffrischung von Kenntnissen der Programmiersprache Javascript verwendet werden:
+## Eloquent Javascript
+**von Marijn Haverbeke**
 
-- [Marijn Haverbeke: Eloquent Javascript](http://eloquentjavascript.net/)
-- [Thibault Imbert: A Javascript refresh](http://typedarray.org/javascript-refresh/)
+Marijn Haverbeke ist ein niederländischer Softwareentwickler, der maßgeblich an verschiedenen *Open Source*-Projekten beteiligt ist. Dazu gehört u.A. die *Javascript*-Editoren [*CodeMirror*](https://github.com/codemirror/codemirror) und [*ProseMirror*](https://github.com/ProseMirror/prosemirror). In dem frei als E-Book verfügbaren *Eloquent Javascript* führt Haverbeke anhand der Programmiersprache *Javascript* in die Programmierung von Anwendungssoftware ein. Dazu werden zentrale Inhalte, wie z.B. Funktionen, Objekte, Module oder asynchrone Programmierung erläutert und am Beispiel von *Javascript* demonstriert. Das Buch ist dabei in drei Abschnitte unterteilt, die nacheinander die grundlegenden Sprachelemente, die Verwendung von *Javascript* im Browser und die Möglichkeiten von *Node.js* behandeln. *Eloquent Javascript* ist [online verfügbar](http://eloquentjavascript.net/) und kann auf der Projektseite auch als *Pdf*-, *epub*- oder *mobi*-Datei heruntergeladen werden.
+
+## Mozilla Developer Network
+
+Bei konkreten Problemen zur Programmiersprache *Javascript* oder den *Browser-APIs* kann ein Blick in die Dokumente des *Mozilla Developer Networks (MDN)* helfen. Auf dieser Plattform werden Inhalte zu Web Standards, APIs und verschiedenen Projekten der Mozilla-Organisation zusammengetragen. Die Beiträge stammen dabei von Mitgliedern und Mitgliederinnen der *Community* und Mitarbeitenden der Mozilla-Organisation. Neben der Dokumentation der verfügbaren APIs finden sich hier auch zahlreiche Überblicksartikel und Tutorials zu den verschiedenen Browserfeatures.
+
 - [Javascript-Übersicht des MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 - [Javascript-Dokumentation des MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 
