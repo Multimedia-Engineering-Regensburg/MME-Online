@@ -15,3 +15,4 @@ Nr | Title | Beschreibung | Themen | Code
 7 | [Ambi Player](./ambi-player) | *Ambilight*-Funktion für Video-Elemente | Video, Canvas | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-AmbiPlayer)
 8 | [ToDo-Liste mit Datenbank](./todo-list-db) | ToDo-Liste mit Datenbank | DOM, IndexedDB | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-ToDo-List-DB)
 9 | [Writer-Online](./writer-online) | Text-Editor mit Server-seitigem-*Backen* zur dauerhaften Persistierung von Dokumenten | Node.js, HTTP | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Writer-Online)
+10 | [Chat](./chat) | Einfache Chat-Anwendung auf der Basis von Node.js und WebSockets | Node.js, WebSockets | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Chat)
