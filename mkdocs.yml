@@ -51,6 +51,7 @@ nav:
       - Ambi Player: Demos/ambi-player.md
       - ToDo-Liste mit Datenbank: Demos/todo-list-db.md
 #     - Writer-Online: Demos/writer-online.md
+      - Chat: Demos/chat.md
   - Aufgaben: 
       - Übersicht: Aufgaben/index.md
       - 01 | Countdown: Aufgaben//SS19-01-Countdown.md
