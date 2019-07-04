@@ -4,6 +4,9 @@ Der MME-Kurs wird durch die Bearbeitung eines Abschlussprojekts abgeschlossen. I
 
 Die Beschreibung des Rahmenthemas und einige Projektvorschläge für das aktuelle Semester finden Sie [hier](./sommer-2019).
 
+!!! danger "Projektabgabe"
+	Die Projekte müssen für das **Sommersemester bis zum 30. September** und für das **Wintersemester bis zum 31. März** abgegeben werden. Bewertet wird jeweils der letzte *Commit* des Abgabetags in den *Master*-Branch. 
+
 ## Anforderung
 
 Durch die erfolgreiche Bearbeitung des Projektes weisen Sie nach, dass Sie in der Lage sind, eine überschaubare Problemstellung zu analysieren und eine passende benutzerfreundliche Lösung auf der Basis von Webtechnologien zu entwickeln. 
