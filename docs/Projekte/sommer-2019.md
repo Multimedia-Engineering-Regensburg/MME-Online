@@ -18,7 +18,7 @@ Diese Projektvorschläge stellen grobe Ideen für Ihre Projektarbeit dar. Im Rah
 
 
 ??? projects "Mitschrift online"
-	Viele Studierende fertigen während des Besuchs von Vorlesungen [Mitschriften](https://www.goethe.de/de/spr/mag/21091991.html) an, um zentrale Aussagen und Inhalte der besuchten Veranstaltung nachbereiten zu können. Implementieren Sie eine Webanwendung, die eine gemeinschaftliche Plattform schafft, auf der anwesende Studierenden kollaborativ an gemeinsamen Mitschriften zur gerade stattfindenden Vorlesung arbeiten können.
+	Viele Studierende fertigen während des Besuchs von Vorlesungen [Mitschriften](https://www.goethe.de/de/spr/mag/21091991.html) an, um zentrale Aussagen und Inhalte der besuchten Veranstaltung nachbereiten zu können. Implementieren Sie eine Webanwendung, die eine Plattform schafft, auf der anwesende Studierende kollaborativ an gemeinsamen Mitschriften zur aktuell stattfindenden Vorlesung arbeiten können.
 
 ??? projects "Mit dem Rad an den Campus"
 	Zahlreiche Studierende und Mitarbeitende erreichen den Campus täglich mit dem Fahrrad. Entwickeln Sie eine Anwendung, die es diesen Menschen erlaubt, die dabei zurückgelegten Strecken benutzerfreundlich zu erfassen, übersichtlich einzusehen und mit anderen Nutzenden zu vergleichen. Erzeugen Sie positives *Feedback*, in dem Sie gesundheitliche, ökonomische und ökologische Auswirkungen präsentierten.
@@ -33,13 +33,13 @@ Diese Projektvorschläge stellen grobe Ideen für Ihre Projektarbeit dar. Im Rah
 	Ein wesentliches Merkmal der Flure und Gänge der Universität sind die zahlreichen Plakate, die z.B. auf Veranstaltungen oder offene Stellen hinweisen. Erstellen Sie eine Anwendung, die eine digitale Version dieses Werbeprinzips bereitstellt. Das System besteht aus einer explorativen, digitalen Plakatwand und einem Online-Editor, mit dem eigene Plakate erstellt und veröffentlicht werden können.
 
 ??? projects "Digitales Tonbandgerät"
-	Im Rahmen von Seminar- und Forschungsarbeiten gehören Interviews zu einer der häufig verwendeten Erhebungsmethoden. Entstehen dabei Audio- oder Videoaufzeichnungen werden diesen in der Regel weitere Informationen, wie Zeit- und Raumangaben, Schlagworte, Informationen zum Interviewpartner oder *Marker* (die auf wichtige Ereignisse in den Aufzeichnungen hinweisen) zu geordnet. Entwickeln Sie ein browser-basiertes Werkzeug für die Aufnahme und Annotation von Interviewaufzeichnungen.
+	Im Rahmen von Seminar- und Forschungsarbeiten gehören Interviews zu einer der häufig verwendeten Erhebungsmethoden. Entstehen dabei Audio- oder Videoaufzeichnungen werden diesen in der Regel weitere Informationen, wie Zeit- und Raumangaben, Schlagworte, Informationen zum Interviewpartner oder *Marker* (die auf wichtige Ereignisse in den Aufzeichnungen hinweisen) zugeordnet. Entwickeln Sie ein browser-basiertes Werkzeug für die Aufnahme und Annotation von aufgezeichneten Interviews.
 
 ??? projects "Assistent für Abschlussarbeiten"
 	Ein wesentlicher Faktor erfolgreicher Abschlussarbeiten ist die inhaltliche und organisatorische Planung des Vorhaben. Implementieren Sie ein Online-System, das Studierende bei dieser Aufgabe unterstützt. Auf Basis eines [geführten Prozesses](https://en.wikipedia.org/wiki/Wizard_(software)) werden die notwendigen Informationen gesammelt und verarbeitet. Mögliche Resultate des Prozesses können Gliederungsentwürfe, Rechercheanleitungen, Zeitpläne, Check- und ToDo-Listen oder andere sinnvolle Hilfestellungen sein. 
 
 ??? projects "Errata online"
-	Viele Lehrmaterialien, z.B. Foliensätze oder Handouts, werden in Unterrichtsveranstaltungen unvollständig oder mit Detailfehlern vorgestellt, die im Nachhinein eine Ergänzung oder Verbesserung erforderlich machen. Der erwartet Aufwand bei der Überarbeitung der Dokumente führt häufig dazu, dass diese unverändert bereitgestellt werden. Erstellen Sie eine Webanwendung, die es Dozierenden vor diesem Hintergrund erlaubt,  kurze Audio- oder Videokommentaren zu zu Foliensätze zu erstellen und zu veröffentlichen.
+	Viele Lehrmaterialien, z.B. Foliensätze oder Handouts, werden in Unterrichtsveranstaltungen unvollständig oder mit Detailfehlern vorgestellt, die im Nachhinein eine Ergänzung oder Verbesserung erforderlich machen. Der erwartet Aufwand bei der Überarbeitung der Dokumente führt häufig dazu, dass diese unverändert bereitgestellt werden. Erstellen Sie eine Webanwendung, die es Dozierenden vor diesem Hintergrund erlaubt, kurze Audio- oder Videokommentaren zu Foliensätze zu erstellen und zu veröffentlichen.
 
 ## Allgemeine Hinweise
 
