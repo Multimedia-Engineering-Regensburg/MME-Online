@@ -1,194 +1,247 @@
 /* Change navbar color to 'Heidenelkenrot' and 'Neutralgrau' from UR-CI*/
 
 .navbar-default {
-	background-color: rgb(156,0,75);
+    background-color: rgb(156, 0, 75);
 }
 
 .navbar-default .navbar-nav .active a {
-	background-color: rgb(142,142,141);
+    background-color: rgb(142, 142, 141);
 }
 
 .navbar-default .navbar-nav .active a:focus {
-	background-color: rgb(142,142,141);
+    background-color: rgb(142, 142, 141);
 }
 
 .navbar-default .navbar-nav .active a:hover {
-	background-color: rgb(142,142,141);
+    background-color: rgb(142, 142, 141);
 }
 
 .navbar-default .navbar-nav .open a {
-	background-color: rgb(142,142,141);
+    background-color: rgb(142, 142, 141);
 }
 
 .navbar-default .navbar-nav .open a:focus {
-	background-color: rgb(142,142,141);
+    background-color: rgb(142, 142, 141);
 }
 
 .navbar-default .navbar-nav .open a:hver {
-	background-color: rgb(142,142,141);
+    background-color: rgb(142, 142, 141);
 }
 
 .navbar-default .navbar-nav li a:hover {
-	background-color: rgb(142,142,141);
+    background-color: rgb(142, 142, 141);
 }
 
 .navbar-default .dropdown-menu {
-	background-color: rgb(142,142,141);
+    background-color: rgb(142, 142, 141);
 }
 
 /* Increase font size in navbar */
 
 .navbar {
-	font-size: 16px;
+    font-size: 16px;
 }
 
 .navbar-brand {
-	font-size: 22px;
+    font-size: 22px;
 }
 
 /* Customize sidebar */
 
 .bs-sidebar {
-	background-color: transparent;
-	border-color: transparent;
-	border-top-color: rgb(142,142,141);
+    background-color: transparent;
+    border-color: transparent;
+    border-top-color: rgb(142, 142, 141);
 }
 
 .bs-sidebar a {
-	color: rgb(156,0,75);
+    color: rgb(156, 0, 75);
 }
 
 /* Customize code blocks */
 
 pre {
-	background-color: rgb(255,255,255);
-	border-color: rgb(100,100,100	);
-	border-width: 1px 1px 1px 5px;
-	margin-bottom: 2em;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(100, 100, 100);
+    border-width: 1px 1px 1px 5px;
+    margin-bottom: 2em;
 }
 
 code.hljs {
-	background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
 }
 
 /* Increase line height for all paragraphs */
 
 p {
-	line-height: 1.75em;
+    line-height: 1.75em;
 }
 
 /* Customize admonition content */
 
-.admonition.note > .admonition-title {
-	background-color: rgb(245,245,245);
-	color: rgb(0,0,0);
-	border-color: rgb(200,200,200);
+.admonition.note>.admonition-title {
+    background-color: rgb(245, 245, 245);
+    color: rgb(0, 0, 0);
+    border-color: rgb(200, 200, 200);
 }
 
-.admonition.note {	
-	border-color: rgb(200,200,200);
+.admonition.note {
+    border-color: rgb(200, 200, 200);
 }
 
 /* Make embedded videos use 100% of the available width */
 
 video {
-   width: 100%;
+    width: 100%;
 }
 
 /* Add custom rules for image labels */
 
 .img-label {
-	display: block;
-	width: 100%;
-	margin: 0 0 2em 0;
-	text-align: center;
-	font-style: italic;
+    display: block;
+    width: 100%;
+    margin: 0 0 2em 0;
+    text-align: center;
+    font-style: italic;
 }
 
 /* Add custom rules for publish date box */
 
 .updated_at {
-	display: block;
-	text-align: right;
+    display: block;
+    text-align: right;
 }
 
 .updated_at .date {
-	color: rgb(156,0,75);
-	font-weight: 600;
+    color: rgb(156, 0, 75);
+    font-weight: 600;
 }
 
 /* Add custom rules to display profil picture */
 
 img.profil {
-	display: block;
-	width: 20%;
-	float: right;
-	border-radius: 50%;
-	border: solid 5px #FAFAFA;
+    display: block;
+    width: 20%;
+    float: right;
+    border-radius: 50%;
+    border: solid 5px #FAFAFA;
 }
 
 img.center {
-	display: block;
-	width: 50%;
-	margin: 0 auto;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
 }
 
 description.profil {
-	clear: both;
+    clear: both;
 }
 
 /* Add custom rules to display github icon as link to repositories */
 
-.github-button {
-}
+.github-button {}
 
 .github-button:after {
-	display: block;	
-	float: left;
-	right: 0;
-	width: 1.5em;
-	height: 1.5em;
-	margin: 0.5em 0.5em 0 0;
-	padding: 0;
-	border-width: 0;
-	border-radius: 50%;
-	background-color: rgb(156,0,75);
-	text-align: center;
-	line-height: 1.5em;
-  	font-style: normal;
-  	font-variant: normal;
-  	text-rendering: auto;
-  	-webkit-font-smoothing: antialiased;
-	font-family: "Font Awesome 5 Brands";
-	font-weight: 400;
-	font-size: 2em;
-	color: rgb(255,255,255);
-	content: "\f09b";
+    display: block;
+    float: left;
+    right: 0;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0.5em 0.5em 0 0;
+    padding: 0;
+    border-width: 0;
+    border-radius: 50%;
+    background-color: rgb(156, 0, 75);
+    text-align: center;
+    line-height: 1.5em;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    content: "\f09b";
 }
 
 .github-button:hover::after {
-	cursor: pointer;
-	background-color: rgb(30,30,30);
+    cursor: pointer;
+    background-color: rgb(30, 30, 30);
 }
 
 /* Highlight external links with a suffix icon */
 
-a[href*='//']:not(.button):after{
-	display: inline-block;
-	margin-left: 0.2em;
-  	font-style: normal;
-  	font-variant: normal;
-  	text-rendering: auto;
-  	-webkit-font-smoothing: antialiased;
-	font-family: "Font Awesome 5 Free";
-	font-weight: 900;
-	font-size: 0.75em;
-	content: "\f0c1";
+a[href*='//']:not(.button):after {
+    display: inline-block;
+    margin-left: 0.2em;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 0.75em;
+    content: "\f0c1";
 }
 
 /* Customized tables */
 
 thead {
-	background-color: rgb(50,50,50);
-	color: rgb(255,255,255);
+    background-color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
 }
+
+/* Customize detail list */
+
+details {
+    margin-bottom: 1.5em;
+}
+
+summary {
+    padding: 0.25em 0.75em;
+    background-color: rgb(60,60,60);
+    font-weight: bold;
+    font-size: 1.25em;
+    line-height: 1.75em;
+    color: rgb(255, 255, 255);
+}
+
+summary:hover {
+    cursor: pointer;
+}
+
+summary:after {
+    display: inline-block;
+    text-align: right;
+    float:right;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.25em;
+    font-weight: 900;
+    content: "\f055";
+}
+
+details[open] summary {
+    background-color: rgb(156, 0, 75);
+}
+
+details[open] summary:after {
+    content: "\f056";
+}
+
+details p {
+    background-color: none;
+    magin-top: 0.5em;
+    padding: 0.5em;
+    line-height: 1.75em;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: rgb(156, 0, 75);
+    color: rgb(0, 0, 0);
+}
+
+details:before {}
