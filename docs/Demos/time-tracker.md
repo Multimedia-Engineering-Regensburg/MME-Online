@@ -13,10 +13,10 @@ Grundlage für die Arbeit an der Anwendung ist ein gemeinsames Github-Repository
 
 Das notwendige Repository können Sie über [diesen Link](https://classroom.github.com/g/bj8WewbS) erstellen. Zu Beginn muss einmalig ein Team angelegt werden, überlegen Sie sich dazu einen passenden Namen für Ihre Gruppe. Anschließend können alle Gruppenmitglieder diesem Team über den selben Link beitreten. Clonen Sie anschließend das so erstellte Repository auf allen Rechnern, die Sie zur Bearbeitung der Aufgaben einsetzen wollen.
 
-!!! warning Hinweis
+!!! danger "Gemeinsame Arbeit an der *code base*"
 	Achtung! Sie arbeiten jetzt an einer gemeinsamen *code base*. Das erstellte Github-Repository dient als zentrale Sammelstelle für die Beiträge der einzelnen Teammitglieder. Jedes Mitglied arbeitet in einem lokalen Repository, das mit dem zentralen *Remote* verbunden ist. Über die Git-Funktionen übertragen Sie Änderungen aus dem *Remote* in Ihre lokale Arbeitskopie (*pull*) und stellen Ihre eigenen Änderungen zentral bereit (*push*). Versuchen Sie dabei die folgende Reihenfolge beizubehalten: 1) *Committen* Sie Ihre Änderungen, 2) *Pullen* Sie den aktuellen Status aus dem zentralen Repository und beheben Sie etwaige Konflikte und 3) *Pushen* Sie abschließend den neuen Zustand der Anwendung in den *Remote*. Ein kleinteiliges und stark modularisiertes Design, in dem einzelne Komponenten in isolierten Dateien abgebildet werden, verhindert viele Probleme. Insbesondere, wenn Sie die Implementierung im Team entlang dieser Struktur aufteilen und versuchen, an unterschiedlichen, schwach verbundenen Komponenten der Anwendung zu arbeiten. Planen Sie gemeinsam die Schnittstellen und Aufgaben der Komponenten und entwickeln Sie die interne Funktionalität anschließend parallel und in Einzelarbeit.
 
-!!! warning "Hinweis"
+!!! note "Vertical Slice"
 	Implementieren Sie zuerst eine rudimentäre Version der Anwendung, die alle wichtigen Teilschritte implementiert, um eine vollständige, aber prototypische, Demonstration der Funktionalität zu erlauben. Beginnen Sie erst im Anschluss damit, die einzelnen Teilbereiche vollständig auszubauen. Das aus einem solchen Vorgehen entstehende Artefakt bezeichnet man im Projektmanagement, vor allem im Kontext der Videospielentwicklung, häufig als [*vertical slice*](https://en.wikipedia.org/wiki/Vertical_slice).
 
 ## Anforderungen

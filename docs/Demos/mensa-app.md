@@ -3,7 +3,7 @@
 
 In dieser Demo implementieren Sie eine einfache Anwendung, die den aktuellen Speiseplan der Uni Mensa anzeigt. Der Nutzer kann dabei das Menü für einen Tag auswählen und erhält eine, nach Speisekategorien aufgeteilte, Darstellung des Tagesmenüs für den ausgewählten Wochentag. Die Bereitstellung und Aktualisierung des Speiseplans erfolgen über den Einsatz von [AJAX](https://regensburger-forscher.de/mme/MME/ajax/#ajax) und den dadurch umgesetzten Zugriff auf eine HTTP-Schnittstelle, die die angebotenen Speisen als JSON-Datei bereitstellt. 
 
-!!! warning "Hinweis"
+!!! warning "Limitierungen"
 	Diese Aufgabenstellung und die bereitgestellte Lösung stellen nur eine Minimalversion der Anwendung dar. Experimentieren Sie in Ihrer eigenen Lösung mit den ungenutzten Daten, die Ihnen die API bereitstellt und ergänzen Sie die Funktionalität bzw. das *User Interface* um weiteren Mehrwert für den Nutzer zu schaffen.
 
 ![Screenshot der Simon-Says-App](img/mensa-app-complete.png)

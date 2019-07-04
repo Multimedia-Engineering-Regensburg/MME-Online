@@ -3,7 +3,7 @@
 
 In dieser Demo implementieren Sie eine einfache Chat-Anwendung. Die Applikation besteht aus einem Client, in dem Chat-Teilnehmende Nachrichten verfassen und Antworten einsehen können, sowie einer Server-Komponente, die die Client-Nachrichten an alle registrierten Teilnehmer weiterleitet. Im Vordergrund steht die exemplarische Demonstration der Einsatzmöglichkeiten von *Node.js*, insbesondere werden die Pakete `express` (für das Bereitstellen des Clients) und `websocket` (für den Datenaustausch zwischen Client und Server) vorgestellt.
 
-!!! warning "Hinweis"
+!!! warning "Limitierungen"
 	Auch in dieser Demo steht die Implementierung einer ersten, funktionierenden Version im Vordergrund. Zahlreiche wichtige Features, wie die clientseitige Angabe des Chat-Servers oder das Speichern und Bereitstellen des Chat-Verlaufs für neue Clients, werden nicht implementiert. Diese Funktionen können aber selbständig in die hier entwickelte Lösung integriert werden. Der begrenzte Funktionsumfang der hier vorgestellten Anwendung könnten mit Hilfe der [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)-API auch ohne Server als *Peer to Peer*-Lösung implementiert werden. 
 
 ![Screenshot der Chat-App](img/chat-complete.png)

@@ -2,8 +2,8 @@
 
 Viele Anwendungsideen setzen Möglichkeiten zur sitzungsübergreifenden, persistenten Speicherung von Informationen voraus. Das können explizit angelegte Daten, wie z.B. die Einträge einer *ToDO*-Liste, implizit erstellte Werte, wie z.B. das zuletzt erreichte Level eines Spiels oder benutzerspezifische Konfigurationswerte wie Schriftgrößen oder Hintergrundfarben sein. Das zentrale Merkmal aller Beispiele ist die kontinuierliche Verwendung der Anwendung durch die Nutzer, die über eine einzelne abgeschlossene Sitzung hinausgeht. Dieses Kapitel stellt verschiedene Anwendungsbeispiele für die lokale Speicherung von Anwendungsdaten im Browser vor und erläutert kurz die aktuell unterstützten APIs zur Datenspeicherung. 
 
-!!! note Hinweis
-	Die Verwendung lokaler Speichermöglichkeiten ist nicht für alle Problemstellungen geeignet. Die eingesetzten Technologien sind bestimmten Einschränkungen hinsichtlich Volumen und Art der gespeicherten Daten unterworfen und sind nur im Browser des jeweils verwendeten Geräts zugänglich. Zusätzlich kann das bewusste oder unbewusste Entfernen der gespeicherten Inhalte durch die Nutzer nicht kontrolliert werden. Komplexere Anwendungen, insbesondere solche, die den Nutzern die Verwendung mehrere Endgeräte erlauben, sollten über eine serverseitig implementierte Lösung zur Benutzer- und Datenverwaltung verfügen. LÖsungvorschläge dazu werden in einem späteren Kapitel vorgestellt.
+!!! warning Hinweis
+	Die Verwendung lokaler Speichermöglichkeiten ist nicht für alle Problemstellungen geeignet. Die eingesetzten Technologien sind bestimmten Einschränkungen hinsichtlich Volumen und Art der gespeicherten Daten unterworfen und sind nur im Browser des jeweils verwendeten Geräts zugänglich. Zusätzlich kann das bewusste oder unbewusste Entfernen der gespeicherten Inhalte durch die Nutzer nicht kontrolliert werden. Komplexere Anwendungen, insbesondere solche, die den Nutzern die Verwendung mehrere Endgeräte erlauben, sollten über eine serverseitig implementierte Lösung zur Benutzer- und Datenverwaltung verfügen. Lösungvorschläge dazu werden in einem späteren Kapitel vorgestellt.
 
 ## Motivation
 

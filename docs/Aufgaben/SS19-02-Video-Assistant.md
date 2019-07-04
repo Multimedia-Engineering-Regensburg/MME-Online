@@ -2,17 +2,17 @@
 
 Seit dem 7. Juni 2019 läuft in Frankreich die Endrunde der [Fußball-Weltmeisterschaft der Frauen 2019](https://de.wikipedia.org/wiki/Fu%C3%9Fball-Weltmeisterschaft_der_Frauen_2019). In dieser Aufgabe entwickeln Sie dazu passend einen *Video Assistant*, mit dem aufgezeichnete Fußballspiele per Freihand-Zeichnungen kommentiert werden können. Nutzer laden dazu vorbereitete Videos in die Anwendung und können spielentscheidende Szenen auswerten und graphisch annotieren. Ein unter *Creative Commons*-Lizenz veröffentlichtes Beispielvideo finden Sie im Starterpaket im Unterordner `data`. Zum Testen Ihrer Lösung können Sie auch Video realer Spiele, z.B. von [dieser Seite](https://mediathekviewweb.de/#query=Fu%C3%9Fball%20Frauen-WM%202019) verwenden.
 
-**Abgabetermin ist der 1. Juli 2019. Wir bewerten den letzten *Commit*, der an diesem Abgabetag in das *Repository* *gepusht* wird. Informationen zur Nutzung von _Github_ finden Sie im GRIPS-Kurs und [hier](../Aufgaben).**
+**Abgabetermin ist der 7. Juli 2019.** Wir bewerten den letzten *Commit*, der an diesem Abgabetag in das *Repository* *gepusht* wird. Informationen zur Nutzung von *Github* finden Sie im GRIPS-Kurs und [hier](../Aufgaben).
 
 Fragen zur Übungsaufgabe können Sie in das [GRIPS-Forum](https://elearning.uni-regensburg.de/mod/forum/view.php?id=1098788) *posten* oder per Mail (mi.mme@mailman.uni-regensburg.de) stellen.
 
+!!! danger "Github Classroom"
+	Das Starterpaket wird über *Github Classroom* bereitgestellt. Sie implementieren Ihre Lösung über ein *Repository* auf *Github*. **Das Repository, mit einer Kopie des Starterpakets, können Sie über diesen [Link](https://classroom.github.com/a/s_ebefBN) generieren und anschließend mit der Arbeit an der Aufgabe beginnen.** Klonen Sie das erstellte *Repository* dazu auf Ihren Rechner, die notwendigen Rechte für Ihr *Github*-Konto werden automatisch beim Erstellen des *Repository* gesetzt. Denken Sie daran, Ihre Arbeit an der Aufgabe durch regelmäßiges *Committen* der Änderungen und Ergänzungen zu dokumentieren. Laden Sie Ihren aktuellen Stand regelmäßig auf *Github* hoch (*Push* bzw. im *Github Desktop*-Client über den *Sync*-Befehl). 
 
 ![Screenshot der finalen Anwendung](img/video-assistant-complete.png)
 
 <div class="img-label">Screenshot des finalen Anwendung</div>
 
-!!! warning "Github Classroom"
-	Das Starterpaket wird über *Github Classroom* bereitgestellt. Sie implementieren Ihre Lösung über ein *Repository* auf *Github*. **Das Repository, mit einer Kopie des Starterpakets, können Sie über diesen [Link](https://classroom.github.com/a/s_ebefBN) generieren und anschließend mit der Arbeit an der Aufgabe beginnen.** Klonen Sie das erstellte *Repository* dazu auf Ihren Rechner, die notwendigen Rechte für Ihr *Github*-Konto werden automatisch beim Erstellen des *Repository* gesetzt. Denken Sie daran, Ihre Arbeit an der Aufgabe durch regelmäßiges *Committen* der Änderungen und Ergänzungen zu dokumentieren. Laden Sie Ihren aktuellen Stand regelmäßig auf *Github* hoch (*Push* bzw. im *Github Desktop*-Client über den *Sync*-Befehl). 
 
 ## Vorgaben
 **Die Aufgabe beschränkt sich auf die Implementierung der Programmlogik mit Javascript. Sie müssen keine Änderungen am vorgegebenen CSS-Dokument oder der HTML-Datei vornehmen. Erweitern Sie den bereits vorhanden Javascript-Code und ergänzen Sie neue Module zur sinnvollen Gestaltung und Strukturierung der Anwendung.** Verwenden Sie dazu die im Kurs besprochene [Modul-API (ES6)](../../MME/closures-and-module-pattern/#module-in-modernen-browsern-es6-module). Die `init`-Methode in der Datei `index.js` stellt den Einstiegspunkt in die Anwendung dar. Erstellen Sie selbstständig weitere Module für die notwendigen Komponenten der Anwendung. Achten Sie dabei darauf, die unterschiedlichen Aufgaben dieser Komponenten klar voneinander abzugrenzen.

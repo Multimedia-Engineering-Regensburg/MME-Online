@@ -2,11 +2,11 @@
 
 *Countdown* ist eine [TV-Sendung](https://en.wikipedia.org/wiki/Countdown_(game_show)), die seit 1982 im britischen Fernsehen ausgestrahlt wird. In dieser Spielshow treten zwei Spieler in verschiedenen Runden gegeneinander an. Eine der gespielten Runden ist das sogenannten *Letters Game*, in dem die Teilnehmer in 30 Sekunden ein möglichst langes Wort aus neun, zufällig ausgewählten Buchstaben bilden müssen. In dieser Aufgabe sollen Sie dieses Spiel als Javascript-Anwendung für einen Spieler im Browser umsetzen. 
 
-**Abgabetermin ist der 10. Juni 2019. Wir bewerten den letzten *Commit*, der an diesem Abgabetag in das *Repository* *gepusht* wird. Informationen zur Nutzung von _Github_ finden Sie im GRIPS-Kurs.**
+**Abgabetermin ist der 10. Juni 2019.** Wir bewerten den letzten *Commit*, der an diesem Abgabetag in das *Repository* *gepusht* wird. Informationen zur Nutzung von *Github* finden Sie im GRIPS-Kurs.
 
 Bei Fragen zur Übungsaufgabe können Sie in das [GRIPS-Forum](https://elearning.uni-regensburg.de/mod/forum/view.php?id=1098788) *posten* oder diese per Mail (mi.mme@mailman.uni-regensburg.de) stellen.
 
-!!! warning "Github Classroom"
+!!! danger "Github Classroom"
 	Das Starterpaket wird über *Github Classroom* bereitgestellt. Sie implementieren Ihre Lösung über ein *Repository* auf *Github*. **Das Repository, mit einer Kopie des Starterpaket, können Sie über diesen [Link](https://classroom.github.com/a/OTE0B3yP) generieren und anschließend mit der Arbeit an der Aufgabe beginnen.** Klone Sie das erstellte *Repository* dazu auf Ihren Rechner, die notwendigen Rechte für Ihr *Github*-Konto werden automatisch beim Erstellen des *Repository* gesetzt. Denken Sie daran, Ihre Arbeit an der Aufgabe durch regelmäßiges *Commiten* der Änderungen und Ergänzungen zu dokumentieren. Laden Sie Ihren aktuellen Stand reglmäßig auf *Github* hoch (*Push* bzw. im *Github Desktop*-Client über den *Sync*-Befehl. 
 
 ## Vorgaben

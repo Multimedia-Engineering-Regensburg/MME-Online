@@ -6,7 +6,7 @@ Module sind eine der Möglichkeiten, individuelle Komponenten einer Javascript-A
 
 Komplexere Software besteht in der Regel aus verschiedenen Komponenten, die unabhängig voneinander oder gemeinsam arbeiten um die Funktionen des Gesamtsystems bereitzustellen. Eine gute Software-Architektur versucht diesen Ansatz (Vgl. [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)) auf allen möglichen Ebenen umzusetzen. In Javascript sind die Bausteine für die Gestaltung des Codes die Funktionen, Prototypen und Module. Während die ersten beiden Features feste Bestandteile des Sprachstandards sind, werden Module vom Programmierenden durch die Anwendung dieser grundlegenden Sprachfeatures realisiert. Dadurch lassen sich auch in Javascript bekannte Konzepte wie das [*information hiding*](https://en.wikipedia.org/wiki/Information_hiding) realisieren. Wichtigste Voraussetzung für die Implementierung von Modulen sind dabei *Closures* (Funktionseinschluss).
 
-!!! note "Hinweis"
+!!! note "Hinweise zur Lektüre"
 	Versuchen Sie die Erläuterungen und Beispiele aus dieser Lektion direkt praktisch umzusetzen. Erstellen Sie dazu ein leeres [Projektverzeichnis](./project-directory) und implementieren Sie die vorgestellten Beispiele selbstständig.
 
 ## Der Modulbegriff in Javascript

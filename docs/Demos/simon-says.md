@@ -3,7 +3,7 @@
 
 In dieser Demo planen und implementieren Sie eine einfache *Javascript*-Variante des Reaktionsspiels [Simon](https://en.wikipedia.org/wiki/Simon_(game)). Dem Spieler wird eine zufällige Abfolge verschiedener Farbsignale vorgeführt, das anschließend in der richtigen Reihenfolge reproduziert werden muss. In dieser Anwendung werden die Farbsignale durch hervorheben unterschiedlich-farbiger Kreissegmente erzeugt. Die Eingabe erfolgt durch das Anklicken derselben Segmente. Für die Realisierung der Anwendungen werden die verfügbaren APIs zur zeitgesteuerten bzw. wiederholten Ausführung von Methoden ([setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) und [setInterval](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)) benötigt.
 
-!!! warning "Hinweis"
+!!! warning "Limitierungen"
 	Im verlinkten Lösungsvorschlag wird eine Minimalversion des Spiels implementiert. Sinnvolle Möglichkeiten zur Erweiterung der Spielidee sind die kontinuierliche Steigerung des Schwierigkeitsgrads durch komplexere Farbmuster, ein vorgegebenes Zeitintervall für die Reproduktion des Musters oder verbessertes Feedback an den Nutzer (z.B. durch die Integration von [*Sound*-Ausgabe](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement)). Versuchen Sie, Ihre eigene Lösung entsprechend zu ergänzen.
 
 ![Screenshot der Simon-Says-App](img/simon-complete.png)
