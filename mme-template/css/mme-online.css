@@ -200,7 +200,7 @@ details {
 
 summary {
     padding: 0.25em 0.75em;
-    background-color: rgb(60,60,60);
+    background-color: rgb(60, 60, 60);
     font-weight: bold;
     font-size: 1.25em;
     line-height: 1.75em;
@@ -214,7 +214,7 @@ summary:hover {
 summary:after {
     display: inline-block;
     text-align: right;
-    float:right;
+    float: right;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
