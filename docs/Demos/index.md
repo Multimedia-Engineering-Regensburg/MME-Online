@@ -16,4 +16,4 @@ Nr | Title | Beschreibung | Themen | Code
 8 | [ToDo-Liste mit Datenbank](./todo-list-db) | ToDo-Liste mit Datenbank | DOM, IndexedDB | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-ToDo-List-DB)
 9 | [Writer-Online](./writer-online) | Text-Editor mit Server-seitigem-*Backen* zur dauerhaften Persistierung von Dokumenten | Node.js, HTTP | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Writer-Online)
 10 | [Chat](./chat) | Einfache Chat-Anwendung auf der Basis von Node.js und WebSockets | Node.js, WebSockets | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Chat)
-11 | [Color Clicker](./color-clicker) | Einfaches Spiel, in dem Unterschiede zwischen Farben erkannt werden müssen | DOM, State | [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Color-Clicker)
+11 | [Color Clicker](./color-clicker) | Einfaches Spiel, in dem Unterschiede zwischen Farben erkannt werden müssen | DOM, State | <!--[Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Color-Clicker)-->

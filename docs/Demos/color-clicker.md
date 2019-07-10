@@ -1,4 +1,4 @@
-<a class="github-button button" href="https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Color-Clicker"></a> 
+<!--<a class="github-button button" href="https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Color-Clicker"></a> -->
 # Color Clicker
 
 In dieser Aufgabe planen und implementieren Sie ein einfaches Javascript-Spiel. Dabei handelt es sich um eine Neuimplementierung des [*Color Picker*](https://gamejolt.com/games/color-picker/35110) von Peter Lauris. In diesem Spiel werden dem Spieler mehrere nahezu gleichfarbige Quadrate präsentiert. Der Farbton einer der Flächen unterscheidet sich leicht von den anderen. Der Spieler muss dieses abweichende Quadrat identifizieren. Gelingt ihm dies, wird die nächste Runde gestartet, in der die Menge der Quadrate erhöht und die Farbabweichung verringert wird. Wählt der Spieler ein falsches Quadrat aus, wird das Spiel neugestartet. Farben werden als Pastellwerte im `RGB`-Raum abgebildet. Farbabweichungen werden durch die Veränderung aller drei Kanäle um den gleichen Wert berechnet. Die einführenden Folien zum Workshop finden Sie [hier](../files/MME-Workshop-II-Intro.pdf).
