@@ -10,15 +10,18 @@ Im **Sommersemester 2019** werden die Übungsaufgaben in den folgenden Zeiträum
 
 - **Aufgabe 1: Countdown**: 27. Mai bis 10. Juni ([Handout](./SS19-01-Countdown))
 - **Aufgabe 2: Video Assistant**: 14. Juni bis 7. Juli ([Handout](./SS19-02-Video-Assistant))
-- **Aufgabe 3**: 15. Juli bis 29. Juli (Link zu Github Classroom folgt)
+- **Aufgabe 3: Digital Typewriter**: 15. Juli bis 29. Juli ([Handout](./SS19-03-Digital-Typewriter))
 
 ## Anforderungen und Bewertungskriterien
 
 Spezifische Anforderungen und Bewertungskriterien werden im Handout der jeweiligen Aufgabe erläutert. Zusätzlich werden diese allgemeinen Punkte bei der Bewertung der Aufgabe berücksichtigt:
 
 - Mit jeder Aufgabe wird eine Konfigurationsdatei für ESLint (Vgl. [Arbeitsumgebung](../Tutorials/work-environment)) veröffentlicht. Der Code Ihrer Lösung darf keine der dort notierten Regeln verletzten.
+
 - Der Code Ihrer Lösung muss sauber und einheitlich formatiert sein. Im Zweifelsfall halten Sie sich an die ebenfalls mit jeder Aufgabe bereitgestellte Konfigurationsdatei für *JSBeautifer*-Plugins.
+
 - Die Qualität des Codes muss mindestens den aus OOP und Android bekannten Qualitätskriterien genügen. Dazu gehören die Verwendung sinnvoller Bezeichner, das gezielte Einsetzten bekannter Entwurfsmuster, Vermeidung bekannter *Code Smells* wie *Magic Numbers* oder *Duplicate Code* und das **sinnvolle** Kommentieren relevanter Stellen.
+
 - Der im Handout beschrieben Funktionsumfang muss sich verlässlich und fehlerfrei nutzten lassen.
 
 ## Ablauf

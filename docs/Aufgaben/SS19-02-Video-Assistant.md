@@ -2,7 +2,7 @@
 
 Seit dem 7. Juni 2019 läuft in Frankreich die Endrunde der [Fußball-Weltmeisterschaft der Frauen 2019](https://de.wikipedia.org/wiki/Fu%C3%9Fball-Weltmeisterschaft_der_Frauen_2019). In dieser Aufgabe entwickeln Sie dazu passend einen *Video Assistant*, mit dem aufgezeichnete Fußballspiele per Freihand-Zeichnungen kommentiert werden können. Nutzer laden dazu vorbereitete Videos in die Anwendung und können spielentscheidende Szenen auswerten und graphisch annotieren. Ein unter *Creative Commons*-Lizenz veröffentlichtes Beispielvideo finden Sie im Starterpaket im Unterordner `data`. Zum Testen Ihrer Lösung können Sie auch Video realer Spiele, z.B. von [dieser Seite](https://mediathekviewweb.de/#query=Fu%C3%9Fball%20Frauen-WM%202019) verwenden.
 
-**Abgabetermin ist der 7. Juli 2019.** Wir bewerten den letzten *Commit*, der an diesem Abgabetag in das *Repository* *gepusht* wird. Informationen zur Nutzung von *Github* finden Sie im GRIPS-Kurs und [hier](../Aufgaben).
+**Abgabetermin ist der 7. Juli 2019.** Wir bewerten den letzten *Commit*, der an diesem Abgabetag in das *Repository* *gepusht* wird. Informationen zur Nutzung von *Github* finden Sie im GRIPS-Kurs und [hier](./index.md).
 
 Fragen zur Übungsaufgabe können Sie in das [GRIPS-Forum](https://elearning.uni-regensburg.de/mod/forum/view.php?id=1098788) *posten* oder per Mail (mi.mme@mailman.uni-regensburg.de) stellen.
 
@@ -34,9 +34,13 @@ Sie finden im Starterprojekt bereits Dateien mit Formatvorgaben für [JS-Beautif
 Die allgemeinen Bewertungskriterien finden Sie [hier](index.md). Zusätzlich gelten für diese Aufgabe die folgenden Punkte:
 
 * Wurde auf eine inhaltliche und strukturelle Trennung der einzelnen Komponenten geachtet? Wurde der Modulmechanismus sinnvoll für diese Aufteilung verwendet?
+
 * Sind die einzelnen Komponenten der Anwendung entlang des MVC- oder MVP-Musters entworfen und implementiert worden?
+
 * Wird dem Benutzer beim Anwendungsstart ein sinnvoller Initialzustand bereitgestellt? 
+
 * Werden vorhersehbare Fehlersituationen, wie z.B. inkompatible Video-Dateien, berücksichtigt und abgefangen?
+
 * Wurden alle funktionalen Anforderungen (Vgl. [Anforderungen](#anforderungen)) erfüllt?
 
 Eine eigenständige Erweiterung der Aufgabenstellung ist nicht notwendig. Unabhängig davon können Sie natürlich gerne eigene *Features*, Verbesserungsvorschläge oder andere Inhalte ergänzen. Kennzeichnen Sie diese Änderungen bitte im Code.
