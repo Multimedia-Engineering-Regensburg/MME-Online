@@ -6,11 +6,11 @@ Die Bearbeitung der Übungsaufgaben ist für alle Studierenden, die ihr Medienin
 
 ## Die Aufgaben
 
-Im **Sommersemester 2019** werden die Übungsaufgaben in den folgenden Zeiträumen bearbeitet:
+Im **Wintersemester 2019** werden die Übungsaufgaben in den folgenden Zeiträumen bearbeitet:
 
-- **Aufgabe 1: Countdown**: 27. Mai bis 10. Juni ([Handout](./SS19-01-Countdown))
-- **Aufgabe 2: Video Assistant**: 14. Juni bis 7. Juli ([Handout](./SS19-02-Video-Assistant))
-- **Aufgabe 3: Digital Typewriter**: 15. Juli bis 29. Juli ([Handout](./SS19-03-Digital-Typewriter))
+- **Aufgabe 1**: 13. November bis 27. November ([Handout](#))
+- **Aufgabe 2**: 4. Dezember bis 18. Dezember ([Handout](#))
+- **Aufgabe 3**: 15. Januar bis 29. Januar ([Handout](#))
 
 ## Anforderungen und Bewertungskriterien
 

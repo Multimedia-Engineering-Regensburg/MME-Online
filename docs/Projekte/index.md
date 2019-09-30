@@ -2,7 +2,7 @@
 
 Der MME-Kurs wird durch die Bearbeitung eines Abschlussprojekts abgeschlossen. Im Rahmen dieses Projektes entwerfen und implementieren Sie eine browserbasierte Webanwendung. Dazu nutzen Sie die im Kurs erworbenen Kompetenzen. Das Abschlussprojekt wird in der Regel als Gruppenarbeit in kleinen Teams von nicht mehr als drei Teilnehmern absolviert. Jeder der Teilnehmer muss gleichberechtigt an denjenigen Projektbereichen arbeiten, die durch die Kursinhalte vorbereitet wurden. Dazu gehören insbesondere die Generierung hochwertigen Quellcodes und die kollaborative Verwaltung und Dokumentation der gemeinsamen *Codebase* mittels *git*.
 
-Die Beschreibung des Rahmenthemas und einige Projektvorschläge für das aktuelle Semester finden Sie [hier](./sommer-2019).
+<!-- Die Beschreibung des Rahmenthemas und einige Projektvorschläge für das aktuelle Semester finden Sie [hier](./sommer-2019). -->
 
 !!! danger "Projektabgabe"
 	Die Projekte müssen für das **Sommersemester bis zum 30. September** und für das **Wintersemester bis zum 31. März** abgegeben werden. Bewertet wird jeweils der letzte *Commit* des Abgabetags in den *Master*-Branch. 
