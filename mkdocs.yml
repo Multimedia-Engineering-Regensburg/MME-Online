@@ -13,7 +13,9 @@ plugins:
       prebuild_index: true
 extra_javascript:
   - scripts/init.js  
-#  - scripts/quiz.js
+  - scripts/mme-quiz.min.js
+extra_css:
+  - css/mme-quiz.min.css
 markdown_extensions:
   - footnotes
   - admonition
