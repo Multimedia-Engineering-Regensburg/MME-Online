@@ -14,9 +14,9 @@ Innerhalb der Laufzeitumgebung wird der *Javascript*-Code in einem abgeschlossen
 
 ### Namespacing
 
-Die Verwendung eigener Variablen innerhalb des globalen *Execution Context* des Fensters sollte möglichst gering gehalten werden. Argumente dafür sind z.B. die übersichtliche Gestaltung der eigenen Anwendung auf Code-Ebene, die Vermeidung von versehentlichen Wechselwirkungen zwischen den im Kontext ausgeführten *Javascript*-Komponenten oder das unbeabsichtigte Überschreiben bereits existierender Variablen (Vom Browser bereitgestellte Objekte, wie etwa das `document`-Objekt könne in der Regel nicht gelöscht werden). 
+Die Verwendung eigener Variablen innerhalb des globalen *Execution Context* des Fensters sollte möglichst gering gehalten werden. Argumente dafür sind z.B. die übersichtliche Gestaltung der eigenen Anwendung auf Code-Ebene, die Vermeidung von versehentlichen Wechselwirkungen zwischen den im Kontext ausgeführten *Javascript*-Komponenten oder das unbeabsichtigte Überschreiben bereits existierender Variablen (Vom Browser bereitgestellte Objekte, wie etwa das `document`-Objekt können in der Regel nicht gelöscht werden). 
 
-Der *Javascript*-Standard definiert keine [Namensräumen](https://en.wikipedia.org/wiki/Namespace). Diese Funktion kann aber durch die Verwendung eines *namespace object*  eingeführt werden. Ein einfache Umsetzung dieses Ansatzes besteht aus dem Initialisieren eines globalen Objekts, in dem alle Objekte der eigenen Anwendung als Eigenschaften gespeichert werden. Die Verwendung des globalen Kontext wird dadurch auf ein einzelnes Objekt reduziert:
+Der *Javascript*-Standard definiert keine [Namensräume](https://en.wikipedia.org/wiki/Namespace). Diese Funktion kann aber durch die Verwendung eines *namespace object*  eingeführt werden. Ein einfache Umsetzung dieses Ansatzes besteht aus dem Initialisieren eines globalen Objekts, in dem alle Objekte der eigenen Anwendung als Eigenschaften gespeichert werden. Die Verwendung des globalen Kontext wird dadurch auf ein einzelnes Objekt reduziert:
 
 ``` javascript 
 // Initialisieren des Namensraums
@@ -40,7 +40,7 @@ var myApp = myApp || {};
 
 Dadurch wird die Initialisierung mit dem Objekt-Literal nur dann ausgeführt, wenn in `myApp` noch kein Wert gespeichert ist bzw. die Variable noch nicht definiert ist. In beiden Fällen liefert die Ausführung des Ausdrucks vor `||` den Wert `undefined` zurück.
 
-Durch das Anlegen und direkte Ausführen einer anonymer Funktionen lässt sich auch der komplette Code der eigenen Anwendung in einem separaten [*Scope*](https://en.wikipedia.org/wiki/Scope_(computer_science)) ausführen. Der Rumpf der inneren Methode hat dabei Zugriff auf alle Variablen, die im umschließenden Kontext existieren, also auch auf die als globale Variablen bereitgestellten APIs des Browsers.
+Durch das Anlegen und direkte Ausführen einer anonymen Funktionen lässt sich auch der komplette Code der eigenen Anwendung in einem separaten [*Scope*](https://en.wikipedia.org/wiki/Scope_(computer_science)) ausführen. Der Rumpf der inneren Methode hat dabei Zugriff auf alle Variablen, die im umschließenden Kontext existieren, also auch auf die als globale Variablen bereitgestellten APIs des Browsers.
 
 ``` javascript
 (function() {
