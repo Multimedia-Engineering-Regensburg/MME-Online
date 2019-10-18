@@ -1,0 +1,22 @@
+# Javascript im Browser
+| Dieses Quiz überprüft Ihren Wissenstand zur Lektion "Javascript im Browser".
+
+## Womit können eigene Variablen, zur Vermeidung von unbeabsichtigten Aufrufen oder Neubelegungen bereits existierender Variablen, abgeschirmt werden?
+? Denken Sie an Scopes!
++ namespace object
+- falsche Antwort
+- Falsche Antwort
+! Um ein künstliches Scope für eigene Variablen zu genererieren kann ein sogenanntes "namespace object" erzeugt werden, in dessen Kontext alle nötigen Variablen und Funktionen erstellt und aufgerufen werden können.
+
+## Welche der folgendendlich genannten Variablen werden vom Browser als globale Variablen bereitgestellt?
+? Diese dienen dazu auf das DOM zuzugreifen und das Browserfenster zu manipulieren, sowie Informationen davon zu erhalten.
++ window
+- context
++ document
+! Die Laufzeitumgebung stellt unter Anderem die globalen Variablen "window" und "document" bereit.
+
+## Kann die Laufzeitumgebung noch während der Prozessierung einer Methode, innerhalb dieser, auf Benutzereingaben reagieren?
+? Tipp
+- Ja
++ Nein
+! Nein! Dies ist in Javascript nicht möglich. Um dies zu erreichen müssten z.B. Web-Worker benutzt werden.
