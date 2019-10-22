@@ -42,7 +42,7 @@ Die von der Selektor-Funktion zurückgegebenen Objekte erben von [Element](https
 
 ### Bewegungen innerhalb des DOMs
 
-Jedes Element, sofern es bereits im DOM verankert ist, hat eine feste Postion innerhalb der Baumstruktur des DOMs. Die Position definiert sich durch das jeweilige Elternelement, also den übergeordneten Knoten, und innerhalb dessen durch die direkten Vorgänger und Nachfolger. Haben Sie ein HTML-Element selektiert, können Sie diese Parameter über die entsprechenden Eigenschaften auslesen:
+Jedes Element, sofern es bereits im DOM verankert ist, hat eine feste Position innerhalb der Baumstruktur des DOMs. Die Position definiert sich durch das jeweilige Elternelement, also den übergeordneten Knoten, und innerhalb dessen durch die direkten Vorgänger und Nachfolger. Haben Sie ein HTML-Element selektiert, können Sie diese Parameter über die entsprechenden Eigenschaften auslesen:
 
 - Elternelement: [`parentElement`](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement)
 
@@ -62,7 +62,7 @@ Für das Einfügen oder Verschieben von Elementen innerhalb des DOMs gibt es gru
 
 Wenn Sie ein existierendes Element mittels `appendChild` oder `insertBefore` an eine neue Position verschieben, wird das Element von seiner ursprünglichen Position entfernt und an der neuen Stelle im DOM eingehängt. Ein Element kopieren können Sie mit der [`cloneNode`](https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode)-Methode.
 
-### Neue Element erzeugen
+### Neue Elemente erzeugen
 
 In der Regel kann das vollständige *User Interface* nicht direkt beim Programmstart bereitgestellt werden. Viele der angezeigten Inhalte, z.b. neue Einträge einer *ToDo*-Liste ergeben sich erst durch die Interaktion des Benutzers mit der Anwendung. Das dynamische Ergänzen oder Entfernen von neuen HTML-Elementen in das DOM gehört daher zu einer der Hauptaufgaben, die wir mittels Javascript realisieren. Für die programmatische Erstellung neuer HTML-Knoten bietet Ihnen die DOM-API bzw. deren Javascript-Implementierung mindestens zwei Möglichkeiten an.
 
