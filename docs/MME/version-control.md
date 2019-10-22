@@ -80,11 +80,11 @@ Mit dem Befehl `git init` erstellen Sie ein neues *Git*-Repository im aktuellen 
 
 ### Revisionen
 
-Ein einzelner Eintrag innerhalb der Versionsgeschichte Ihres Repositories wird als *Revision* bezeichnet. Eine Revision beschreibt den Zustand (d.h. den Inhalt der verwalteten Dateien) Ihres Repository-Ordners zu einem bestimmten Zeitpunkt. Revisionen werden in der Regel manuell erstellt. Durch das Hinzufügen eines neuen Eintrags in der Versionsgeschichte dokumentieren Sie Fortschritt, z.B. das erfolgreiche Implementieren eines bestimmten Features oder das Entfernen eines Programmfehlers. Mit der Momentaufnahme des Projektverzeichnisses wird dabei auch eine inhaltliche Beschreibung verknüpft, die beim Erstellen der Revision vom jeweiligen Autoren bzw. der jeweiligen Autorin in Form eines Textkommentars angegeben wird.
+Ein einzelner Eintrag innerhalb der Versionsgeschichte Ihres Repositorys wird als *Revision* bezeichnet. Eine Revision beschreibt den Zustand (d.h. den Inhalt der verwalteten Dateien) Ihres Repository-Ordners zu einem bestimmten Zeitpunkt. Revisionen werden in der Regel manuell erstellt. Durch das Hinzufügen eines neuen Eintrags in der Versionsgeschichte dokumentieren Sie Fortschritte, z.B. das erfolgreiche Implementieren eines bestimmten Features oder das Entfernen eines Programmfehlers. Mit der Momentaufnahme des Projektverzeichnisses wird dabei auch eine inhaltliche Beschreibung verknüpft, die beim Erstellen der Revision vom jeweiligen Autoren bzw. der jeweiligen Autorin in Form eines Textkommentars angegeben wird.
 
 Das Erstellen einer Revision geschieht in zwei Schritte:
 
-1. **Staging**: Zuerst Sammeln Sie alle Änderungen, die Sie protokollieren wollen. Dies geschieht durch Hinzufügen der neu erstellten oder geänderten Dateien zur sogenannten *Stage*, einem virtuellen Bereich Ihres Repositorys. Bis zum tatsächlichen Erstellen einer Revision kann diese *Stage* beliebig verändert werden, d.h. es können neue Inhalte hinzugefügt werden oder bereits hinzugefügte Inhalte von der *Stage* entfernt werden. Das Hinzufügen von Dateien zur *Stage* erfolgt mit dem Befehlt `git add`. Das Entfernen erfolgt über den [entsprechend parametrisiert](https://stackoverflow.com/questions/1505948/how-do-i-remove-a-single-file-from-the-staging-area-of-git-but-not-remove-it-fro#answer-1505968) `reset`-Befehl.
+1. **Staging**: Zuerst Sammeln Sie alle Änderungen, die Sie protokollieren wollen. Dies geschieht durch Hinzufügen der neu erstellten oder geänderten Dateien zur sogenannten *Stage*, einem virtuellen Bereich Ihres Repositorys. Bis zum tatsächlichen Erstellen einer Revision kann diese *Stage* beliebig verändert werden, d.h. es können neue Inhalte hinzugefügt werden oder bereits hinzugefügte Inhalte von der *Stage* entfernt werden. Das Hinzufügen von Dateien zur *Stage* erfolgt mit dem Befehlt `git add`. Das Entfernen erfolgt über den [entsprechend parametrisierten](https://stackoverflow.com/questions/1505948/how-do-i-remove-a-single-file-from-the-staging-area-of-git-but-not-remove-it-fro#answer-1505968) `reset`-Befehl.
 
 2. **Commit**: Mit dem `commit` Befehl wird der aktuellen Inhalt der *Stage* in eine neue Revision überführt. Diese besteht dabei aus der vorangegangene Revision sowie den durch die *Stage* hinzugefügten Änderungen (hinzugefügte, entfernte oder manipulierte Dateien). Nach Eingabe von `git commit` leitet *git* Sie in den eingerichteten Standardeditor weiter. Hier haben Sie die Möglichkeit, die sogenannte *Commit Message* zu verfassen. Dabei handelt es sich um eine textuelle Beschreibung der mit der neuen Revision eingeführten Änderungen. Viele Programme interpretieren beim Anzeigen einer *Git*-Versionsgeschichte die erste Zeile dieser Nachricht als Überschrift und die folgenden Zeilen als eigentlichen Inhalt. Gewöhnen Sie sich an, in der ersten Zeile eine kurze Zusammenfassung der vorgenommenen Änderungen zu verfassen und diese in den folgenden Zeilen genauer zu erklären. Insbesondere in der kollaborativen Softwareentwicklung sind [einheitliche, aussagekräftige und verständliche](https://chris.beams.io/posts/git-commit/) *Commit Messages* notwendig und Zeichen guten Softwareengineerings. Ein *Commit* muss nicht zwangsweise alle aktuell erkennbaren Änderungen im Repository umfassen. Bündeln Sie in einem einzelnen *Commit* - über das gezielte Zusammenstellen der *Stage* - immer nur inhaltlich zusammenhängende Änderungen. Modifikationen am Code die zwei unabhängige Komponenten oder Funktionen betreffen, sollten auch in unabhängigen *Commits* dokumentiert werden.
 
@@ -113,7 +113,7 @@ Beim Initialisieren eines Repository wird automatisch der sogenannte *Master Bra
 
 1. In einem *Git*-Repository ist immer genau ein *Branch* *ausgecheckt*. Im Projektverzeichnis befinden sich alle Inhalte, die in diesem Branch bekannt sind sowie alle nicht-versionierterten Dateien.
 
-2. Die Inhalte (Dateien und deren Inhalt) andere *Branches* werden im `.git`-Verzeichnis gespeichert
+2. Die Inhalte (Dateien und deren Inhalt) anderer *Branches* werden im `.git`-Verzeichnis gespeichert
 
 3. Beim *Auschecken* einer *Branch* werden die sichtbaren Inhalte des Projektverzeichnis durch die Inhalte der entsprechenden *Branch* ersetzt. Inhalte der *Stage* bleiben dabei in der Regel erhalten.
 
@@ -127,7 +127,7 @@ Inhalte der Versionsgeschichte einer *Branch* können über den `merge`-Befehl i
 
 #### Branching am Beispiel eines einfachen *Dev Branch*
 
-*Branches* werden eingesetzt, um bestimmte Arte der Arbeit am Quellcode zu repräsentieren. Dazu gehört z.B. die parallel Arbeit an unterschiedlichen Funktionen der Anwendung oder das Testen neuer *Features*. Die technischen Möglichkeiten von *git* dienen dabei der Unterstützung einer bestimmten Arbeitsweise. Ein gutes Beispiel dafür ist die Verwendung einer sogenannte *dev*-Branch.
+*Branches* werden eingesetzt, um bestimmte Arte der Arbeit am Quellcode zu repräsentieren. Dazu gehört z.B. die parallele Arbeit an unterschiedlichen Funktionen der Anwendung oder das Testen neuer *Features*. Die technischen Möglichkeiten von *git* dienen dabei der Unterstützung einer bestimmten Arbeitsweise. Ein gutes Beispiel dafür ist die Verwendung einer sogenannte *dev*-Branch.
 
 ![Vereinfache Darstellung einer *dev*-Branch](img/git-branches-dev.png){: class="center"}
 
@@ -137,7 +137,7 @@ Die Arbeit am Quellcode Ihrer Anwendung führt häufig zu fehlerhaftem Code. Bei
 
 ### Remotes
 
-*Remotes* stellen in *git* besondere, zentral gespeicherte Formen eines Repositorys da. Lokal verfügbare Repositorys können über verschiedene Schnittstellen (HTTP oder SSH) mit diesen *entfernten* Repositorys kommunizieren und die auf beiden Seiten verfügbaren Versionsgeschichten synchronisieren.  Grundsätzlich lassen sich *Remotes* als eigenständige, gegenüber dem lokalen Verzeichnis gleichberechtigte Repositorys auffassen, die über die selben Möglichkeiten der Versionskontrolle verfügen (z.B. *Branches*). Die grundlegende Mechanik dieses Datenaustausch basiert dabei auf dem *mergen* von *Branches* und unterscheidet sich in diesem Zusammenhang nicht von der lokalen Arbeitsweise, werden aber über ein anderes Set an Befehlen ausgeführt.
+*Remotes* stellen in *git* besondere, zentral gespeicherte Formen eines Repositorys da. Lokal verfügbare Repositories können über verschiedene Schnittstellen (HTTP oder SSH) mit diesen *entfernten* Repositorys kommunizieren und die auf beiden Seiten verfügbaren Versionsgeschichten synchronisieren.  Grundsätzlich lassen sich *Remotes* als eigenständige, gegenüber dem lokalen Verzeichnis gleichberechtigte Repositories auffassen, die über die selben Möglichkeiten der Versionskontrolle verfügen (z.B. *Branches*). Die grundlegende Mechanik dieses Datenaustausch basiert dabei auf dem *mergen* von *Branches* und unterscheidet sich in diesem Zusammenhang nicht von der lokalen Arbeitsweise, werden aber über ein anderes Set an Befehlen ausgeführt.
 
 Die Verbindung zwischen einem lokalen Repository und einem *Remote* wird über den Befehl `git remote add` und der Angabe eines frei wählbaren Bezeichners sowie der Adresse des *Remote*-Repository durchgeführt. Der Befehlt `git remote add gitserver http://mygitserver.de` stellt z.B. eine Verbindung zwischen dem aktuellen lokalen Git-Repository und dem über die URL `http://mygitserver.de` erreichbaren Repository auf und trägt die Verbindung unter dem Namen `gitserver` in die Konfiguration des lokalen Repository ein. (Siehe auch [Pro Git: Working with Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes#_adding_remote_repositories))
 
@@ -153,13 +153,13 @@ Nach dem Einrichten eines *Remotes* kann mit diesem gearbeitet werden. Grundsät
 
 #### Das *richtige Pushen*
 
-Auch wenn sich *Merge*-Konflikte nicht vollständigen vermeiden lassen werden, kann eine gut geplante und abgesprochene Arbeitsweise den Umgang mit diesen in einem kollaborativen Softwareprojekt erleichtern. Im Rahmen der Projektvorbereitung werden wir über geeignete Arbeitsweisen und konkrete *Workflows* reden, mit denen Sie die Arbeit Ihres Teams in Bezug auf die Versionskontrolle im allgemeinen und *git* im speziellen steuern können. Gewönnen Sie sich im Idealfall schon jetzt einen bestimmten *Rhythmus* im Kontext der Arbeit mit *Remotes* an:
+Auch wenn sich *Merge*-Konflikte nicht vollständigen vermeiden lassen werden, kann eine gut geplante und abgesprochene Arbeitsweise den Umgang mit diesen in einem kollaborativen Softwareprojekt erleichtern. Im Rahmen der Projektvorbereitung werden wir über geeignete Arbeitsweisen und konkrete *Workflows* reden, mit denen Sie die Arbeit Ihres Teams in Bezug auf die Versionskontrolle im allgemeinen und *git* im speziellen steuern können. Gewöhnen Sie sich im Idealfall schon jetzt einen bestimmten *Rhythmus* im Kontext der Arbeit mit *Remotes* an:
 
 1. Verbinden Sie zu Beginn die notwendigen lokalen (A) und entfernten *Branches* (R)
 
-2. Erarbeiten Sie Ihre Änderungen am Code im Idealfall in einem separaten, lokalen *Branch* (B), die nicht mit dem *Remote* verbunden ist
+2. Erarbeiten Sie Ihre Änderungen am Code im Idealfall in einem separaten, lokalen *Branch* (B), der nicht mit dem *Remote* verbunden ist
 
-3. Synchronisieren Sie den lokale *Branch* (A) vor dem Bereitstellen Ihrer Änderungen mittels `git pull` mit dem *Remote* (R) 
+3. Synchronisieren Sie den lokalen *Branch* (A) vor dem Bereitstellen Ihrer Änderungen mittels `git pull` mit dem *Remote* (R) 
 
 4. *Mergen* Sie über `git merge B` die Änderungen aus dem separaten *Branch* (B) in den lokalen *Branch* (A)
 
