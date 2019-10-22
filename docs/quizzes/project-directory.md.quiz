@@ -8,16 +8,16 @@
 - data
 ! Richtig! Externe Bibliotheken sollten in seperarierten Unterordner im Verzeichnis "vendors" gespeichert werden.
 
-## Sollte der Ordner "js" Unterordner beherbergen?
+## Sollte der Ordner <code>js</code> Unterordner beherbergen?
 ? Würde dies zur Übersichtlichkeit beitragen?
 + Ja
 - Nein
-! Sofern es die Übersichtlichkeit und Strukturiertheit erhöht ist es sehr sinnvoll im Verzeichnis "js" noch weitere Unterordner zu pflegen.
+! Sofern es die Übersichtlichkeit und Strukturiertheit erhöht ist es sehr sinnvoll im Verzeichnis <code>js</code> noch weitere Unterordner zu pflegen.
 
-## Welche der folgenden Ordner sollten im Verzeichnis "resources" zu finden sein?
-? Von Ihnen geschriebener Code landet fast immer in "resources".
+## Welche der folgenden Ordner sollten im Verzeichnis <code>resources</code> zu finden sein?
+? Von Ihnen geschriebener Code landet fast immer in <code>resources</code>.
 + images
 + css
 - libs
 + js
-! Im vorgestellten Vorschlag sind im "resources"-Verzeichnis die Unterordner "images", "css", "js", aber auch "data" zu finden.
+! Im vorgestellten Vorschlag sind im <code>resources</code>-Verzeichnis die Unterordner <code>images</code>, <code>css</code>, <code>js</code>, aber auch <code>data</code> zu finden.

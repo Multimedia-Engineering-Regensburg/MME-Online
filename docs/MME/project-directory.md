@@ -52,3 +52,5 @@ Der Ressourcen-Ordner ist dabei weiter untergliedert:
 - Der Quellcode der Anwendung liegt, separiert in Einzeldateien, unter `js`
 
 Die verschiedenen Ordner können weiter untergliedert werden um zusätzliche Strukturen zu schaffen bzw. abzubilden. Innerhalb des `js`-Ordners können z.B. Unterordner eingesetzt werden um verschiedene Komponenten oder Module der Anwendung zu trennen oder zusammengehörige Dateien zu bündeln. Hier kann ähnlich wie bei der Verwendung und Gliederung der der *Packages* im Java-Kontext vorgegangen werden.
+
+<div class="mme-quiz-wrapper" data-url="../../quizzes/project-directory.md.quiz"></div>
