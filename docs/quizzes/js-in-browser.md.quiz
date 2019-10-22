@@ -1,0 +1,22 @@
+# Javascript im Browser
+| Dieses Quiz überprüft Ihren Wissenstand zur Lektion "Javascript im Browser".
+
+## Womit können eigene Variablen, zur Vermeidung von unbeabsichtigten Aufrufen oder Neubelegungen bereits existierender Variablen, abgeschirmt werden?
+? Denken Sie an Scopes!
++ <i>Namespace Object</i>
+- Unterstriche vor dem Variablenamen
+- Schlüsselwort private
+! Um ein zusätzlichen Scope für eigene Variablen zu generieren kann ein sogenanntes <i>Namespace Object</i> erzeugt werden, in dessen Kontext alle nötigen Variablen und Funktionen erstellt und aufgerufen werden können. Denken Sie daran: Die Eigenschaften des Objekts sind nicht "privat", können also von anderen Stellen des Programms aus eingesehen werden.
+
+## Welche der folgenden Variablen werden vom Browser als globale Variablen bereitgestellt?
+? Über diese globale Variablen stellt der Browser eine Zugriffsmöglichkeit auf bestimmte APIs, z.B. für den Zugriff auf das DOM, bereit.
++ <code>window</code>
+- <code>context</code>
++ <code>document</code>
+! Die Laufzeitumgebung stellt unter anderem die globalen Variablen <code>window</code> und <code>document</code> bereit.
+
+## Kann die Laufzeitumgebung noch während der Prozessierung einer Methode, innerhalb dieser, auf Benutzereingaben reagieren?
+? 
+- Ja
++ Nein
+! Nein! Das Eventsystem in Javascript arbeitet blockierend. Während eine Ereignis verarbeitet wird, können parallel dazu keine weiteren Arbeiten durchgeführten werden. Eintreffende Ereignisse werden gesammelt und nach vollendeter Bearbeitung des aktuellen Events abgearbeitet.

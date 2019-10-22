@@ -145,6 +145,8 @@ Im Rahmen der Präsenzveranstaltung werden die Grundlagen der Softwareentwicklun
 
 - Versuchen Sie, Mausklicks auf den hinzugefügten Listenelementen zu registrieren und verändern Sie in der entsprechenden *Callback*-Methode das Erscheinungsbild des angeklickten Elements. Definieren Sie dazu eine CSS-Klasse (in einem ausgelagerten Dokument) und nutzen Sie die entsprechenden API-Methoden um diese Klasse zum angeklickten Element  hinzuzufügen.
 
+<div class="mme-quiz-wrapper" data-url="../../quizzes/dom-introduction.md.quiz"></div>
+
  [^1]: [WHATWG, DOM - Living Standard](https://dom.spec.whatwg.org/#interface-document)
  [^2]: [ECMAScript 2017 Language Specification](https://www.ecma-international.org/ecma-262/8.0/)
  [^3]: Neben den beiden Methoden `querySelector()` und `querySelectorAll()` bietet das `document`-Objekt weitere Methoden als Zugriffs- bzw. Selektionsmöglichkeiten für das DOM an. Dazu gehört bspw. die Auswahl eines Elements anhand dessen `id`-Attributs mittels `getElementById()`. Eine vollständige Liste können Sie der [Dokumentation](https://developer.mozilla.org/en-US/docs/Web/API/Document) entnehmen.

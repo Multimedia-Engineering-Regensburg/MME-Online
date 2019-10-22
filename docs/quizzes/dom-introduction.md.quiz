@@ -1,0 +1,17 @@
+# Das Projektverzeichnis
+| Dieses Quiz überprüft ihr Wissen zur DOM-Manipulation mit Javascript.
+
+## Welche Methoden bietet das, vom Browser bereitgestellte, <code>document</code>-Objekt zur Selektierung eines HTML-Elements?
+? Elemente können mit Selektoren, wie z.B. in CSS, oder z.B. auch direkt über ihre ID abgefragt werden.
++ <code>getElementById()</code>
++ <code>querySelector()</code>
+- <code>getHTMLElement()</code>
+! Richtig! Neben diesen Methoden gibt es z.B. noch die Möglichkeit alle Elemente einer bestimmten CSS-Klasse mit dem Befehl <code>getElementsByClassName()</code> in einer Liste zurückzugeben.
+
+## Wählen Sie die richtige Syntax für die Registrierung eines Eventlisteners auf einem Element!
+? Dies ist eine Methode des Elements, auf dem der Listener registriert werden soll.
+- <code>element.eventListeners.add("event", callback);</code>
+- <code>element.onEvent(callback, "event");</code>
++ <code>element.addEventListener("event", callback);</code>
+- <code>document.addEventListener(element, "event", callback);</code>
+! Um einen Listener auf einem Event zu registrieren wird die Syntax </ode>element.addEventListener("event", callback);</code> genutzt.
