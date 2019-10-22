@@ -1,0 +1,32 @@
+# Das Projektverzeichnis
+| Dieses Quiz überprüft ihr Wissen zur DOM-Manipulation mit Javascript.
+
+## Welche Methoden bietet das, vom Browser bereitgestellte, `document`-Objekt zur Selektierung eines HTML-Elements?
+? Elemente können mit Selektoren, wie z.B. in CSS, oder z.B. auch direkt über ihre ID abgefragt werden.
++ `getElementById()`
++ `querySelector()`
+- `getHTMLElement()`
+! Richtig! Neben diesen Methoden gibt es z.B. noch die Möglichkeit alle Elemente einer bestimmten CSS-Klasse mit dem Befehl `getElementsByClassName()` in einer Liste zurückzugeben.
+
+## Wählen Sie die richtige Syntax für die Registrierung eines Eventlisteners auf einem Element!
+? Dies ist eine Methode des Elements, auf dem der Listener registriert werden soll.
+- `element.eventListeners.add("event", callback);`
+- `element.onEvent(callback, "event");`
++ `element.addEventListener("event", callback);`
+- `document.addEventListener(element, "event", callback);`
+! Um einen Listener auf einem Event zu registrieren wird immer die Syntax `element.addEventListener("event", callback);` genutzt.
+
+## Gegeben ist folgender HTML Code. In einer eingebundenen Javascript-Datei wird der Befehl `document.querySelector("h1")` ausgeführt. Welche der beiden Überschriften werden dadurch als Objekt zurückgegeben.
+``` html
+<html>
+  <body>
+    <h1>Hello World</h1>
+    <h1>MME-Tutorial</h1>
+  </body
+</html>
+```
+? Durch die Methode `querySelector()` wird nur ein Element selektiert.
++ Hello World
+- MME-Tutorial
+- Beide
+! Die Methode `querySelector()` gibt das erste Element zurück, das für die übergebene Query passt.
