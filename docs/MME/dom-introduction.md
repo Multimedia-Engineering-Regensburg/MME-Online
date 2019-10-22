@@ -4,14 +4,14 @@ Die graphische Benutzeroberfläche einer Webanwendung wird in der Regel durch HT
 
 ## Einleitung
 
-Im Rahmen des *Parsings* eines HTML-Dokuments erstellt der Browser eine virtuelle Repräsentation der Strukturen und Inhalte, die durch die HTML-Elemente und deren Inhalte und Attribute vorgegeben werden. Diese Repräsentation basiert auf dem [Document Object Model (DOM)](https://en.wikipedia.org/wiki/Document_Object_Model), einem standardisierten Model[^1], das von allen modernen Browser implementiert wird. Das DOM dient als Verbindung zwischen der Webseite oder Webanwendung und Skript- bzw. Programmiersprachen, die dadurch die Möglichkeit erhalten, die dargestellten Inhalte zu manipulieren. In der Regel meint dies Javascript. Javascript selbst, bzw. der ECMAScript-Standard[^2] definieren dabei keine Schnittstellen zum DOM bzw. zur Manipulation von HTML-Dokumenten. Diese Möglichkeit wird durch die Implementierung des DOM-Standards in Form einer [Javascript-API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)bereitgestellt, die im Javascript-Kontext des Browsers bereitgestellt wird. Der oberste Knoten des Dokuments wird dabei durch das globale  `document`-Objekt repräsentiert.
+Im Rahmen des *Parsings* eines HTML-Dokuments erstellt der Browser eine virtuelle Repräsentation der Strukturen und Inhalte, die durch die HTML-Elemente und deren Inhalte und Attribute vorgegeben werden. Diese Repräsentation basiert auf dem [Document Object Model (DOM)](https://en.wikipedia.org/wiki/Document_Object_Model), einem standardisierten Model[^1], das von allen modernen Browser implementiert wird. Das DOM dient als Verbindung zwischen der Webseite oder Webanwendung und Skript- bzw. Programmiersprachen, die dadurch die Möglichkeit erhalten, die dargestellten Inhalte zu manipulieren. In der Regel meint dies Javascript. Javascript selbst, bzw. der ECMAScript-Standard[^2] definieren dabei keine Schnittstellen zum DOM bzw. zur Manipulation von HTML-Dokumenten. Diese Möglichkeit wird durch die Implementierung des DOM-Standards in Form einer [Javascript-API](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) umgesetzt, die im Javascript-Kontext des Browsers bereitgestellt wird. Der oberste Knoten des Dokuments wird dabei durch das globale `document`-Objekt repräsentiert.
 
 !!! note "Hinweise zur Lektüre"
 	In dieser Lektion werden die Grundlagen der DOM-Manipulation mit Javascript beschrieben. Es empfiehlt sich, die beschriebene Methoden und Vorgänge direkt auszuprobieren. Erstellen Sie dazu eine einfache HTML-Datei und binden Sie eine leere Javascript-Datei (siehe Beispiel aus der Vorlesung) ein. 
 
 ## Javascript-Objekte als Repräsentation der DOM-Inhalte
 
-Die Bearbeitung des DOMs mit Hilfe der Javascript-API folgt einem einfachen Prinzip. Existierende und neue Element des DOMs werden durch entsprechende Javascript-Objekte repräsentiert. Inhalte, Attribute und deren Werte sowie die Position der Element werden durch entsprechende Eigenschaften des Objekts repräsentiert. Eine Veränderung der Objekt-Eigenschaft, z.B. des Element-Inhalts (repräsentiert durch `innerHTML`) sorgt automatisch für die entsprechende Veränderung des DOMs. Bevor Sie existierende DOM-Objekte über diese Weg manipulieren können, müssen Sie die entsprechenden Repräsentationen durch *Selektion* der Elemente aus dem DOM auswählen. Dazu stellt Ihnen die API verschiedene Möglichkeiten bereit, die u.a. durch Methoden des globalen `document`-Objekts genutzt werden können. 
+Die Bearbeitung des DOMs mit Hilfe der Javascript-API folgt einem einfachen Prinzip. Existierende und neue Element des DOMs werden durch entsprechende Javascript-Objekte repräsentiert. Inhalte, Attribute und deren Werte sowie die Position der Elemente werden durch entsprechende Eigenschaften des Objekts repräsentiert. Eine Veränderung der Objekt-Eigenschaft, z.B. des Element-Inhalts (repräsentiert durch `innerHTML`) sorgt automatisch für die entsprechende Veränderung des DOMs. Bevor Sie existierende DOM-Objekte über diese Weg manipulieren können, müssen Sie die entsprechenden Repräsentationen durch *Selektion* der Elemente aus dem DOM auswählen. Dazu stellt Ihnen die API verschiedene Möglichkeiten bereit, die u.a. durch Methoden des globalen `document`-Objekts genutzt werden können. 
 
 ### Beispiel: Eine Überschrift verändern
 
@@ -42,7 +42,7 @@ Die von der Selektor-Funktion zurückgegebenen Objekte erben von [Element](https
 
 ### Bewegungen innerhalb des DOMs
 
-Jedes Element, sofern es bereits im DOM verankert ist, hat eine feste Postion innerhalb der Baumstruktur des DOMs. Die Position definiert sich durch das jeweiligen Elternelement, also den übergeordneten Knoten, und innerhalb dessen durch die direkten Vorgänger und Nachfolger definiert. Haben Sie ein HTML-Element selektiert, können Sie diese Parameter über die entsprechenden Eigenschaften auslesen:
+Jedes Element, sofern es bereits im DOM verankert ist, hat eine feste Postion innerhalb der Baumstruktur des DOMs. Die Position definiert sich durch das jeweilige Elternelement, also den übergeordneten Knoten, und innerhalb dessen durch die direkten Vorgänger und Nachfolger. Haben Sie ein HTML-Element selektiert, können Sie diese Parameter über die entsprechenden Eigenschaften auslesen:
 
 - Elternelement: [`parentElement`](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement)
 
@@ -56,7 +56,7 @@ Mit Hilfe dieser Eigenschaften können Sie den kompletten DOM-Baum traversieren.
 
 Für das Einfügen oder Verschieben von Elementen innerhalb des DOMs gibt es grundsätzlich zwei verschiedene Möglichkeiten: 
 
-1. Die [`appendChild`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)-Methode wird auf dem Elternelement aufgerufen und bekommt das einzufügenden Element als Parameter übergebenen. Dieses wird als letztes Kindelemente des Elternelement eingefügt.
+1. Die [`appendChild`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)-Methode wird auf dem Elternelement aufgerufen und bekommt das einzufügende Element als Parameter übergebenen. Dieses wird als letztes Kindelemente des Elternelements eingefügt.
 
 2. Die [`insertBefore`](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore)-Methode wird ebenfalls auf dem Elternelement aufgerufen und erhält als zusätzlichen Parameter ein existierendes Kindelement als Positionsreferenz.
 
@@ -105,7 +105,7 @@ Generell sollte bei der dynamischen Erstellung komplexerer HTML-Objekte auf eine
 
 Neben der Manipulation der dargestellten HTML-Knoten definiert der DOM-Standard auch ein Verfahren zur Kommunikation von Ereignissen (*Events*) an die einzelnen Elemente[^5]. Für die Entwicklung von Webanwendungen sind dabei vor allem die Ereignisse relevant, die durch Interaktion des Nutzers mit den HTML-Knoten ausgelöst werden. Dazu gehören z.B. Maus- oder Tastaturereignisse. Darüber hinaus gibt es aber auch andere Arten von Ereignissen, die innerhalb des DOMs kommuniziert werden, z.B. Informationen über entfernte oder hinzugefügte Elemente oder verschiedene Phasen während des *Renderings* des Dokuments. Auch dieser Teil des DOM-Standards wird durch eine *Javascript*-API abgebildet. Eine tiefere Beschäftigung mit dem *Event*-System des Browsers und der internen Verarbeitung dieser Ereignisse erfolgt in einer [separaten Lektion](./event-loop). In dieser Einführung wird das grundsätzliche Vorgehen zum Abfangen von (Interaktions-)*Events* am Beispiel einfacher Maus-*Events* beschrieben.
 
-Die DOM-API verwendet ein vereinfachtes [Observer-Pattern](https://en.wikipedia.org/wiki/Observer_pattern)[^6] um die Reaktion auf Ereignisse zu erlauben. Dabei wird auf einem selektieren HTML-Element bzw. auf dessen Javascript-Repräsentation ein *Event Listener* in Form einer *Callback*-Methode registriert. Bei der Registrierung wird der *Event*-Typ definiert, dessen Auftreten in der *Callback*-Methode verarbeitet werden soll. Eine List aller *DOM Events* und der entsprechenden Bezeichner findet sich [hier](https://developer.mozilla.org/en-US/docs/Web/Events). Tritt nach der Registrierung ein entsprechender *Event* im Kontext des jeweiligen Elements auf, werden alle vorher als *Listener* gespeicherten *Callback*-Methoden, in der Regel in der Reihenfolge ihrer Registrierung, aufgerufen. 
+Die DOM-API verwendet ein vereinfachtes [Observer-Pattern](https://en.wikipedia.org/wiki/Observer_pattern)[^6] um die Reaktion auf Ereignisse zu erlauben. Dabei wird auf einem selektieren HTML-Element bzw. auf dessen Javascript-Repräsentation ein *Event Listener* in Form einer *Callback*-Methode registriert. Bei der Registrierung wird der *Event*-Typ definiert, dessen Auftreten in der *Callback*-Methode verarbeitet werden soll. Eine Liste aller *DOM Events* und der entsprechenden Bezeichner findet sich [hier](https://developer.mozilla.org/en-US/docs/Web/Events). Tritt nach der Registrierung ein entsprechendes *Event* im Kontext des jeweiligen Elements auf, werden alle vorher als *Listener* gespeicherten *Callback*-Methoden, in der Regel in der Reihenfolge ihrer Registrierung, aufgerufen. 
 
 Im folgenden Beispiel wird ein *Listener* registriert, um Mausklicks auf einem bestimmten HTML-Element abzufangen. Ausgangslage ist dabei das folgenden HTML-Dokument:
 
@@ -134,12 +134,12 @@ Beim Aufruf der registrierten *Callback*-Methoden wird in der Regel ein Paramete
 ## Demos und Übungsaufgaben
 Als erste Fingerübung im Rahmen der DOM-Manipulation mit Javascript können Sie die hier verlinkte [Übungsaufgabe](https://classroom.github.com/assignment-invitations/d84cc63e1f72964722cec4f9c46a6684) bearbeiten. Die Aufgabe wird mittels [Github Classroom](https://classroom.github.com/) bereitgestellt. Für die Bearbeitung benötigen Sie einen (kostenlosen) Account auf der Webseite [github.com](https://github.com/).
 
-Im Rahmen der Präsenzveranstaltung werden die Grundlagen der Softwareentwicklung mit *Javascript* und der DOM-Manipulation an Beispiel eines einfachen [Kanban-Boards](../../Demos/kanban-board) praktisch umgesetzt.
+Im Rahmen der Präsenzveranstaltung werden die Grundlagen der Softwareentwicklung mit *Javascript* und der DOM-Manipulation am Beispiel eines einfachen [Kanban-Boards](../../Demos/kanban-board) praktisch umgesetzt.
 
 ### Weitere Aufgaben
 - Rufen Sie die [Webseite der Medieninformatik](https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/) auf und öffnen Sie die Javascript-Konsole Ihres Browsers. Nutzen Sie die bekannten Javascript-Befehle um die Überschrift "Aktuelle Meldungen der Medieninformatik" zu selektieren und durch den *String* "Hello World" zu ersetzen.
 
-- Versuchen Sie weitere Bestandteile der Website zu manipulieren: Tauschen Sie z.B. die Quellpfade von angezeigten Bildern aus oder ergänzen Sie weitere Texte bzw. Abschnitte
+- Versuchen Sie weitere Bestandteile der Website zu manipulieren: Tauschen Sie z.B. die Quellpfade von angezeigten Bildern aus oder ergänzen Sie weitere Texte bzw. Abschnitte.
 
 - Erstellen Sie ein einfaches HTML-Dokument mit einer Überschrift und einer unsortierten Liste. Versuchen Sie, beim Öffnen des Dokuments - über eine integrierte Javascript-Datei - neue Listenelemente mit beliebigem Inhalt hinzuzufügen. 
 
