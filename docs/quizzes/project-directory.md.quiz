@@ -1,0 +1,23 @@
+# Das Projektverzeichnis
+| In diesem Quiz wird ihre Fähigkeit getestet, Dateien an sinnvollen Stellen abzuspeichern.
+
+## Unter welchem Ordner sollten externe Bibliotheken gespeichert werden?
+? Dies ist ein Ordner auf der höchsten Ebene im Projektverzeichnis.
+- extern
++ vendors
+- data
+! Richtig! Externe Bibliotheken sollten in seperarierten Unterordner im Verzeichnis "vendors" gespeichert werden.
+
+## Sollte der Ordner "js" Unterordner beherbergen?
+? Würde dies zur Übersichtlichkeit beitragen?
++ Ja
+- Nein
+! Sofern es die Übersichtlichkeit und Strukturiertheit erhöht ist es sehr sinnvoll im Verzeichnis "js" noch weitere Unterordner zu pflegen.
+
+## Welche der folgenden Ordner sollten im Verzeichnis "resources" zu finden sein?
+? Von Ihnen geschriebener Code landet fast immer in "resources".
++ images
++ css
+- libs
++ js
+! Im vorgestellten Vorschlag sind im "resources"-Verzeichnis die Unterordner "images", "css", "js", aber auch "data" zu finden.
