@@ -8,8 +8,8 @@ Im **Wintersemester 2019/20** findet der MME-Kurs wöchentlich von 13:00 Uhr (s.
 
 Woche | Datum     | Inhalt               | Material | Anmerkung
 :----:|:---------:|:---------------------|:---------|:-------
-1     |16.10.2019 | Kursinhalte, Struktur und erste Schritte mit Javascript |[Einführung](./class-introduction), [Einrichten der Arbeitsumgebung](http://localhost:8000/MME/work-environment/), [Javascript im Browser](http://localhost:8000/MME/javascript-browser/) | Vorlesung und praktische Übung
-2     |23.10.2019 | Erste Schritte mit Javascript | [Projektverzeichnis](http://localhost:8000/MME/project-directory/)und  [Javascript Intro](./dom-introduction) | Vorlesung und praktische Übung
+1     |16.10.2019 | Kursinhalte, Struktur und erste Schritte mit Javascript |[Einführung](./class-introduction), [Einrichten der Arbeitsumgebung](./work-environment), [Javascript im Browser](./javascript-browser) | Vorlesung und praktische Übung
+2     |23.10.2019 | Erste Schritte mit Javascript | [Projektverzeichnis](./project-directory)und  [Javascript Intro](./dom-introduction) | Vorlesung und praktische Übung
 3     |30.10.2019 | Modularisierte Anwendungen | [Javascript-Anwendungen strukturieren und gestalten](./closures-and-module-pattern) und [Versionskontrolle mit Git](./version-control) | Online-Material und praktische Übung
 4     |06.11.2019 | Event-basierte Programmierung | [Der Event-Loop in Javascript und die Events der Web-APIs](./event-loop) | Online-Material und praktische Übung
 5     |13.11.2019 | Praxissitzung: Coding-Workshop |  | Vorlesung und praktische Übung
