@@ -4,6 +4,8 @@ Der MME-Kurs besteht aus inhaltlichen Abschnitten und praktischen Übungen. Zu j
 
 ## Semesterplan für das Wintersemester 2019/20
 
+Im **Wintersemester 2019/20** findet der MME-Kurs wöchentlich von 13:00 Uhr (s.t.) bis 14:30 Uhr (s.t.) im [Raum DE 2.121](https://www-app.uni-regensburg.de/Einrichtungen/TZ/famos/hoersaele/index.php?raumid=BY.R.C.3000.3080._2.121) statt. Die Praxissitzungen (Anmerkung: *Vorlesung und praktische Übung*) finden an den entsprechenden Terminen von 13:00 Uhr (s.t.) bis ca. 16:00 Uhr statt.
+
 Woche | Datum     | Inhalt               | Material | Anmerkung
 :----:|:---------:|:---------------------|:---------|:-------
 1     |16.10.2019 | Kursinhalte, Struktur und erste Schritte mit Javascript |[Einführung](./class-introduction), [Einrichten der Arbeitsumgebung](http://localhost:8000/MME/work-environment/), [Javascript im Browser](http://localhost:8000/MME/javascript-browser/) | Vorlesung und praktische Übung
