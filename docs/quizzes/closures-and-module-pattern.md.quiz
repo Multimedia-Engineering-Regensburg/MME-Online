@@ -1,0 +1,15 @@
+# Closures und Module Patterns
+| In diesem Quiz wird ihr erlangtes Wissen über Closures und Module geprüft.
+
+## Welche der folgendlich genannten Patterns und APIs, bzw. Bibliotheken können in Client-seitigen Javascriptprogrammen verwendet werden, um information hiding umzusetzen?
++ Revealing Module Pattern
++ ES6-Module
++ browserify 
+! Alle diese drei können verwendet werden, um information hiding umzusetzen. Sie funktionieren jedoch auf verschiedene Arten.
+
+## Warum ist es sinnvoll ein Referenzobjekt als lokale Variable innerhalb des Closures abzuspeichern?
+? Dies ist eine Methode des Elements, auf dem der Listener registriert werden soll.
++ Trägt zur Übersichtlichkeit bei
+- Verbraucht weniger Speicherplatz
++ Ermöglicht sogenanntes "chaining"
+! Durch den Einsatz eines expliziten Referenzobjekts ergeben sich zwei Vorteile. Zum einen wird die Zusammenstellung des Objekts bei komplexeren Modulen übersichtlicher. Zum anderen kann innerhalb des Moduls auf das Referenzobjekt Bezug genommen werden, was "chaining" ermöglicht.
