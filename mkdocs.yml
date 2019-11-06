@@ -53,7 +53,7 @@ nav:
       - Übersicht: Demos/index.md
       - ToDo-Liste: Demos/todo-list.md
 #      - Kanban-Board: Demos/kanban-board.md
-#     - Writer: Demos/writer.md
+     - Writer: Demos/writer.md
 #      - Simon Says: Demos/simon-says.md
 #      - Time Tracker: Demos/time-tracker.md
 #      - Mensa App: Demos/mensa-app.md
