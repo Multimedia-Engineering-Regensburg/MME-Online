@@ -190,7 +190,7 @@ Die Darstellung unterscheidet sich dabei - in diesem Beispiel - nicht von einem 
 Aufgrund dem hohen Verbreitungsgrad und der strukturellen Nähe zwischen *JSON* und *Javascript* beinhaltet der Sprachstandard seit der 6. Edition ein globales 'JSON'-Objekt [^6], das Methoden zum *Parsen* und *Erstellen* von *JSON*-Objekten beinhaltet. Das Objekt `JSON` ist im globalen Kontext des Browsers verfügbar. Mit Hilfe der Methode `JSON.parse(<JSONString>)` können Sie ein in Textform vorliegendes *JSON*-Objekt in ein *Javascript*-Objekt umwandeln. Die Methode `stringify(<OBJECT>)` ermöglicht es, einen *String* zu erstellen, der das übergebene *Javascript*-Objekt als *JSON*-formatierten Text repräsentiert.
 
 !!! danger "Vorsicht!"
-  Dabei gehen die Informationen, die nicht durch *JSON* dargestellt werden können (z.B. Funktionen oder der Wert `undefined`) verloren.
+    Dabei gehen die Informationen, die nicht durch *JSON* dargestellt werden können (z.B. Funktionen oder der Wert `undefined`) verloren.
 
 **Umwandeln eines Javascript-Objekts nach JSON**
 
