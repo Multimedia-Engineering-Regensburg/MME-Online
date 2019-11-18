@@ -1,0 +1,21 @@
+# Client-Server-Kommunikation
+| Dieses Quiz überprüft Ihre Kenntnisse zur Kommunikation zwischen Server und Client zur Javascript-Laufzeit.
+
+## Welches der folgenden Objekte repräsentiert eine HTTP-Anfrage innerhalb des Javascript-Codes
++ XMLHttpRequest
+- HttpRequest
+- HTTPRequest
+! Das XMLHttpRequest-Objekt wird vom Browser global bereitgestellt und kann daher überall im Code erstellt werden.
+
+## Mit welcher Methode des erstellten XMLHttpRequest-Objekts werden die wesentlichen Parameter der Anfrage definiert?
+- `request`
++ `open`
+- `send`
+! Der `open`-Methode werden sowohl die Request-Methode (z.B 'GET'), als auch die Ziel-URL übergeben.
+
+## Warum ist JSON im Kontext dieses Datenaustausches sinnvoll?
+? Ist der JSON-Standard ein Teil der Javascript-Sprachdefinition?
++ weist große Überschneidungen mit Javascript-Objekten auf
++ für Datenaustausch zwischen unterschiedlichen Programmiersprachen und Systemen designed
+- JSON ist Javascript
+! JSON ist Standard des Datenaustausches zwischen Servern und Clients, da es bereits große Überschneidungen mit Javascript-Objekten aufweist, sowie auch für den Datenaustausch zwischen unterschiedlichen Systemen und Programmiersprachen geeignet ist.
