@@ -218,6 +218,8 @@ let o =  JSON.parse(json);
 o.id = 1337;
 ```
 
+<div class="mme-quiz-wrapper" data-url="../../quizzes/ajax.md.quiz"></div>
+
 ## Übungsaufgaben
 
 ### Rechtschreibprüfung

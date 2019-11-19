@@ -1,13 +1,23 @@
 # Client-Server-Kommunikation
 | Dieses Quiz überprüft Ihre Kenntnisse zur Kommunikation zwischen Server und Client zur Javascript-Laufzeit.
 
+## Was sind gute Gründe für den Einsatz von AJAX in browserbasierten Anwendungen?
+?  Der Einsatz von AJAX hat Vorteile gegenüber rein statischen Webseiten.
++ Dynamisches Nachladen von Inhalten 
++ Einfache Möglichkeit zur Nutzung serverseitige Komponente
+- Weniger fehleranfällige Anwendungen
+- Schöneres UI
+! AJAX erlaubt die Implementierung dynamischer und responsiver Anwendungen, die von den Möglichkeiten Client/Server-basierter Systeme Gebrauch machen. 
+
 ## Welches der folgenden Objekte repräsentiert eine HTTP-Anfrage innerhalb des Javascript-Codes
+? HTTP-Anfragen werden für die programmatische Verarbeitung durch ein Objekt repräsentiert.
 + XMLHttpRequest
 - HttpRequest
 - HTTPRequest
 ! Das XMLHttpRequest-Objekt wird vom Browser global bereitgestellt und kann daher überall im Code erstellt werden.
 
 ## Mit welcher Methode des erstellten XMLHttpRequest-Objekts werden die wesentlichen Parameter der Anfrage definiert?
+? Über das XMLHTTPRequest-Objekt können die verschiedenen Phasen einer HTTP-Anfrage durchlaufen werden.
 - `request`
 + `open`
 - `send`
@@ -16,6 +26,13 @@
 ## Warum ist JSON im Kontext dieses Datenaustausches sinnvoll?
 ? Ist der JSON-Standard ein Teil der Javascript-Sprachdefinition?
 + weist große Überschneidungen mit Javascript-Objekten auf
-+ für Datenaustausch zwischen unterschiedlichen Programmiersprachen und Systemen designed
++ speziell für diesen Zweck entworfen
 - JSON ist Javascript
 ! JSON ist Standard des Datenaustausches zwischen Servern und Clients, da es bereits große Überschneidungen mit Javascript-Objekten aufweist, sowie auch für den Datenaustausch zwischen unterschiedlichen Systemen und Programmiersprachen geeignet ist.
+
+## Worin unterscheidet sich die `fetch`-API vom klassischen AJAX-Ansatz via `XMLHttpRequest`
+?  
++ Promises statt Callbacks
+- Schnellere Verarbeitung durch den Server
+- Untersützt nur JSON-Daten
+! Die `fetch`-API löst das Problem der Asynchronität der AJAX-Anfragen durch Promises, die eine einfacherer Ereignisbehandlung ermöglichen sollen.
