@@ -56,7 +56,7 @@ nav:
       - Writer: Demos/writer.md
       - Simon Says: Demos/simon-says.md
 #      - Time Tracker: Demos/time-tracker.md
-#      - Mensa App: Demos/mensa-app.md
+      - Mensa App: Demos/mensa-app.md
 #     - Bundesliga-Tabelle: Demos/bundesliga.md
 #      - Ambi Player: Demos/ambi-player.md
 #      - ToDo-Liste mit Datenbank: Demos/todo-list-db.md
