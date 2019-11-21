@@ -4,7 +4,7 @@ Multimediale Inhalte wie Audio- und Videodateien können wichtige Bestandteile i
 
 ## Einleitung
 
-Während die fünfte Fassung des HTML-Standards[^1] grundsätzlich nur Veränderungen und Neuerung im Sprachstandard umfasst, werden unter dem Begriff *HTML5* in der Regel auch die in diesem Kontext eingeführten neuen Web-APIs sowie Aktualisierungen des CSS-Standards (Vgl. [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)) zusammengefasst. Eine der zentralen Erweiterungen der Browser-Fähigkeiten im Kontext von [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) ist die erweiterte Unterstützung von Medieninhalten (Audio und Video) sowie die Einführung rudimentärer 2D/3D-Operationen im Browser. Durch die Einführung der `<audio>` und `<video>`-Elemente können entsprechende Inhalte direkt und ohne zusätzliche *Plugins* oder Erweiterungen im Browser abgespielt werden. Video- und Audiodateien werden gleichberechtigte *"first-class citizens"* (Mozilla Developer Network, HTML5) des Browsers, deren Wiedergabe durch die entsprechenden APIs programmatisch aus dem Javascript-Code heraus gesteuert werden kann. Zusätzlich erhalten Entwickler und Entwicklerinnen mit dem *Canvas* die Möglichkeit, Teilbereiche des *User Interfaces* auch außerhalb der DOM-Struktur zu gestalten. Das `<canvas>`-Element stellt dazu einen Knoten im DOM-Baum dar, dessen Inhalt nicht durch Text oder weitere Kindelemente definiert wird, sondern durch eine rudimentäre Grafikschnittstelle programmatisch erzeugt und aktualisiert werden kann. In dieser Lektion lernen Sie die grundsätzliche Verwendung von Audio-, Video- und Canvas-Element kennen und erfahren, wie die Kompatibilität zwischen Canvas- und Video-Inhalten sinnvoll für die Implementierung interessanter Anwendungskonzepte verwendet werden kann.
+Während die fünfte Fassung des HTML-Standards[^1] grundsätzlich nur Veränderungen und Neuerung im Sprachstandard umfasst, werden unter dem Begriff *HTML5* in der Regel auch die in diesem Kontext eingeführten neuen Web-APIs sowie Aktualisierungen des CSS-Standards (Vgl. [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)) zusammengefasst. Eine der zentralen Erweiterungen der Browser-Fähigkeiten im Kontext von [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) ist die erweiterte Unterstützung von Medieninhalten (Audio und Video) sowie die Einführung rudimentärer 2D/3D-Operationen im Browser. Durch die Einführung der `<audio>` und `<video>`-Elemente können entsprechende Inhalte direkt und ohne zusätzliche *Plugins* oder Erweiterungen im Browser abgespielt werden. Video- und Audiodateien werden gleichberechtigte *"first-class citizens"* (Mozilla Developer Network, HTML5) des Browsers, deren Wiedergabe durch die entsprechenden APIs programmatisch aus dem Javascript-Code heraus gesteuert werden kann. Zusätzlich erhalten Entwickler und Entwicklerinnen mit dem *Canvas* die Möglichkeit, Teilbereiche des *User Interfaces* auch außerhalb der DOM-Struktur zu gestalten. Das `<canvas>`-Element stellt dazu einen Knoten im DOM-Baum dar, dessen Inhalt nicht durch Text oder weitere Kindelemente definiert wird, sondern durch eine rudimentäre Grafikschnittstelle programmatisch erzeugt und aktualisiert werden kann. In dieser Lektion lernen Sie die grundsätzliche Verwendung von Audio-, Video- und Canvas-Elemente kennen und erfahren, wie die Kompatibilität zwischen Canvas- und Video-Inhalten sinnvoll für die Implementierung interessanter Anwendungskonzepte verwendet werden kann.
 
 ## Audio & Video
 
@@ -23,7 +23,7 @@ Ein einfaches Beispiel für die Integration eines Videos in ein HTML-Dokument ka
 
 Über das Attribut `controls` wird dem Browser mitgeteilt, dass die nativen Steuerelement des Browser eingeblendet werden sollen. Diese werden vom jeweiligen Browser-Hersteller implementiert, sollten aber immer Schaltflächen zum Starten und Pausieren, eine Zeitleiste, Lautstärke- und Vollbildregler sowie ggf. Auswahlmöglichkeiten für Untertitel und *Tracks* beinhalten. Eine Übersicht über die weiteren Attribute des Elements finden Sie [hier](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video). Im Beispiel wird die abzuspielende Datei durch Kindelemente vom Typ `<source>` definiert. Der Browser prüft, beginnend beim ersten `<source>`-Element, ob die verlinkte Datei abspielbar ist, d.h. de-codiert und wiedergegeben werden kann. Ist dies nicht der Fall, werden die angegebenen Alternativen geprüft. Kann keine der aufgeführten Dateien verwendet werden, wird der übrige Inhalt des Elements (hier der Inhalt des `<p>`-Abschnitts) angezeigt. 
 
-Korrespondierend zu den `<video>`-Elementen und `<audio>`-Elementen	existieren *Javascript*-Objekte, die die programmatische Steuerung der Elemente erlauben. Deren Verwendung folgt dabei dem bekannten Prinzip, das bereits für andere HTML-Elemente verwendet wurde: Innerhalb Ihrer *Javascript*-Anwendung referenzieren Sie die entsprechenden DOM-Elemente über die Selektor-Funktionen und arbeiten anschließend mit den zurückgegebenen Objekten. Grundlage für beide Objekte ist das [HTMLMediaElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement). Spezifische Methoden und Eigenschafte werden im [HTMLVideoElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement) bzw. [HTMLAudioElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement) definiert. Die programmatische Steuerung der selektierten Elemente erfolgt durch die Verwendung der Eigenschaften, Methoden und *Events* der entsprechenden Objekte.
+Korrespondierend zu den `<video>` und `<audio>`-Elementen	existieren *Javascript*-Objekte, die die programmatische Steuerung der Elemente erlauben. Deren Verwendung folgt dabei dem bekannten Prinzip, das bereits für andere HTML-Elemente verwendet wurde: Innerhalb Ihrer *Javascript*-Anwendung referenzieren Sie die entsprechenden DOM-Elemente über die Selektor-Funktionen und arbeiten anschließend mit den zurückgegebenen Objekten. Grundlage für beide Objekte ist das [HTMLMediaElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement). Spezifische Methoden und Eigenschafte werden im [HTMLVideoElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement) bzw. [HTMLAudioElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement) definiert. Die programmatische Steuerung der selektierten Elemente erfolgt durch die Verwendung der Eigenschaften, Methoden und *Events* der entsprechenden Objekte.
 
 Die nun folgenden Beispiele beziehen sich auf ein HTML-Dokument mit diesem (Teil-)Inhalt: 
 
@@ -162,7 +162,7 @@ Farbe und Stärke der Pfade und Formen können durch das Manipulieren der entspr
 
 **Importieren von Bildern**
 
-Mittels der `drawImage`-Methode der *Canvas*-API können Bilder auf den ausgewählten Kontext gezeichnet werden. Neben der Position und den (optionalen) Dimensionen wird der Methode dazu die Bild-Quelle übergeben. Diese kann aus einem `HTMLImageElement` (`<img>`), einem `HTMLVideoElement` (`<video>`) oder einem anderen *Canvas* (`<canvas>`) bestehen[^2]. Die jeweilige Quelle kann dabei entweder bereits im DOM vorhanden sein, oder für den Zeichenprozess neu erstellt werden. Vor allem im zweiten Fall muss berücksichtigt werden, dass das Zeichnen des Bildes erst dann möglich ist, wenn dieses vollständig aus den entsprechenden Quelle (`src`-Attribut) geladen ist:
+Mittels der `drawImage`-Methode der *Canvas*-API können Bilder auf den ausgewählten Kontext gezeichnet werden. Neben der Position und den (optionalen) Dimensionen wird der Methode dazu die Bild-Quelle übergeben. Diese kann aus einem `HTMLImageElement` (`<img>`), einem `HTMLVideoElement` (`<video>`) oder einem anderen *Canvas* (`<canvas>`) bestehen[^2]. Die jeweilige Quelle kann dabei entweder bereits im DOM vorhanden sein, oder für den Zeichenprozess neu erstellt werden. Vor allem im zweiten Fall muss berücksichtigt werden, dass das Zeichnen des Bildes erst dann möglich ist, wenn dieses vollständig aus den entsprechenden Quellen (`src`-Attribut) geladen ist:
 
 ``` javascript
 // Erstellen eines leeren img-Containers mit jeweils 100px Breite und Höhe
@@ -224,7 +224,7 @@ for(let i = 0; i < imageData.data.length; i += 4) {
 context.putImageData(imageData, 0, 0); 
 ``` 
 
-Auf dem folgenden Screenshot sehen Sie ein Beispiel für die Anwendung des oben skizzierten Codes. Im linken *Canvas* wurde ein Bild (Quelle: *Lucas V. Barbosa*, [The Gunk](https://commons.wikimedia.org/wiki/File:The_Gunk.png))  eingezeichnet. Der Inhalt dieses *Canvas*wurde anschließend in Form eines `ImageData`-Objekts ausgelesen, in eine Graustufen-Repräsentation umgewandelt und in dieser Form in den rechten *Canvas* übertragen.
+Auf dem folgenden Screenshot sehen Sie ein Beispiel für die Anwendung des oben skizzierten Codes. Im linken *Canvas* wurde ein Bild (Quelle: *Lucas V. Barbosa*, [The Gunk](https://commons.wikimedia.org/wiki/File:The_Gunk.png))  eingezeichnet. Der Inhalt dieses *Canvas* wurde anschließend in Form eines `ImageData`-Objekts ausgelesen, in eine Graustufen-Repräsentation umgewandelt und in dieser Form in den rechten *Canvas* übertragen.
 
 ![Beispiel für Graustufen-Effekt im Canvas](img/canvas-effect.png)
 
@@ -238,7 +238,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArsAAAGVCAYAAAD+LTlZAAAgAElEQVR4nO
 
 Die URL beginnt mit dem Präfix `data:` an das sich der *mime type* (hier: `image/png`) und die Codierung (hier `base64`) anschließt. Der Rest der Zeichenkette beinhaltet den eigentlichen Dateiinhalt.
 
-Die so erzeugte URL kann dann verwendet werden, um den codierten *Canvas*-Inhalt zum Download (als Link) anzubieten oder als Inhalt eines `<img>`-Elements genutzt zu werden.
+Die so erzeugte URL kann dann verwendet werden, um den codierten *Canvas*-Inhalt zum Download (als Link) anzubieten oder als Inhalt eines `<img>`-Elements genutzt werden.
 
 ``` javascript
 let imageUrl = canvas.toDataURL(),
@@ -248,11 +248,11 @@ iamgeEl.src = imageUrl;
  
 ## Beispiel: Echtzeit-Videoeffekte im Browser
 
-Die Kompatibilität zwischen *Canvas*- und Video-Element lässt sich nutzen, um z.B. einfache Echtzeit-Videoeffekte direkt im Browser zu realisieren. Ein naiver Ansatz dafür kann nach folgendem Schema implementiert werden:
+Die Kompatibilität zwischen *Canvas*- und *Video*-Element lässt sich nutzen, um z.B. einfache Echtzeit-Videoeffekte direkt im Browser zu realisieren. Ein naiver Ansatz dafür kann nach folgendem Schema implementiert werden:
 
 1. Das Originalvideo wird in einem `<video>`-Element abgespielt (optional auch unsichtbar über die CSS-Eigenschaft `display: none`).
 
-2. In einem regelmäßigen, an die Wiedergabefrequenz des Videos angepassten Intervall wird der aktuelle *Frame* des Videos auf den *Canvas* gezeichnet.
+2. In einem regelmäßigen, an die Wiedergabefrequenz des Videos angepassten, Intervall wird der aktuelle *Frame* des Videos auf den *Canvas* gezeichnet.
 
 3. Nach jedem Zeichenvorgang werden die Pixel-Informationen (`ImageData`) des *Canvas* ausgelesen, manipuliert und anschließend zurück in den *Canvas* geschrieben.
 
@@ -266,7 +266,7 @@ let videoEl = document.querySelector("video"),
   context = canvasEl.getContext("2d");
 ```
 
-** Regelmäßiges Auslesen und Importieren des Video-Inhalts (als Einzelbild)**
+**Regelmäßiges Auslesen und Importieren des Video-Inhalts (als Einzelbild)**
 
 ``` javascript
 // Angenommen wird eine Frequenz von 25 Bildern pro Sekunde
@@ -285,17 +285,17 @@ Die tatsächliche *frame rate* eines Videos kann im Browser und mit *Javascript*
 
 **Anwendungsbeispiel**
 
-Das folgende Video zeigt ein einfaches Anwendungsbeispiel für die oben beschriebenen Echtzeit-Video-Effekte. Links sehen Sie ein Video-Element. Die Einzelbilder werden regelmäßig auf den *Canvas* (rechts) übertragen. Die Farbwerte der Pixel des `ImageData`-Objekts werden manipuliert, um ein *Threshold*-Bild zu erzeugen (Alle Pixel, deren Graustufe einen bestimmten Wert überschreiten, werden mit der Farbe Weiß (`255,255,255`) überschrieben, alle anderen Pixel mit der Farbe Schwarz (`0,0,0`)). Die modifizierten Pixel werden zurück in den *Canvas* geschrieben:
+Das folgende Video zeigt ein einfaches Anwendungsbeispiel für die oben beschriebenen Echtzeit-Video-Effekte. Links sehen Sie ein Video-Element. Die Einzelbilder werden regelmäßig auf den *Canvas* (rechts) übertragen. Die Farbwerte der Pixel des `ImageData`-Objekts werden manipuliert, um ein *Threshold*-Bild zu erzeugen. Alle Pixel, deren Graustufe einen bestimmten Wert überschreiten, werden mit der Farbe Weiß (`255,255,255`) überschrieben, alle anderen Pixel mit der Farbe Schwarz (`0,0,0`). Die modifizierten Pixel werden zurück in den *Canvas* geschrieben:
 
 ![Beispiel für Graustufen-Effekt im Video](img/canvas-effect-player.gif)
 
 ## Übungsaufgaben
 
-1. Erstellen Sie einen einfachen *video player*: Über ein Text-Eingabefeld kann der Benutzer nacheinander verschiedene Video-URLs eingeben (z.B. URLs aus [dieser](https://gist.github.com/jsturgis/3b19447b304616f18657) Liste). Die Videos ergeben eine *Playlist*, deren Inhalte nacheinander in einem `<video>`-Element mit angezeigten Standard-Steuerelementen abgespielt wird. Nutzen Sie entsprechende Eigenschaften bzw. *Events* des [`<video>`-Elements](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement) um das automatische Abspielen des jeweils nächsten Eintrags zu realisieren. Beispiel-Videos zum Testen der Anwendung finden Sie z.B. [hier](http://techslides.com/sample-webm-ogg-and-mp4-video-files-for-html5).
+1. Erstellen Sie einen einfachen *video player*: Über ein Text-Eingabefeld kann der Benutzer nacheinander verschiedene Video-URLs eingeben (z.B. URLs aus [dieser](https://gist.github.com/jsturgis/3b19447b304616f18657) Liste). Die Videos ergeben eine *Playlist*, deren Inhalte nacheinander in einem `<video>`-Element mit angezeigten Standard-Steuerelementen abgespielt wird. Nutzen Sie entsprechende Eigenschaften bzw. *Events* des [`<video>`-Elements](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement) um das automatische Abspielen des jeweils nächsten Eintrags zu realisieren. Beispiel-Videos zum Testen der Anwendung finden Sie [hier](http://techslides.com/sample-webm-ogg-and-mp4-video-files-for-html5).
 
 2. Ergänzen Sie den erstellen *video player* mit eigenen Schaltflächen für das Starten und Stoppen des aktuellen Videos sowie das Auswählen des nächsten Eintrags der *Playlist*.
 
-3. Implementieren Sie eine einfache Web-Anwendung, die es dem Benutzer erlaubt, Zeichnungen zu erstellen. Erstellen Sie ein HTML-Dokument und fügen Sie diesem ein `<canvas>`-Element hinzu. Fangen Sie die Mausinteraktion des Nutzers auf diesem Element ab (Vgl. [`mousemove`](https://developer.mozilla.org/en-US/docs/Web/Events/mousemove)) und übersetzen Sie die Mausbewegung in eine Zeichenoperation. Verwenden Sie die [`lineTo`-Methode](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#Lines) der *Canvas*-API bzw. um jeweils eine Linie zwischen der letzten bekannten und der aktuellen Position des Mauszeigers zu zeichnen.
+3. Implementieren Sie eine einfache Web-Anwendung, die es dem Benutzer erlaubt, Zeichnungen zu erstellen. Erzeugen Sie ein HTML-Dokument und fügen Sie diesem ein `<canvas>`-Element hinzu. Fangen Sie die Mausinteraktion des Nutzers auf diesem Element ab (Vgl. [`mousemove`](https://developer.mozilla.org/en-US/docs/Web/Events/mousemove)) und übersetzen Sie die Mausbewegung in eine Zeichenoperation. Verwenden Sie die [`lineTo`-Methode](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#Lines) der *Canvas*-API bzw. um jeweils eine Linie zwischen der letzten bekannten und der aktuellen Position des Mauszeigers zu zeichnen.
 
 
 [^1]: W3C, [HTML 5.2](https://www.w3.org/TR/html5/)
