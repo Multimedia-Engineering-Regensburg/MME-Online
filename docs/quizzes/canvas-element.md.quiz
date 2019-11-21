@@ -1,0 +1,21 @@
+# Canvas-, Audio- und Video-Elemente
+| In diesem Quiz wird ihr erlangtes Wissen über die Canvas-API geprüft.
+
+## Was bewirkt das hinzufügen des Attributs `controls` zu einem Video-Element?
+- Erlaubt die Manipulation des Video-Elements mittels Javascript
+- Das Element passt sich der Fenstergröße des Browsers an
++ Ein vom Browser gestelltes User Interface wird im Videoplayer integriert
+! Das hinzufügen des `controls`-Atrributs führt dazu, dass ein natives, vom Browser-Hersteller implementiertes, UI zur Kontrolle über das Video mitgeladen wird (Play, Pause, etc.).
+
+## Kann ein `<canvas>`-Element ohne jegliche weitere Schritte als Zeichenfläche genutzt werden?
+? Denken Sie daran, auf welchem Objekt die Zeichenmethoden aufgerufen werden!
++ Nein
+- Ja
+- Vielleicht?
+! Die richtige Antowort lautet "Nein". Das eigentliche `<canvas>`-Element ist keine Zeichenfläche. Um eine solche zu generieren, muss auf ihm ein *rendering context* erzeugt werden. Dies geschieht mittels der Methode `getContext()`.
+
+## Welche der folgenden Arten den Inhalt eines Canvas als Bild zu exportieren existieren?
++ Erzeugen einer *Data-URL*
++ Export als `ImageData`-Objekt (mit dem dann weiterverfahren werden kann)
+- Direktes Abspeicher einer PNG-Datei auf dem Computer mittels der Methode `png(path)` des Canvas-Objekts.
+! Der Bildinhalt eines `<canvas>`-Elements kann sowohl als *Data-URL*, wie auch als ImageData-Objekt erhalten werden.
