@@ -11,7 +11,7 @@ HTML- und CSS-Dateien der Anwendung sind vollständig vorgegeben. Das *User Inte
 
 Auch die grundlegende Funktionalität zum Import von Video-Dateien und dem Abspielen von Videomaterial ist über das Modul `VideoPlayer` im Unterordner `utils` gegeben. Der dort abgebildete Prototyp informiert registrierte *Observer* mittels `videoFrameChanged`-Event über Statusänderungen beim abgespielten Video.  Die Anwendung wird in der Datei `index.js` initialisiert. Konzentrieren Sie sich auf die Implementierung des *Ambilight* als wiederverwertbare Bibliothek, die die *bias lighting*-Funktion für beliebige HTML-Container bereit stellt.
 
-**Videodateien für das Testen den Anwendung können Sie [hier](https://test-videos.co.uk/bigbuckbunny/mp4-h264) herunterladen.**
+**Videodateien für das Testen den Anwendung können Sie [hier](https://test-videos.co.uk/bigbuckbunny/mp4-h264) oder [hier](http://bbb3d.renderfarming.net/download.html) herunterladen.**
 
 Die fertige Anwendung soll in etwa so aussehen:
 
