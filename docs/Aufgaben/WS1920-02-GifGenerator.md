@@ -38,7 +38,7 @@ Per *Drag & Drop* [Vgl. Mozilla Developer Network](https://developer.mozilla.org
 
 ### Export und Darstellung der Einzelbilder
 
-Beim Betätigen des entsprechenden *Buttons* wird das aktuelle Bild des Videos extrahiert (siehe dazu [Multimedial Inhalte im Browser](../MME/canvas-element)) und als `li` bzw. `image`-Element der Liste der exportierte *Frames* hinzugefügt. Die Einzelbilder werden als Listenelemente dargestellt. Nutzen Sie den unten angegebenen Aufbau, um die gewünschte Darstellung zu erreichen. Diese Vorlage finden Sie auch als *Template* im HTML-Code der Anwendung.
+Beim Betätigen des entsprechenden *Buttons* wird das aktuelle Bild des Videos extrahiert (siehe dazu [Multimedial Inhalte im Browser](../..//MME/canvas-element)) und als `li` bzw. `image`-Element der Liste der exportierte *Frames* hinzugefügt. Die Einzelbilder werden als Listenelemente dargestellt. Nutzen Sie den unten angegebenen Aufbau, um die gewünschte Darstellung zu erreichen. Diese Vorlage finden Sie auch als *Template* im HTML-Code der Anwendung.
 
 ```html
 <ul class="frames">
