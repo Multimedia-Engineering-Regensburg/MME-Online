@@ -7,7 +7,7 @@ In dieser Aufgabe implementieren Sie eine Editor, der aus benutzerdefinierten Ei
 Fragen zur Übungsaufgabe können Sie in das [GRIPS-Forum](https://elearning.uni-regensburg.de/mod/forum/view.php?id=1166886) *posten* oder diese per Mail (mi.mme@mailman.uni-regensburg.de) stellen.
 
 !!! danger "Github Classroom"
-	Das Starterpaket wird über *Github Classroom* bereitgestellt. Sie implementieren Ihre Lösung über ein *Repository* auf *Github*. **Das Repository, mit einer Kopie des Starterpaket, können Sie über diesen [Link](https://classroom.github.com/a/5Zd0yUOI) generieren und anschließend mit der Arbeit an der Aufgabe beginnen.** Klonen Sie das erstellte *Repository* dazu auf Ihren Rechner. Die notwendigen Rechte für Ihr *Github*-Konto werden automatisch beim Erstellen des *Repository* gesetzt. Denken Sie daran, Ihre Arbeit an der Aufgabe durch regelmäßiges *Commiten* der Änderungen und Ergänzungen zu dokumentieren. Laden Sie Ihren aktuellen Stand reglmäßig auf *Github* hoch (*Push*). 
+	Das Starterpaket wird über *Github Classroom* bereitgestellt. Sie implementieren Ihre Lösung über ein *Repository* auf *Github*. **Das Repository, mit einer Kopie des Starterpaket, können Sie über diesen [Link](https://classroom.github.com/a/AO_54k29) generieren und anschließend mit der Arbeit an der Aufgabe beginnen.** Klonen Sie das erstellte *Repository* dazu auf Ihren Rechner. Die notwendigen Rechte für Ihr *Github*-Konto werden automatisch beim Erstellen des *Repository* gesetzt. Denken Sie daran, Ihre Arbeit an der Aufgabe durch regelmäßiges *Commiten* der Änderungen und Ergänzungen zu dokumentieren. Laden Sie Ihren aktuellen Stand reglmäßig auf *Github* hoch (*Push*). 
 
 ## Bewertungskriterien
 
@@ -27,9 +27,6 @@ Eine eigenständige Erweiterung der Aufgabenstellung ist nicht notwendig. Unabh�
 
 Versuchen Sie die folgenden Features möglichst komplett und fehlerfrei umzusetzen. Achten Sie dabei darauf, die vorgeschlagenen Architektur und die Aufgabenverteilung bezüglich der Modulstruktur einzuhalten. Vermeiden Sie fehlerhafte Implementierungen und stellen Sie eine funktionierende Bedienung der Anwendung sicher. Denken Sie daran, dass auch die qualitative Gestaltung des Quellcodes in die Bewertung einfließt. 
 
-Ein Video der gewünschten Funktionalität finden Sie hier:
-
-![Screencast der finalen Anwendung](img/screencast.gif)
 
 ### Import des Videos in den Browser
 
@@ -37,7 +34,7 @@ Per *Drag & Drop* kann der Nutzer Videodateien auf dem Video-Element ablegen, di
 
 ### Export und Darstellung der Einzelbilder
 
-Beim Betätigen des entsprechenden *Buttons* wird das aktuelle Bild des Videos extrahiert und als `image`-Element der Liste der exportierte *Frames* hinzugefügt. Die Einzelbilder werden als Listenelemente dargestellt, nutzen Sie diesen Aufbau, um die gewünschte Darstellung zu erreichen:
+Beim Betätigen des entsprechenden *Buttons* wird das aktuelle Bild des Videos extrahiert und als `image`-Element der Liste der exportierte *Frames* hinzugefügt. Die Einzelbilder werden als Listenelemente dargestellt, nutzen Sie diesen Aufbau, um die gewünschte Darstellung zu erreichen. Diese Vorlage finden Sie als *Template* auch im HTML-Code der Anwendung.
 
 ```html
 <ul class="frames">
@@ -48,17 +45,22 @@ Beim Betätigen des entsprechenden *Buttons* wird das aktuelle Bild des Videos e
 </ul>
 ```
 
-Über den *remove*-Button kann ein *Frame* aus der Liste entefernt werden. Sorgen Sie dafür, dass der Nutzer einzelne Bilder per *Drag & Drop* innerhalb der Liste verschieben kann. Dabei gilt: Wird ein *Frame* auf einen anderen geschoben, wird das Bild innerhalb der Liste vor den darunterliegenden *Frame* einsortiert.
+Über den *remove*-Button kann ein *Frame* aus der Liste entefernt werden. Sorgen Sie zusätzlich dafür, dass der Nutzer einzelne Bilder per *Drag & Drop* innerhalb der Liste verschieben kann. Dabei gilt: Wird ein *Frame* auf einen anderen geschoben, wird das Bild innerhalb der Liste vor den darunterliegenden *Frame* einsortiert.
+
+Versuchen Sie im gesamten Im- und Export-Prozess die Größen der Video- und Einzelbilder sowie des *Gifs* einheitlich zu halten. Dadurch vermeiden Sie Probleme wie etwa verzehrte oder fehlerhafte Darstellung in der Bilderliste oder der *Gif*-Ausgabe.
 
 ### Erzeugen des *Animated GIFs*
 
-Beim Klick auf den entsprechenden Button wird aus den Einzelbildern ein *Animated GIFs* erzeugt. Diese Funktion ist erst zugänglich, wenn mindestens zwei Einzelbilder exportiert wurden (CSS-Klasse `disabled` des Buttons). Die Reihenfolge der Einzelbilder basiert auf der Sortierung innerhalb der oben beschriebenen Liste. Wählen Sie eine sinnvolle *Frame Rate* für das GIF. Nach Fertigstellung wird das *Animated GIF* im linken Bereich der Anwendung (`gif-box`) angezeigt. Nutzen Sie diesen Aufbau, um die gewünschte Darstellung zu erreichen:
+Beim Klick auf den entsprechenden Button wird aus den Einzelbildern ein *Animated GIFs* erzeugt. Diese Funktion ist erst zugänglich, wenn mindestens zwei Einzelbilder exportiert wurden (CSS-Klasse `disabled` des Buttons). Die Reihenfolge der Einzelbilder basiert auf der Sortierung innerhalb der oben beschriebenen Liste. Wählen Sie eine sinnvolle *Frame Rate* für das GIF. Nach Fertigstellung wird das *Animated GIF* im linken Bereich der Anwendung (`gif-box`) angezeigt. Der dort angezeigte Hinweistext wird dabei deaktiviert. Nutzen Sie diesen Aufbau, um die gewünschte Darstellung zu erreichen:
+
 ```html
 <img class="gif" src="{{src}}">
 ```
+
+Die integrierte *gif.js*-Bibliothek generiert als Ergebniss ein  [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob)-Objekt. Für die Verwendung im `<img>`-Container können Sie dieses mithilfe der Methode [`URL.createObjectURL`](https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL) umwandeln.
 
 ## Vorgaben 
 
 Die HTML-Struktur sowie eine CSS-Datei sind vorgegeben. Machen Sie sich mit beiden Punkten vertraut und versuchen Sie das auf den Screenshots zu sehenden Design korrekt umzusetzen. Beachten Sie dazu auch die Kommentare innerhalb der CSS-Datei. Für die interne Kommunikation können Sie das bereits bekannte `EventTarget`  aus dem Browserkontext verwenden. Gerne können Sie zusätzlich auch die aus der ersten Aufgabe bekannte *underscore*-Bibliothek ergänzen, um etwa *Templating* für die dynamische Generierung der notwendigen HTML-Strukturen zu verwenden. Die *Drag & Drop*-Komponente können Sie selbstständig, oder auf Basis der im Kurs vorgestellten Lösung implementieren.
 
-Für die Generierung des *Animated GIFs* verwenden Sie bitte die *gif.js*-Bibliothek, die bereits in das Projekt eingebunden wird. Die Dokumentation zur Verwendung der Bibliothek finden Sie [hier](https://github.com/jnordberg/gif.js).
+Für die Generierung des *Animated GIFs* verwenden Sie bitte die *gif.js*-Bibliothek, die bereits in das Projekt eingebunden wird. Die Dokumentation zur Verwendung der Bibliothek finden Sie [hier](https://github.com/jnordberg/gif.js). Beim Erstellen des Generators müssen Sie in der Regel den vollständigen Pfad zum *Worker*-Skript angeben (Vgl. Dokumentation der Bibliothek).
