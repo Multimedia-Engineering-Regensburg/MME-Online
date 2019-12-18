@@ -17,10 +17,9 @@ Woche | Datum     | Inhalt               | Material | Anmerkung
 7   |27.11.2019   | Multimediale Inhalte im Browser | [Audio-, Video- und Canvas-Elemente](./canvas-element.md) | Online-Material und praktische Übung
 8 |04.12.2019 | Daten im Browser persistieren | [Datenspeicherung in Webanwendungen](./data-storage.md)  | Online-Material und praktische Übung
 9 |11.12.2019 | **entfällt**
-<!-- 10 |18.12.2019 | Javascript außerhalb des Browsers| [Einführung in die Verwendung von Node.js](./node-js.md) | Online-Material und praktische Übung -->
-10 |18.12.2019 | Die eigenen Programmierfähigkeiten mit Code Kata verbessern | [Code Kata](./code-kata.md) | Online-Material und praktische Übung
+10 |18.12.2019 | Javascript außerhalb des Browsers| [Einführung in die Verwendung von Node.js](./node-js.md) | Online-Material und praktische Übung
 11 |08.01.2020 | **Praxissitzung: Coding-Workshop** |  | Vorlesung und praktische Übung 
-12 |15.01.2020 | Implementierung einfacher Serverkomponenten | Inhalte folgen | Online-Material und praktische Übung 
+12 |15.01.2020 | Implementierung einfacher Serverkomponenten | [Einführung in die Verwendung von Node.js](./node-js.md) | Online-Material und praktische Übung 
 13 |22.01.2020 | Der Einsatz von Entwurfsmustern | Inhalte folgen  | Online-Material und praktische Übung
 14 |29.01.2020 | Projektworkshop: Vorstellung und Auswahl von Themen, Definition einer ersten Projektskizze, Einrichten der Repositories | | Online-Material und praktische Übung
 15 |05.02.2020 | **Praxissitzung: Coding-Workshop** |  | Vorlesung und praktische Übung 
