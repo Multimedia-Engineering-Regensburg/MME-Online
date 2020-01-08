@@ -11,7 +11,7 @@ Grundlage für die Arbeit an der Anwendung ist ein gemeinsames Github-Repository
 
 ### Vorbereitung
 
-Das notwendige Repository können Sie über [diesen Link](https://classroom.github.com/g/bj8WewbS) erstellen. Zu Beginn muss einmalig ein Team angelegt werden, überlegen Sie sich dazu einen passenden Namen für Ihre Gruppe. Anschließend können alle Gruppenmitglieder diesem Team über den selben Link beitreten. Clonen Sie anschließend das so erstellte Repository auf allen Rechnern, die Sie zur Bearbeitung der Aufgaben einsetzen wollen.
+Das notwendige Repository können Sie über [diesen Link](https://classroom.github.com/g/e_5xCvx9) erstellen. Zu Beginn muss einmalig ein Team angelegt werden, überlegen Sie sich dazu einen passenden Namen für Ihre Gruppe. Anschließend können alle Gruppenmitglieder diesem Team über den selben Link beitreten. Clonen Sie anschließend das so erstellte Repository auf allen Rechnern, die Sie zur Bearbeitung der Aufgaben einsetzen wollen. Arbeiten Sie während des Workshops an einem gemeinsamen Entwicklungsrechner. Sollten Sie die Aufgaben im Anschluss weiter entwickeln wollen, können Sie dies über das gemeinsame Repository tuen.
 
 !!! danger "Gemeinsame Arbeit an der *code base*"
 	Achtung! Sie arbeiten jetzt an einer gemeinsamen *code base*. Das erstellte Github-Repository dient als zentrale Sammelstelle für die Beiträge der einzelnen Teammitglieder. Jedes Mitglied arbeitet in einem lokalen Repository, das mit dem zentralen *Remote* verbunden ist. Über die Git-Funktionen übertragen Sie Änderungen aus dem *Remote* in Ihre lokale Arbeitskopie (*pull*) und stellen Ihre eigenen Änderungen zentral bereit (*push*). Versuchen Sie dabei die folgende Reihenfolge beizubehalten: 1) *Committen* Sie Ihre Änderungen, 2) *Pullen* Sie den aktuellen Status aus dem zentralen Repository und beheben Sie etwaige Konflikte und 3) *Pushen* Sie abschließend den neuen Zustand der Anwendung in den *Remote*. Ein kleinteiliges und stark modularisiertes Design, in dem einzelne Komponenten in isolierten Dateien abgebildet werden, verhindert viele Probleme. Insbesondere, wenn Sie die Implementierung im Team entlang dieser Struktur aufteilen und versuchen, an unterschiedlichen, schwach verbundenen Komponenten der Anwendung zu arbeiten. Planen Sie gemeinsam die Schnittstellen und Aufgaben der Komponenten und entwickeln Sie die interne Funktionalität anschließend parallel und in Einzelarbeit.
@@ -37,15 +37,15 @@ Sie haben insgesamt drei Stunden für die Bearbeitung der Aufgabe zur Verfügung
 
 Phase | Aufgabe | Zeitaufwand | Erwartete Ziele 
 :-----|:--------|:---------------:|:----------------
-Vorbereitung | Team und Repository erstellen, lokale Arbeitsumgebung einrichten und testen  | 5min | Alle Teammitglieder haben Zugang zu einem gemeinsamen Github-Repositoy, in dem der Startercode verfügbar ist. Alle Teammitglieder verfügen über eine lokale Kopie des Repository und können Änderungen zentral bereitstellen
-Vorbereitung | Starterpaket und Anforderungen durcharbeiten | 5min | Das Team verfügt über einen groben Überblick über die vorhandenen UI-Strukturen sowie die aufgelisteten Anforderungen
-Planung | Komponenten planen und strukturieren | 20min | Das Team verfügt über eine schriftlich festgehaltene Skizze des *Software Designs*. Dazu gehört eine Übersicht über die notwendigen Komponenten und deren Aufgaben
+Vorbereitung | Team und Repository erstellen, lokale Arbeitsumgebung einrichten und testen  | 5min | Jedes Team verfügt über ein Repository mit dem vorgegbenen Startercode. Das Projekt befindet sich lokal auf dem ausgewählten Entwicklungsrechner und kann dort auch über den eingebauten Webserver gestartet werden.
+Vorbereitung | Starterpaket und Anforderungen durcharbeiten | 10min | Das Team verfügt über einen groben Überblick über die vorhandenen UI-Strukturen sowie die aufgelisteten Anforderungen
+Planung | Komponenten planen und strukturieren | 30min | Das Team verfügt über eine schriftlich festgehaltene Skizze des *Software Designs*. Dazu gehört eine Übersicht über die notwendigen Komponenten und deren Aufgaben
 Planung | Kommunikation planen | 10min | Das Team verfügt über eine schriftlich festgehaltene Skizze, aus der hervorgeht wo, wann und wie zur Laufzeit Informationen zwischen den Komponenten ausgetauscht werden
 Planung | Projektverzeichnis vorbereiten | 5 min | Für alle geplanten Komponenten sind entsprechende (leere) Dateien im Projektverzeichnis erstellt worden. Diese Struktur ist im zentralen Repository verfügbar gemacht worden.
         | 5 Minuten Pause
-Implementierung | Implementierung der Aufgabe | 100 min | Wesentliche Funktionen der Anwendung wurden umgesetzt und können über die im zentralen Repository verfügbare *code base* getestet werden
+Implementierung | Implementierung der Aufgabe | - | Wesentliche Funktionen der Anwendung wurden umgesetzt und können über die im zentralen Repository verfügbare *code base* getestet werden
         | 5 Minuten Pause
-Retrospektive | Vorstellung der Lösung und Bericht über Probleme | 30 min | Das Team kann die wesentlichen Komponenten der Anwendung beschreiben und vorstellen, die funktionierenden Features demonstrieren und über aufgetretene Probleme berichten
+Retrospektive | Vorstellung der Lösung und Bericht über Probleme | - | Das Team kann die wesentlichen Komponenten der Anwendung beschreiben und vorstellen, die funktionierenden Features demonstrieren und über aufgetretene Probleme berichten
 
 ### Hilfsmittel zur Planung und Strukturierung
 
@@ -72,9 +72,5 @@ Neue Tasks werden über ein Formular (Element mit der ID `new-task`) erstellt, d
 ### Javascript und Modulstruktur
 
 Verwenden Sie das existierende Javascript-Modul in der Datei `index.js` als Einstiegspunkt in den Anwendungsablauf. Erstellen Sie alle weiteren Module in sinnvoll benannten Unterordnern des `js`-Verzeichnis.
-
-## Starterpaket und Lösung
-
-Ein vorbereitetes Starterpaket zur selbständigen Implementierung der Aufgabe sowie einen Lösungsvorschlag finden Sie auf [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Time-Tracker). Die Lösung findet sich im `master`-Branch des verlinkten Repositories. Das Starterpaket im `starter`-Branch.
 
 [^1]: In der Webansicht von *Github* werden beim *Browsing* durch die Repository-Ordner Dateien dem Namen `Readme.md` automatisch gerendert und können so z.B. gut als Inhaltsverzeichnisse oder Beschreibungstext verwendet werden. Dieses Feature funktioniert im Wurzelverzeichnis und allen Unterordnern. Sie können dabei die Markupsprache [Markdown](https://help.github.com/en/articles/basic-writing-and-formatting-syntax) verwenden, um Ihre Dokumente zu strukturieren und zu gestalten.
