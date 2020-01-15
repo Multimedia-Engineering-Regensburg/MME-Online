@@ -12,9 +12,9 @@ In dieser Demo implementieren Sie eine erweiterte Version der [Writer](../writer
 
 Im Starterpaket finde Sie einen Ordner für das Gesamtprojekt mit dem folgenden Inhalt:
 
-- `lib`: In diesem Ordner werden die neu implementierten Komponenten des Server-seitigen Teils der Anwendung gespeichert.
+- `lib`: In diesem Ordner werden die neu implementierten Komponenten des Server-seitigen Teils der Anwendung gespeichert. Erstellen Sie den Ordner, falls er nicht vorhanden ist.
 
-- `www`: In diesem Ordner wird der vollständige Client-Code der Anwendung gespeichert.
+- `app`: In diesem Ordner wird der vollständige Client-Code der Anwendung gespeichert.
 
 - `index.js`: Diese Datei dient als (Server-seitiger) Einstiegspunkt in die Anwendung und wird beim Start als Parameter an die *Node.js*-Umgebung übergeben.
 
@@ -26,7 +26,7 @@ Der Client ist - mit Ausnahme der Anbindung an die Server-seitige Persistenzschi
 
 Erstellen Sie im Projektverzeichnis einen leeren Ordner `data`, in dem später die einzelnen Dateien bzw. Dokumente, die von den Nutzern erstellt werden abgespeichert werden.
 
-Für die weitere Implementierung der Anwendung ist die Installation des *Node.js*-*Framework* *express* notwendig. Führen Sie dazu im Projektverzeichnis den Befehl `node install express` aus. Da die Abhängigkeit gegenüber diesem *Framework* bereits in der `packge.json`-Datei eingetragen ist, können Sie diese auch über den Befehl `npm install` installieren.
+Für die weitere Implementierung der Anwendung ist die Installation des *Node.js*-*Framework* *express* notwendig. Führen Sie dazu im Projektverzeichnis den Befehl `npm install express` aus. Da die Abhängigkeit gegenüber diesem *Framework* bereits in der `packge.json`-Datei eingetragen ist, können Sie diese auch über den Befehl `npm install` installieren.
 
 ## Schnittstellenbeschreibung
 
@@ -49,8 +49,6 @@ Diese Implementierung stellt eine sehr einfache Möglichkeiten einer HTTP-basier
 2. Erstellen Sie ein neues Modul (im *Node.js*-Stil, nicht als *Revealing Module*) in einer Datei im Pfad `lib/DataStorage.js`. Implementieren Sie Mithilfe der `fs`-Bibliothek die notwendigen Funktionen um Dateien zu erstellen, zu laden und zu speichern. Die öffentlichen Funktionen des Moduls geben jeweils ein Objekt zurück, das *ID* und Inhalt der betreffenden Datei beinhaltet. Beim Erstellen einer neuen Datei wird die notwendige und eindeutige *ID* berechnet und als Dateiname für die persistente Speicherung verwendet.
 
 3. Erstellen Sie in der Datei `index.js` die notwendigen *express*-Routen, um die oben beschriebenen *Endpoints* zu realisieren (Vgl.: [*Basic routing*](http://expressjs.com/en/starter/basic-routing.html)). Verwenden Sie die vorher implementierten Funktionen des `DataStorage`-Moduls, um in den *Callbacks* der einzelnen Routen die notwendige Funktionalität bereit zustellen. Denken Sie daran, das erstellte Modul vorher mit Hilfe der `require`-Methode zu importieren.
-
-4. Vervollständigen Sie den Client-Code, insbesondere das Modul aus der Datei `DocumentStorage.js`. Implementieren Sie dort die Anbindung des Clients an den Server und verwenden Sie dazu die eben implementierte Schnittstelle. Zur Realisierung der AJAX-Komponenten können Sie eine eigene Implementierung aus Basis des `XMLHTTPRequest`-Objekts erstellen oder die vorgefertigte `request`-Funktion verwenden, die über das Einbinden der Datei `vendors/request/request.js` im globalen *Scope* der Anwendung bereitgestellt wird. 
 
 5. Ergänzen Sie die Anwendung um eine Funktion zur automatischen, Intervall-basierten Speicherung des aktuellen Dateiinhalts. Sie können das HTML-Element mit der *ID* `notification` verwenden, um den Benutzer über die erfolgreiche Speicherung zu informieren. Entfernen Sie dazu für eine selbst gewählten Zeitraum die Klasse `hidden`.
 
