@@ -9,8 +9,8 @@ Die Bearbeitung der Übungsaufgaben ist für alle Studierenden, die ihr Medienin
 Im **Wintersemester 2019** werden die Übungsaufgaben in den folgenden Zeiträumen bearbeitet:
 
 - **Aufgabe 1**: 13. November bis 27. November ([Handout](./WS1920-01-Countdown))
-- **Aufgabe 2**: 9. Dezember bis 23	. Dezember ([Handout](./WS1920-02-GifGenerator))
-- **Aufgabe 3**: 15. Januar bis 29. Januar ([Handout](#))
+- **Aufgabe 2**: 9. Dezember bis 23	. Dezember ([Handout](./WS1920-02-GifGenerator)
+- **Aufgabe 3**: 20. Januar bis 3. Februar ([Handout](./WS1920-03-Video-Assistant))
 
 ## Anforderungen und Bewertungskriterien
 
