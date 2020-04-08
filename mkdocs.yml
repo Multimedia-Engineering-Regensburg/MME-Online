@@ -32,42 +32,42 @@ nav:
   - Lektionen: 
     - Übersicht: MME/index.md
     - Multimedia Engineering: MME/class-introduction.md
-    - Javascript im Browser: MME/javascript-browser.md
-    - Einrichten der Arbeitsumgebung: MME/work-environment.md
-    - Das Projektverzeichnis: MME/project-directory.md
-    - Versionskontrolle mit Git: MME/version-control.md
-    - Progammatische Manipulation des DOM: MME/dom-introduction.md
+#    - Javascript im Browser: MME/javascript-browser.md
+#    - Einrichten der Arbeitsumgebung: MME/work-environment.md
+#    - Das Projektverzeichnis: MME/project-directory.md
+#    - Versionskontrolle mit Git: MME/version-control.md
+#    - Progammatische Manipulation des DOM: MME/dom-introduction.md
 #    - Codequalität: MME/code-quality.md
-    - Javascript-Anwendungen strukturieren und gestalten: MME/closures-and-module-pattern.md
-    - Den Event-Loop verstehen und verwenden: MME/event-loop.md
-    - Client-Server-Kommunikation (AJAX und XMLHttpRequest): MME/ajax.md
-    - Canvas, Video & Audio: MME/canvas-element.md
-    - Datenspeicherung in Webanwendungen: MME/data-storage.md
-    - Nebenläufigkeit im Browser: MME/webworkers.md
-    - Code Kata: MME/code-kata.md
-    - Einführung in die Node.js-Umgebung: MME/node-js.md
+#    - Javascript-Anwendungen strukturieren und gestalten: MME/closures-and-module-pattern.md
+#    - Den Event-Loop verstehen und verwenden: MME/event-loop.md
+#    - Client-Server-Kommunikation (AJAX und XMLHttpRequest): MME/ajax.md
+#    - Canvas, Video & Audio: MME/canvas-element.md
+#    - Datenspeicherung in Webanwendungen: MME/data-storage.md
+#    - Nebenläufigkeit im Browser: MME/webworkers.md
+#    - Code Kata: MME/code-kata.md
+#    - Einführung in die Node.js-Umgebung: MME/node-js.md
 #    - Komplexe Webanwendungen: MME/server-client-applications.md
 #    - Anforderungen erheben und dokumentieren: MME/requirements-for-student-projects.md
-    - Pair Programming: MME/pair-programming.md
-  - Demos:
-      - Übersicht: Demos/index.md
-      - ToDo-Liste: Demos/todo-list.md
+#    - Pair Programming: MME/pair-programming.md
+#  - Demos:
+#      - Übersicht: Demos/index.md
+#      - ToDo-Liste: Demos/todo-list.md
 #      - Kanban-Board: Demos/kanban-board.md
-      - Writer: Demos/writer.md
-      - Simon Says: Demos/simon-says.md
-      - Time Tracker: Demos/time-tracker.md
-      - Mensa App: Demos/mensa-app.md
+#      - Writer: Demos/writer.md
+#      - Simon Says: Demos/simon-says.md
+#      - Time Tracker: Demos/time-tracker.md
+#      - Mensa App: Demos/mensa-app.md
 #     - Bundesliga-Tabelle: Demos/bundesliga.md
-      - Ambi Player: Demos/ambi-player.md
-      - ToDo-Liste mit Datenbank: Demos/todo-list-db.md
-      - Writer-Online: Demos/writer-online.md
+#      - Ambi Player: Demos/ambi-player.md
+#      - ToDo-Liste mit Datenbank: Demos/todo-list-db.md
+#      - Writer-Online: Demos/writer-online.md
 #      - Chat: Demos/chat.md
 #      - Color Clicker: Demos/color-clicker.md
   - Aufgaben: 
       - Übersicht: Aufgaben/index.md
-  - Projekte:
-      - Übersicht: Projekte/index.md
-      - Winter 2019: Projekte/winter-2019.md
+#  - Projekte:
+#      - Übersicht: Projekte/index.md
+#      - Winter 2019: Projekte/winter-2019.md
   - Reader: Reader/index.md
   - Impressum:
     - Autor: author.md
