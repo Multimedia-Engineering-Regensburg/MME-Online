@@ -9,4 +9,5 @@ Alle Materialien liegen als [Markdown](https://en.wikipedia.org/wiki/Markdown)-D
 ### Hinweise Verwendung von MkDocs
 
 - Um die Seite lokal zu testen müssen per `pip` die Erweiterungen `pymdown-extensions`, `mkdocs-git-revision-date-plugin` und  `mkdocs-bootswatch` installiert werden
-- Auf dem Server wird Python3 verwendet, im Zweifelsfall sind MkDocs und Plugins nicht mit der Version 2.7 kompatible
+- Zur Installation der notwendigen python packages kann der Befehl `python -m pip install -r requirements.txt` ausgeführt werden
+- Auf dem Server wird Python3 verwendet, im Zweifelsfall sind MkDocs und Plugins nicht mit der Version 2.7 kompatibel
