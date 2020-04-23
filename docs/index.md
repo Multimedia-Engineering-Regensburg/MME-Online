@@ -1,6 +1,19 @@
 # Multimedia Engineering
 
-Auf dieser Seite finden Sie Tutorials, Begleittexte, Videos und Beispiele zum Multimedia Engineering-Kurs des [Lehrstuhls für Medieninformatik](https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/). Die Inhalte dienen dem kursbegleitenden Selbststudium und ergänzen die wöchentlichen Sitzungen, **die im Sommersemester 2020 in Form eines Live-Streams über den [Twitch-Kanal](https://twitch.tv/alexanderbazo) durchgeführt werden. Organisatorische Hinweise, weitere Inhalte und Verweise erhalten Sie im jeweils aktuellen [GRIPS-Kurs](https://elearning.uni-regensburg.de/course/view.php?id=40901). Die Inhalte zu den einzelnen Sitzungen werden laufend weiterentwickelt und spätestens am Montag vor der jeweiligen Live-Sitzung hier veröffentlicht.
+Auf dieser Seite finden Sie Tutorials, Begleittexte, Videos und Beispiele zum Multimedia Engineering-Kurs des [Lehrstuhls für Medieninformatik](https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/). Die Inhalte dienen dem kursbegleitenden Selbststudium und ergänzen die wöchentlichen Sitzungen, **die im Sommersemester 2020 in Form eines Live-Streams über den [Twitch-Kanal](https://twitch.tv/alexanderbazo) durchgeführt werden.** Organisatorische Hinweise, weitere Inhalte und Verweise erhalten Sie im jeweils aktuellen [GRIPS-Kurs](https://elearning.uni-regensburg.de/course/view.php?id=40901). Die Inhalte zu den einzelnen Sitzungen werden laufend weiterentwickelt und spätestens am Montag vor der jeweiligen Live-Sitzung hier veröffentlicht.
+
+
+**Eine ausführliche Beschreibung des MME-Kurses und die zugehörigen Lernmaterialien finden Sie auf dieser Seite. Die wichtigsten Informationen haben wir hier für Sie zusammengefasst.**
+
+??? projects "Lerngruppen"
+	Informationen zu den Lerngruppen finden sich [hier](./MME/study-groups). Für jede Lerngruppe haben wir einen Kanal im [Rocket-Chat der Uni Regensburg](https://chat.ur.de ) eingerichtet. Sollten Sie keinen Zurgriff auf den Kanal Ihrer Gruppe haben, schreiben Sie uns bitte eine kurze E-Mail.
+
+??? projects "Streams und Chats"
+	Der wöchentliche Live-Stream findet immer Mittwochs, ab 10 Uhr auf [diesem Twitch-Kanal](https://twitch.tv/alexanderbazo) statt. Die aufgezeichneten Stream können Sie in [dieser Playlist](https://www.youtube.com/playlist?list=PLkvtIsp_a3sg51eKDzSBIzul_Z0JlZs_C) nachschauen. 	Im [Rocket-Chat der Uni Regensburg](https://chat.ur.de) haben wir einen Kanal (`#mi-mme-public`) für den Kurs eingerichtet. Sie können über [diesen Link](https://chat.uni-regensburg.de/invite/PWx6DB) beitreten. Sollte das nicht klappen, schreiben Sie uns eine E-Mail an `mme.mi@mailman.uni-regensburg.de`. 
+
+??? projects "Übungsaufgaben"
+	Termine und Anforderungen zu den Übungsaufgaben können Sie [hier](./Aufgaben) einsehen.
+
 
 ## Zusammenfassung
 Der Multimedia Engineering-Kurs (MME) richtet sich in erster Linie an Studierende der Medieninformatik. Der Kurs schließt inhaltlich an die beiden Vorlesungen *Einführung in die Objektorientierte Programmierung* und *Anwendungsentwicklung mit Android* an. Sie vertiefen Ihre Kenntnisse im Bereich der Anwendungsentwicklung und Softwaretechnik und lernen neue Methoden und Techniken kennen, die Ihnen bei der Entwicklung und Bewertung komplexer Anwendungssoftware helfen soll. Durch eine erfolgreiche Teilnahme am Kurs und dem abschließenden Entwicklungsprojekt erwerben Sie Kompetenzen, die es Ihnen erlauben, (multimediale) Anwendungen zu konzipieren und auf der Basis aktueller Techniken zu realisieren. Sie lernen den Entwicklungsprozess dabei durch den Einsatz geeigneter Methoden und Werkzeuge zu gestalten und zu dokumentieren. 
