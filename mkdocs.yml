@@ -69,7 +69,7 @@ nav:
 #      - Übersicht: Projekte/index.md
 #      - Winter 2019: Projekte/winter-2019.md
   - Reader: Reader/index.md
-  - Impressum:
-    - Autor: author.md
+  - Informationen:
+    - Team: team.md
     - Impressum: impress.md
     - Lizenz: licence.md

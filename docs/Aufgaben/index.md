@@ -1,16 +1,20 @@
 # Übungsaufgaben
 
-Im Rahmen des Multimedia Engineering-Kurses werden semester-begleitend drei Übungsaufgaben gestellt. In jeder Übungsaufgabe werden Sie, ausgehend von einem vorgegebene Grundgerüst aus HTML und CSS eine komplexere Webanwendung implementieren. Zu jeder Aufgabe erhalten Sie ein ausführliches Handout, das Ihnen die Ziele und Bewertungskriterien erläutert. Die vorgegebenen Inhalte werden im Handout erläutert. Spezifische, nicht-funktionale Anforderungen an die zu implementierende Aufgabe, werden ebenfalls im Handout definiert. Dazu gehören z.B. bestimmte Vorgaben bezüglich der Softwarearchitektur oder des -Designs. Alle notwendigen Materialien werden über ein Github-Repository bereitgestellt und können über einen Link importiert werden. Zu diesem Zweck wird [Github Classroom](https://classroom.github.com/) eingesetzt. Zugriff auf die von Ihnen erstellten Inhalte haben nur Sie selbst sowie Dozierende des Lehrstuhls. 
+Im Rahmen des Multimedia Engineering-Kurses werden semester-begleitend fünf Übungsaufgaben gestellt. In jeder Übungsaufgabe werden Sie, ausgehend von einem vorgegebene Grundgerüst aus HTML und CSS eine vollständige Webanwendung implementieren. Zu jeder Aufgabe erhalten Sie ein ausführliches Handout, das Ihnen die Ziele und Bewertungskriterien erläutert. Die vorgegebenen Inhalte werden im Handout erläutert. Spezifische, nicht-funktionale Anforderungen an die zu implementierende Aufgabe, werden ebenfalls im Handout definiert. Dazu gehören z.B. bestimmte Vorgaben bezüglich der Softwarearchitektur oder des -Designs. Alle notwendigen Materialien werden über ein Github-Repository bereitgestellt und können über einen Link importiert werden. Zu diesem Zweck wird [Github Classroom](https://classroom.github.com/) eingesetzt. Zugriff auf die von Ihnen erstellten Inhalte haben Sie selbst, Teile Ihrer Lerngruppe sowie die Tutoren und Dozierende des Lehrstuhls. 
 
-Die Bearbeitung der Übungsaufgaben ist für alle Studierenden, die ihr Medieninformatikstudium zum oder nach dem Wintersemester 2017/18 aufgenommen haben, verpflichtend (die Übungsaufgaben stellen die in der [Modulbeschreibung](https://www.uni-regensburg.de/studium/modulbeschreibungen/medien/ba/medieninformatik-ba-ws1718.pdf) vorgesehenen Studienleistungen dar). **Zwei von drei Aufgaben müssen bestanden werden, um die Studienleistungen insgesamt erfolgreich abzuschließen.** Für alle anderen Teilnehmenden ist die Bearbeitung dringend empfohlen. Eine erfolgreiche Teilnahme an den Abschlussprojekten ist ohne die Erfahrungen aus den Übungsaufgaben in der Regel nicht möglich.
+Die Bearbeitung der Übungsaufgaben sowie das anfertigen eines Reviews zur Lösung eines Ihrer Komilitonen ist für alle Studierenden, die ihr Medieninformatikstudium zum oder nach dem Wintersemester 2017/18 aufgenommen haben, verpflichtend (die Übungsaufgaben stellen die in der [Modulbeschreibung](https://www.uni-regensburg.de/studium/modulbeschreibungen/medien/ba/medieninformatik-ba-ws1718.pdf) vorgesehenen Studienleistungen dar). **Drei von fünf Aufgaben müssen bestanden werden, um die Studienleistungen insgesamt erfolgreich abzuschließen.** Für alle anderen Teilnehmenden ist die Bearbeitung dringend empfohlen. Eine erfolgreiche Teilnahme an den Abschlussprojekten ist ohne die Erfahrungen aus den Übungsaufgaben in der Regel nicht möglich.
 
 ## Die Aufgaben
 
-Im **Wintersemester 2019** werden die Übungsaufgaben in den folgenden Zeiträumen bearbeitet:
+Im **Sommersemester 2019** werden die Übungsaufgaben in den folgenden Zeiträumen bearbeitet:
 
-- **Aufgabe 1**: 13. November bis 27. November ([Handout](./WS1920-01-Countdown))
-- **Aufgabe 2**: 9. Dezember bis 23	. Dezember ([Handout](./WS1920-02-GifGenerator)
-- **Aufgabe 3**: 20. Januar bis 3. Februar ([Handout](./WS1920-03-Video-Assistant))
+- **Aufgabe 1**: 1. Mai bis 10. Mai ([Handout](#))
+- **Aufgabe 2**: 15. Mai bis 24. Mai ([Handout](#))
+- **Aufgabe 3**: 29. Mai bis 7. Juni ([Handout](#))
+- **Aufgabe 4**: 12. Juni bis 21. Juni ([Handout](#))
+- **Aufgabe 5**:  26. Juni bis 5. Juli ([Handout](#))
+
+Alle Informationen zu den individuellen Aufgaben finden zum Start der Bearbeitungszeit auf den verlinkten Seiten.
 
 ## Anforderungen und Bewertungskriterien
 
@@ -36,9 +40,10 @@ Spezifische Anforderungen und Bewertungskriterien werden im Handout der jeweilig
 
 Mit Hilfe [dieser Testaufgabe](https://classroom.github.com/assignment-invitations/d84cc63e1f72964722cec4f9c46a6684) können Sie den Vorgang vor der ersten Übungsaufgabe testen.
 
-## Feedback
+## Feedback & Peer Review
+
+Zu jeder Aufgabe erhalten Sie von uns eine kurze Bewertung, die ihnen angibt, ob Sie die Anforderungen erfüllt haben (`bestanden` oder `nicht bestanden`) sowie eine kurze Zusammenfassung unserer Eindrücke. Ausführlicheres Feedback, inbesondere auch zur Qualität Ihrer Lösung und mögliche Verbesserungsvorschläge erhalten und geben Sie innerhalb Ihrer Lerngruppe. Dazu erstellt jedes Gruppenmitglied für jede Aufgabe ein [Code Review](https://en.wikipedia.org/wiki/Code_review) für einen bzw. eine andere Teilnehmerin. Um die Zuteilung die technische Realisierung kümmern wir uns und organisieren den Ablauf innerhalb der Lerngruppen. Im Vorfeld des ersten Reviews erhalten Sie eine entsprechende Einführung.
 
 Sie erhalten zu jeder der Aufgaben ein ausführliches Feedback. Dieses wird direkt in dem verwendeten Repository bereitgestellt. Nach Korrektur der Aufgabe wird dort ein neuer Branch (*review*) erstellt in dem Sie allgemeines Feedback (z.B. bestanden/nicht bestanden) in Form einer Textdatei im Hauptverzeichnis des Repository finden. Der Branch enthält zusätzlich ausführliches Feedback in Form eines *Code Reviews*, das Sie in Form von Kommentaren direkt im Code Ihrer Lösung finden. Arbeiten Sie dieses Feedback in Ruhe durch und kontaktieren Sie bei Nachfragen den Dozierenden.
-
 
 [^1]: Wir müssen Ihre Abgabe eindeutig Ihrer Person zuordnen können. Verwenden Sie daher entweder einen Github-Nutzernamen, der Ihren realen Namen (Vor- und Nachname) enthält oder hinterlegen Sie Ihren Realnamen in Ihrem öffentlichen Github-Profil unter "Name" (oder Sie machen beides). [Hier](https://github.com/alexanderbazo) ist ein Beispiel für ein eindeutig zuordenbares Profil. 

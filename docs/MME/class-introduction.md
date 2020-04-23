@@ -10,15 +10,11 @@ Nach dem erfolgreichen Abschluss des Kurses sollten Sie Ihre im universitären U
 
 ## Herangehensweise
 
-Der Semesterteil des Kurses teilt sich in via Live-Stream durchgeführte Online-Sitzungen und das Selbststudium in kleinen Lerngruppen auf. Für neun der 14 Semesterwochen erhalten Sie Materialien zur gemeinsamen Vorbereitung. In der wöchentlichen Online-Sitzung werden die so erworbenen Kenntnisse dann zur gemeinsamen Implementierung kleinerer Anwendungsprojekte verwendet, dabei vertieft und diskutiert. In den letzten Semesterwochen wird mit der Planung der Abschlussprojekte begonnen. Einen detaillierten Semesterplan finden Sie [hier](../).
+Der Semesterteil des Kurses teilt sich in via Live-Stream durchgeführte Online-Sitzungen und ein eigenständiges Selbststudium auf, das bestmöglichst durch [Lerngruppen](./study-groups) unterstützt wird. In der ersten Semesterhälfte erhalten Sie zu Beginn jeder Woche eine aufbereitete Lerneinheit, dern Inhalte Sie sich im Selbststudium eigenständig erarbeiten. Die Anwendung der so erworbenen, theoretischen Grundlagen werden in einer begeleitenden Live-Veranstaltung demonstriert. In diesem Semester erfolgt die Demonstration über einen Live-Stream auf der Plattform [Twitch.t](https://twitch.tv/alexanderbazo). Dabei haben Sie Gelegenheit, über einen Chat-Kanal Feedback zu geben und Fragen zu stellen. Alle Sitzungen stehen im Anschluss als Videoaufzeichung bereit. Einen detaillierten Semesterplan finden Sie [hier](../).
 
 ## Selbststudium und Übungsaufgaben
 
-Bereiten Sie sich gründlich auf die jeweiligen Sitzungen vor. 
-
-~~Im Rahmen des Kurses werden zusätzlich drei Übungsaufgaben veröffentlicht. Dabei handelt es sich um größere Anwendungen, die Sie selbstständig und alleine implementieren sollen. Zu jeder Aufgabe erhalten Sie ein Grundgerüst aus HTML- und CSS-Dateien sowie ein ausführliches *Handout*, das die Aufgabenstellung und Bewertungskriterien erläutert. Diese Aufgaben dienen der Projektvorbereitung. Im Anschluss an die Abgabe erhalten Sie individuelles Feedback zu Ihrer Lösung in Form eines *Code Reviews*. **Für Studierende, die nach neuer Studienordnung studieren (ab WS 2017/18) gelten die Übungsaufgaben als verpflichtende Studienleistungen (Vgl. [Modulbeschreibung](https://www.uni-regensburg.de/studium/modulbeschreibungen/medien/ba/medieninformatik-ba-ws1718.pdf)).** Die Termine der Übungsaufgaben werden in der dritten Vorlesungswoche bekannt gegeben.~~
-
-Zu jeder inhaltlichen Sitzung wird es eine sehr kleine Übungsaufgabe geben, die Sie innerhalb einer Woche bearbeiten und abgeben müssen. **Für Studierende, die nach neuer Studienordnung studieren (ab WS 2017/18) gelten die Übungsaufgaben als verpflichtende Studienleistungen (Vgl. [Modulbeschreibung](https://www.uni-regensburg.de/studium/modulbeschreibungen/medien/ba/medieninformatik-ba-ws1718.pdf)).** Mehr Informationen dazu finden Sie auf [dieser Seite](../Aufgaben)
+Zu jeder zweiten inhaltlichen Sitzung wird es eine sehr kleine Übungsaufgabe geben, die Sie innerhalb einer Woche bearbeiten und abgeben müssen. **Für Studierende, die nach neuer Studienordnung studieren (ab WS 2017/18) gelten die Übungsaufgaben als verpflichtende Studienleistungen (Vgl. [Modulbeschreibung](https://www.uni-regensburg.de/studium/modulbeschreibungen/medien/ba/medieninformatik-ba-ws1718.pdf)).** Bitte versuchen Sie, eine eigenständige und selbsterarbeitete Lösung einzureichen. Auf dem Weg dahin können Sie sich gerne innerhalb Ihrer Lerngruppe unterstützten. Auch wir stehen Ihnen bei Fragen oder Problemen gerne zur Verfügung. Mehr Informationen dazu finden Sie auf [dieser Seite](../Aufgaben)
 
 Beginnen Sie möglichst früh damit, Ihre Arbeit mit Hilfe von `git` zu dokumentieren und berücksichtigen Sie konsequent die Hinweise des eingesetzten *Linting*-Tools. Das gilt sowohl für die Vorbereitung auf die Sitzungen als auch für die Implementierungen der Übungsaufgaben. 
 
@@ -48,9 +44,4 @@ Die erworbenen Fähigkeiten können Sie im Anschluss ganz konkret in den weitere
 
 ## Lernfragen
 
-Unter einigen Lektionen finden Sie Lernfragen im *Multiple Choice*-Format. In der Regel beziehen sich diese auf die theoretischen Inhalte des jeweiligen Textes und sollen Ihnen helfen, die zentralen Aussagen der Lektion zu wiederholen und den Lernfortschritt zu testen. Denken Sie daran, dass die Bearbeitung der praktischen Übungsaufgaben, die sich ebenfalls am Ende einer Lektion befinden, von größerer Bedeutung für ihren persönlichen Lernfortschritt sind. Sie können die Quizze beliebig oft wiederholen. Ein Beispiel für eine solche Sammlung an Lernfragen sehen Sie hier:
-
-<div class="mme-quiz-wrapper" data-url="../../quizzes/intro-quiz.md.quiz"></div>
-
-
-
+Unter einigen Lektionen finden Sie Lernfragen im *Multiple Choice*-Format. In der Regel beziehen sich diese auf die theoretischen Inhalte des jeweiligen Textes und sollen Ihnen helfen, die zentralen Aussagen der Lektion zu wiederholen und den Lernfortschritt zu testen. Denken Sie daran, dass die Bearbeitung der praktischen Übungsaufgaben, die sich ebenfalls am Ende einer Lektion befinden, von größerer Bedeutung für ihren persönlichen Lernfortschritt sind.
