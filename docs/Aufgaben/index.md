@@ -6,7 +6,7 @@ Die Bearbeitung der Übungsaufgaben sowie das anfertigen eines Reviews zur Lösu
 
 ## Die Aufgaben
 
-Im **Sommersemester 2019** werden die Übungsaufgaben in den folgenden Zeiträumen bearbeitet:
+Im **Sommersemester 2020** werden die Übungsaufgaben in den folgenden Zeiträumen bearbeitet:
 
 - **Aufgabe 1**: 1. Mai bis 10. Mai ([Handout](#))
 - **Aufgabe 2**: 15. Mai bis 24. Mai ([Handout](#))
