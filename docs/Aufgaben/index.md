@@ -20,7 +20,7 @@ Alle Informationen zu den individuellen Aufgaben finden zum Start der Bearbeitun
 
 Spezifische Anforderungen und Bewertungskriterien werden im Handout der jeweiligen Aufgabe erläutert. Zusätzlich werden diese allgemeinen Punkte bei der Bewertung der Aufgabe berücksichtigt:
 
-- Mit jeder Aufgabe wird eine Konfigurationsdatei für ESLint (Vgl. [Arbeitsumgebung](../Tutorials/work-environment)) veröffentlicht. Der Code Ihrer Lösung darf keine der dort notierten Regeln verletzten.
+- Mit jeder Aufgabe wird eine Konfigurationsdatei für ESLint (Vgl. [Arbeitsumgebung](../MME/work-environment)) veröffentlicht. Der Code Ihrer Lösung darf keine der dort notierten Regeln verletzten.
 
 - Der Code Ihrer Lösung muss sauber und einheitlich formatiert sein. Im Zweifelsfall halten Sie sich an die ebenfalls mit jeder Aufgabe bereitgestellte Konfigurationsdatei für *JSBeautifer*-Plugins.
 

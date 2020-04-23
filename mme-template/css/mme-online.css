@@ -119,10 +119,28 @@ video {
 
 /* Add custom rules to display profil picture */
 
+
+.team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly   ;
+    align-items: flex-start;
+}
+
+.person {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description.profile {
+    text-align: center;
+}
+
 img.profil {
-    display: block;
-    width: 20%;
-    float: right;
+    width: 7vw;
     border-radius: 50%;
     border: solid 5px #FAFAFA;
 }
@@ -130,11 +148,6 @@ img.profil {
 img.center {
     display: block;
     width: 50%;
-    margin: 0 auto;
-}
-
-description.profil {
-    clear: both;
 }
 
 /* Add custom rules to display github icon as link to repositories */
@@ -243,7 +256,7 @@ details[open] summary:after {
 
 details p {
     background-color: none;
-    magin-top: 0.5em;
+    margin-top: 0.5em;
     padding: 0.5em;
     line-height: 1.75em;
     border-style: solid;
