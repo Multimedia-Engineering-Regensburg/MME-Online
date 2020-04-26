@@ -48,7 +48,5 @@ Durch das Anlegen und direkte Ausführen einer anonymen Funktionen lässt sich a
 }());
 ```
 
-<div class="mme-quiz-wrapper" data-url="../../quizzes/js-in-browser.md.quiz"></div>
-
 [^1]: Vgl. [Mozilla Developer Network: Memory Management](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management)
 [^2]: Vgl. [Mozilla Developer Network: Concurrency model and Event Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)

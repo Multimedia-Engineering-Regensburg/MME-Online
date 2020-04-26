@@ -80,8 +80,3 @@ var app;
 ```
 
 Ihr Editor sollte Sie nun durch Hervorheben der eingegeben Zeile darüber informieren, dass im Code die Regel `no-unused-vars` verletzt wird, da die erstellte Variable `app` an keiner Stelle des Programms verwendet wird.
-
-
-<!---
-## Kommandozeile
--->
