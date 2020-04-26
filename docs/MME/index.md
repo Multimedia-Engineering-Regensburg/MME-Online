@@ -4,12 +4,12 @@ Der MME-Kurs besteht aus inhaltlichen Abschnitten und praktischen Übungen. Zu j
 
 ## Vorläufiger Semesterplan für das Sommersemester 2020
 
-Im **Sommersemester 2020** findet der MME-Kurs als reine Digitalveranstaltung statt. Den Mittelpunkt bildet ein wöchentlicher Live-Stream, **immer Mittwochs von 10 bis 12 Uhr**. Das begleitende Selbststudium organisieren wir in kleineren [Lerngruppen](./study-groups), in denen wir Sie auch bei der Bearbeitung der aktuellen [Übungsaufgaben](../Aufgaben) unterstützten. Jede Woche werden wir mit den einzelnen Lerngruppe ein ca. halbstündiges [Live Coaching](./study-groups#coaching) durchführen, in dem wir Ihren individuellen Lernfortschritt besprechen und konkrete Probleme lösen werden.
+Im **Sommersemester 2020** findet der MME-Kurs als reine Digitalveranstaltung statt. Den Mittelpunkt bildet ein wöchentlicher Live-Stream, **immer Mittwochs von 10 bis 12 Uhr**. Das begleitende Selbststudium organisieren wir in kleineren [Lerngruppen](./00-Class-Introduction/study-groups), in denen wir Sie auch bei der Bearbeitung der aktuellen [Übungsaufgaben](../Aufgaben) unterstützten. Jede Woche werden wir mit den einzelnen Lerngruppe ein ca. halbstündiges [Live Coaching](./00-Class-Introduction/study-groups#coaching) durchführen, in dem wir Ihren individuellen Lernfortschritt besprechen und konkrete Probleme lösen werden.
 
 | Woche | Datum | Thema | Live-Beispiel | Übungsaufgabe | Coaching |
 |---|-------|-------|---------------|---------------|----------|
 |-| 22.04.2020 | **entfällt** | | | |
-|1| 29.04.2020 | Grundlagen Javascript im Browser | | | |
+|1| 29.04.2020 | [Grundlagen der Webentwicklung mit Javascript](./01-Basics) | -  | -  | |
 |3| 06.05.2020 | Grundlagen der (kollaborativen) Versionsverwaltung | | | |
 |4| 13.05.2020 | Javascript-Anwendung modularisieren und strukturieren | | | |
 |5| 20.05.2020 | Dynamische Webanwendungen als Server-/Client-Lösung | | | |
