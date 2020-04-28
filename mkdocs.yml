@@ -55,6 +55,7 @@ nav:
 #    - Anforderungen erheben und dokumentieren: MME/requirements-for-student-projects.md
 #    - Pair Programming: MME/pair-programming.md
 #  - Demos:
+    - Simple Color Clicker: Demos/simple-color-clicker.md
 #      - Übersicht: Demos/index.md
 #      - ToDo-Liste: Demos/todo-list.md
 #      - Kanban-Board: Demos/kanban-board.md
@@ -62,7 +63,7 @@ nav:
 #      - Simon Says: Demos/simon-says.md
 #      - Time Tracker: Demos/time-tracker.md
 #      - Mensa App: Demos/mensa-app.md
-#     - Bundesliga-Tabelle: Demos/bundesliga.md
+#      - Bundesliga-Tabelle: Demos/bundesliga.md
 #      - Ambi Player: Demos/ambi-player.md
 #      - ToDo-Liste mit Datenbank: Demos/todo-list-db.md
 #      - Writer-Online: Demos/writer-online.md
