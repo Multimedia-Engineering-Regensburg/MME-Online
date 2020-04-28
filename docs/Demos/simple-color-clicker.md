@@ -9,4 +9,4 @@ Die Aufgabe dient als einfacher Einstieg in die grundlegenden Methoden und Techn
 
 ## Lösung
 
-Eeinen Lösungsvorschlag finden Sie auf [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-SimpleColorClicker).
+Einen Lösungsvorschlag finden Sie auf [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-SimpleColorClicker).

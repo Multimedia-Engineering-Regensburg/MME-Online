@@ -54,7 +54,7 @@ nav:
 #    - Komplexe Webanwendungen: MME/server-client-applications.md
 #    - Anforderungen erheben und dokumentieren: MME/requirements-for-student-projects.md
 #    - Pair Programming: MME/pair-programming.md
-#  - Demos:
+  - Demos:
     - Simple Color Clicker: Demos/simple-color-clicker.md
 #      - Übersicht: Demos/index.md
 #      - ToDo-Liste: Demos/todo-list.md
