@@ -18,7 +18,7 @@ In der ersten Woche machen Sie sich mit den grundsätzlichen Prinzipien der Webe
 
 - [JavaScript im Browser](./javascript-browser)
 - [Einrichten der Arbeitsumgebung](./work-environment)
-- [Das Projektverzeichnis](./javascript-browser)
+- [Das Projektverzeichnis](./project-directory)
 - [Programmatische Manipulation des DOMs](./dom-introduction)
 
 ## Weitere Materialien im Mozilla Developer Network
@@ -35,5 +35,5 @@ Als erste Fingerübung im Rahmen der DOM-Manipulation mit Javascript können Sie
 ### Weitere Aufgaben
 - Rufen Sie die [Webseite der Medieninformatik](https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/) auf und öffnen Sie die JavaScript-Konsole Ihres Browsers. Nutzen Sie die bekannten Javascript-Befehle um die Überschrift "Aktuelle Meldungen der Medieninformatik" zu selektieren und durch den *String* "Hello World" zu ersetzen.
 - Versuchen Sie weitere Bestandteile der Website zu manipulieren: Tauschen Sie z.B. die Quellpfade von angezeigten Bildern aus oder ergänzen Sie weitere Texte bzw. Abschnitte.
-- Erstellen Sie ein einfaches HTML-Dokument mit einer Überschrift und einer unsortierten Liste. Versuchen Sie, beim Öffnen des Dokuments - über eine integrierte Javascript-Datei - neue Listenelemente mit beliebigem Inhalt hinzuzufügen. 
+- Erstellen Sie ein einfaches HTML-Dokument mit einer Überschrift und einer unsortierten Liste. Versuchen Sie, beim Öffnen des Dokuments - über eine integrierte Javascript-Datei - neue Listenelemente mit beliebigem Inhalt hinzuzufügen. x   	
 - Versuchen Sie, Mausklicks auf den hinzugefügten Listenelementen zu registrieren und verändern Sie in der entsprechenden *Callback*-Methode das Erscheinungsbild des angeklickten Elements. Definieren Sie dazu eine CSS-Klasse (in einem ausgelagerten Dokument) und nutzen Sie die entsprechenden API-Methoden um diese Klasse zum angeklickten Element hinzuzufügen.
