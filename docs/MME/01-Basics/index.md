@@ -29,6 +29,11 @@ Das [Mozilla Developer Network](https://developer.mozilla.org/en-US/) bietet ein
 - [Learn to Style HTML with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
 - [JavaScript - Dynamic client-side scripting](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
 
+## Zusätzliche Tutorials und Hilfestellungen
+
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [33 Concepts Every JavaScript Developer Should Know ](https://github.com/leonardomso/33-js-concepts)
+
 ## Übungsaufgaben
 Als erste Fingerübung im Rahmen der DOM-Manipulation mit Javascript können Sie die hier verlinkte [Übungsaufgabe](https://classroom.github.com/a/u3svFPFO) bearbeiten. Die Aufgabe wird mittels [Github Classroom](https://classroom.github.com/) bereitgestellt. Für die Bearbeitung benötigen Sie einen (kostenlosen) Account auf der Webseite [github.com](https://github.com/).
 
