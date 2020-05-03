@@ -4,13 +4,13 @@ Versionskontrollsysteme sind ein wichtiges Werkzeug in der Softwareentwicklung. 
 
 **Die Live-Sitzung zu dieser Lektion findet am 6. Mai ab 10:00 Uhr per Stream über [Twitch.tv](https://twitch.tv/alexanderbazo) statt.** Im Stream machen wir uns mit der praktischen Verwendung des Versionskontrollwerkzeug `git` zur Dokumentation und Steuerung unserer Entwicklungsprojekte vertraut. 
 
-
 ## Ziele
 
-- Sie verfügen über eine funktionierende Arbeitsumgebung, mit der Sie qualitativ hochwertigen HTML- und JavaScript-Code implementieren können. Dabei werden Sie durch einen korrekt eingerichteten *Linter*, der Sie während der Arbeit am Code auf Probleme und Fehler hinweist.
-- Sie haben sich mit unserem Vorschlag für die Strukturierung von Projekordnern für JavaScript vertraut gemacht und finden sich in den bereitgestellten Demos und Übungsaufgaben zurecht.
-- Sie wissen, wie und unter welchem Umständen JavaScript-Code im Browser ausgeführt wird.
-- Sie kennen mit HTML, CSS und JavaScript die drei wesentlichen Bestandteile einer Webanwendung und sind in der Lage, die per HTML und CSS strukturiert und gestaltete Benutzeroberfläche programmatisch, d.h. aus Ihrem JavaScript-Code heraus, zu manipulieren und auf einfache Interaktionsereignisse zu reagieren.
+- Sie verfügen auf Ihrem Arbeitsrechner über eine funktionierende `git`-Installation und können lesend und schreibend auf *Remote Repositories* zugreifen, die auf [github.com](https://github.com) für Sie freigegeben wurden.
+- Sie kennen wesentliche Gründe dafür, warum Versionskontrolle in Softwareprojekten eingesetzt wird und welche Vorteile sich aus der Verwendung ergeben.
+- Sie kennen die wesentlichen Befehle und Abläufe, die zur Verwendung des dezentralen Versionskontrollsystems `git` notwendig sind.
+- Sie können die Arbeit an den Übungsaufgaben und Kursbeispielen sinnvoll mit `git` dokumentieren und bei Bedarf auch vorherige Versionen Ihres Softwareprojekts wiederherstellen.
+- Sie kennen das Prinzip der *Branches* in `git` und können dieses zur Organisation Ihre Entwicklungsprojekte einsetzten.
 
 ## Inhalte zum Durcharbeiten
 
