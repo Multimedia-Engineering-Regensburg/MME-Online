@@ -9,16 +9,16 @@ Im **Sommersemester 2020** findet der MME-Kurs als reine Digitalveranstaltung st
 | Woche | Datum | Thema | Live-Beispiel | Übungsaufgabe | Coaching |
 |---|-------|-------|---------------|---------------|----------|
 |-| 22.04.2020 | **entfällt** | | | |
-|1| 29.04.2020 | [Grundlagen der Webentwicklung mit Javascript](./01-Basics) | -  | -  | |
-|3| 06.05.2020 | Grundlagen der (kollaborativen) Versionsverwaltung | | | |
-|4| 13.05.2020 | Javascript-Anwendung modularisieren und strukturieren | | | |
-|5| 20.05.2020 | Dynamische Webanwendungen als Server-/Client-Lösung | | | |
-|6| 27.05.2020 | Sitzungsübergreifende Verwendung von Browseranwendungen | | | |
-|7| 03.06.2020 | Multimedial Inhalte im Browser präsentieren | | | |
-|8| 10.06.2020 | 2D-Animationen und Bildverarbeitung auf dem Canvas
-|9| 17.06.2020 | Softwaredesign und Entwurfsmuster | | | |
-|10| 24.06.2020 | Serverseitige Komponenten programmieren | | | |
-|11| 01.07.2020 | Projektarbeit: Themenvorstellung und Feature-Pitch | | | |
-|12| 08.07.2020 | Projektarbeit: Software-Design | | | |
-|13| 15.07.2020 | Projektarbeit: Fragen & Probleme | | | |
-|14| 22.07.2020 | Projektarbeit: Vorstellung *Proof of Concept*| | | |
+|1| 29.04.2020 | [Grundlagen der Webentwicklung mit Javascript](./01-Basics) | [Color-Clicker-Spiel](../Demos/simple-color-clicker.md)  | [Erste Übungsaufgabe](../Aufgaben/SS20-01-Klopapierrechner) | - |
+|2| 06.05.2020 | [Grundlagen der (kollaborativen) Versionsverwaltung](./02-Version-Control) | - | - | - |
+|3| 13.05.2020 | Javascript-Anwendung modularisieren und strukturieren | | | |
+|4| 20.05.2020 | Dynamische Webanwendungen als Server-/Client-Lösung | | | |
+|5| 27.05.2020 | Sitzungsübergreifende Verwendung von Browseranwendungen | | | |
+|6| 03.06.2020 | Multimedial Inhalte im Browser präsentieren | | | |
+|7| 10.06.2020 | 2D-Animationen und Bildverarbeitung auf dem Canvas
+|8| 17.06.2020 | Softwaredesign und Entwurfsmuster | | | |
+|9| 24.06.2020 | Serverseitige Komponenten programmieren | | | |
+|10| 01.07.2020 | Projektarbeit: Themenvorstellung und Feature-Pitch | | | |
+|11| 08.07.2020 | Projektarbeit: Software-Design | | | |
+|12| 15.07.2020 | Projektarbeit: Fragen & Probleme | | | |
+|13| 22.07.2020 | Projektarbeit: Vorstellung *Proof of Concept*| | | |

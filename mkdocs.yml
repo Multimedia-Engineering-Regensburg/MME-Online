@@ -34,12 +34,8 @@ nav:
     - 00 | Der MME-Kurs: 
       - Kursübersicht: MME/00-Class-Introduction/class-introduction.md
       - Lerngruppen: MME/00-Class-Introduction/study-groups.md
-    - 01 | Grundlagen der Webentwicklung mit Javascript: 
-      - Übersicht: MME/01-Basics/index.md
-      - Javascript im Browser: MME/01-Basics/javascript-browser.md
-      - Einrichten der Arbeitsumgebung: MME/01-Basics/work-environment.md
-      - Das Projektverzeichnis: MME/01-Basics/project-directory.md
-      - Progammatische Manipulation des DOM: MME/01-Basics/dom-introduction.md
+    - 01 | Grundlagen der Webentwicklung mit Javascript: MME/01-Basics/index.md
+    - 02 | Versionskontrolle in Softwareprojekten: MME/02-Version-Control/index.md
 #    - Versionskontrolle mit Git: MME/version-control.md
 #    - Progammatische Manipulation des DOM: MME/dom-introduction.md
 #    - Codequalität: MME/code-quality.md
