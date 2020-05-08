@@ -18,8 +18,6 @@ In der dritten Woche beschäfitgen wir uns mit ersten Ansätzen für gutes *Soft
 
 ## Weitere Materialien im Mozilla Developer Network
 
-Das [Mozilla Developer Network](https://developer.mozilla.org/en-US/) bietet einige sehr gut ausgearbeitete Übersichten und *Tutorials* für den Einstieg in bzw. das Auffrischen von der Arbeit mit den grundlegenden Webtechnologien. Zu Beginn des Kurses sind dabei vorallem die folgenden Anleitungen hilfreiche:
-
 - [Functions and Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Closures)
 - [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 - [Introduction to events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture)
