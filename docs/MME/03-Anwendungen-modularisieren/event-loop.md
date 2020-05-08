@@ -1,6 +1,6 @@
 # Der Event-Loop in Javascript und die Events der Web-APIs
 
-Einer der wichtigsten Bestandteile der *Javascript*-Laufzeitumgebung ist der *Event Loop* (Vgl. [Javascript im Browser](../01-Basics/javascript-browser)), der den grundlegenden Ablauf einer Web-Anwendung bestimmt. Während der Implementierung Ihrer Anwendungen werden Sie auf die unterschiedlichen *Events* reagieren müssen, die der Browser bzw. die *Web APIs* im Kontext des *Lifecycles* der Webseite, den DOM-Elementen oder den Benutzereingaben erzeugt. In dieser Lektion werden grundlegende Prinzipien der Event-Verarbeitung im Browser erklärt. Der Schwerpunkt liegt dabei auf den sogenannten *DOM Events*.
+Einer der wichtigsten Bestandteile der *Javascript*-Laufzeitumgebung ist der *Event Loop* (Vgl. [Javascript im Browser](../../01-Basics/javascript-browser)), der den grundlegenden Ablauf einer Web-Anwendung bestimmt. Während der Implementierung Ihrer Anwendungen werden Sie auf die unterschiedlichen *Events* reagieren müssen, die der Browser bzw. die *Web APIs* im Kontext des *Lifecycles* der Webseite, den DOM-Elementen oder den Benutzereingaben erzeugt. In dieser Lektion werden grundlegende Prinzipien der Event-Verarbeitung im Browser erklärt. Der Schwerpunkt liegt dabei auf den sogenannten *DOM Events*.
 
 ## Einleitung
 
