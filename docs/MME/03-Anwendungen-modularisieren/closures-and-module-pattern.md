@@ -363,13 +363,5 @@ import TaskItem from "./Task.js";
 let myTask = new TaskItem("Javascript lernen");
 ```
 
-## Übungsaufgaben
-
-1. Erstellen Sie ein Modul (*revealing module pattern*), das bei Konstruktion innerhalb eines übergebenen DOM-Elements ein leeres Kindelement (`div`) erzeugt und bei jedem Mausklick auf diesen Element die Hintergrundfarbe zufällig verändert.
-
-2. Erstellen Sie ein Modul (ES6), das eine Liste an Personen (auf der Basis eines einfachen Prototypen mit Namen und einer eindeutigen ID) verwaltet. Das Modul bietet öffentliche Methoden zur Suche nach bestimmten Personen anhand z.B. des Namens an. Befüllen Sie das Modul mit Informationen, die Sie über Eingabefelder vom Benutzer eingeben lassen.
-
-3. Vervollständigen Sie die Implementierung der [*ToDo-Liste*](../../Demos/todo-list) und verwende Sie bei der Umsetzung der unterschiedlichen Bestandteile der Anwendung das ES6-Modulschema.
-
 [^1]: Weitere Informationen zum Modul-Begriff in Javascript finden Sie bei [Haverbeke (Eloquent Javascript)](http://eloquentjavascript.net/10_modules.html9)
 [^2]: Douglas Crockford, [Private Members in JavaScript](http://www.crockford.com/javascript/private.html)

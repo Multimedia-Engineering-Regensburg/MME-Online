@@ -31,11 +31,10 @@ markdown_extensions:
 nav:
   - Lektionen: 
     - Übersicht: MME/index.md
-    - 00 | Der MME-Kurs: 
-      - Kursübersicht: MME/00-Class-Introduction/class-introduction.md
-      - Lerngruppen: MME/00-Class-Introduction/study-groups.md
+    - 00 | Der MME-Kurs: MME/00-Class-Introduction/class-introduction.md
     - 01 | Grundlagen der Webentwicklung mit Javascript: MME/01-Basics/index.md
     - 02 | Versionskontrolle in Softwareprojekten: MME/02-Version-Control/index.md
+    - 03 | Anwendungen modularisieren: MME/03-Anwendungen-modularisieren/index.md
 #    - Versionskontrolle mit Git: MME/version-control.md
 #    - Progammatische Manipulation des DOM: MME/dom-introduction.md
 #    - Codequalität: MME/code-quality.md

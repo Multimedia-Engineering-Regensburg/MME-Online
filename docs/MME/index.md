@@ -11,7 +11,7 @@ Im **Sommersemester 2020** findet der MME-Kurs als reine Digitalveranstaltung st
 |-| 22.04.2020 | **entfällt** | | | |
 |1| 29.04.2020 | [Grundlagen der Webentwicklung mit Javascript](./01-Basics) | [Color-Clicker-Spiel](../Demos/simple-color-clicker.md)  | [Erste Übungsaufgabe](../Aufgaben/SS20-01-Klopapierrechner) | - |
 |2| 06.05.2020 | [Grundlagen der (kollaborativen) Versionsverwaltung](./02-Version-Control) | - | - | - |
-|3| 13.05.2020 | Javascript-Anwendung modularisieren und strukturieren | | | |
+|3| 13.05.2020 | [Javascript-Anwendung modularisieren und strukturieren](./03-Anwendungen-modularisieren) | | | |
 |4| 20.05.2020 | Dynamische Webanwendungen als Server-/Client-Lösung | | | |
 |5| 27.05.2020 | Sitzungsübergreifende Verwendung von Browseranwendungen | | | |
 |6| 03.06.2020 | Multimedial Inhalte im Browser präsentieren | | | |

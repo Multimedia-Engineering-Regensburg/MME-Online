@@ -214,11 +214,3 @@ function onClick(event) {
 	// Handle event
 }
 ```
-
-## Übungsaufgaben
-
-1. Erstellen Sie eine einfache HTML-Struktur mit zwei ineinander verschachtelten Block-Elementen. Sorgen Sie mit Hilfe von unterschiedlichen Größen und Farben dafür, dass die Elemente im Browser unterschieden werden können. Registrieren Sie auf beiden Elementen einen *Click*-Listener und geben Sie in den *Callback*-Methoden jeweils das `target` und `currentTarget` aus. Sorgen Sie durch Veränderung des optionalen Parameter der `addEventListener`-Methode dafür, dass das Ereignis im übergeordneten Element zuerst in der *Bubbling* und anschließend bereits in der *Capture*-Phase abgefangen wird. Versuchen Sie die unterschiedlichen Verhaltensweisen nachzuvollziehen.
-
-2. Erstellen Sie eine einfache HTML-Struktur mit mehreren quadratischen Block-Elementen, die in einem gemeinsamen Elternelement angeordnet sind. Beim Klick auf eines der Element wird dessen Hintergrundfarbe zufällig verändert. Verwenden Sie nur einen *Listener* für die *Event*-Verarbeitung (*Delegation*).
-
-3. Vervollständigen Sie Ihre Lösung des [Kanban-Board](../../Demos/kanban-board) und achten Sie insbesondere auf die Stellen, an denen *Events* und *Callbacks* eingesetzt werden. Versuchen Sie, die Prinzipien *Delegation* und *Binding* zur Verbesserung Ihrer Lösung einzusetzen.
