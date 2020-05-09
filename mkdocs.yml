@@ -32,6 +32,7 @@ nav:
   - Lektionen: 
     - Übersicht: MME/index.md
     - 00 | Der MME-Kurs: MME/00-Class-Introduction/class-introduction.md
+    - 00 | Code Reviews: MME/00-Code-Reviews/index.md
     - 01 | Grundlagen der Webentwicklung mit Javascript: MME/01-Basics/index.md
     - 02 | Versionskontrolle in Softwareprojekten: MME/02-Version-Control/index.md
     - 03 | Anwendungen modularisieren: MME/03-Anwendungen-modularisieren/index.md
