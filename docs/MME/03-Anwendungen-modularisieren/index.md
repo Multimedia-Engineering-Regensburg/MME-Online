@@ -1,6 +1,6 @@
 # 03 | Anwendungen modularisieren
 
-In der dritten Woche beschäfitgen wir uns mit ersten Ansätzen für gutes *Software Design* in JavaScript-Anwendungen. Sie lernen mehr über die besonderen Eigenschaften von Funktionen kennen und erfahren, wie Sie mit unterschiedlichen Modul-Konzepten Teilbereiche Ihrer Anwendung separieren und von einander lösen können. Sie vertiefen Ihre Kenntnisse über die Event-Verarbeitung und *Callback*-Funktionen in JavaScript um auf dieser Basis auch eine indirekte KOmmunikation zwischen Bestandteilen Ihrer Anwendung zu ermöglichen.  
+In der dritten Woche beschäftigen wir uns mit ersten Ansätzen für gutes *Software Design* in JavaScript-Anwendungen. Sie lernen mehr über die besonderen Eigenschaften von Funktionen kennen und erfahren, wie Sie mit unterschiedlichen Modul-Konzepten Teilbereiche Ihrer Anwendung separieren und von einander lösen können. Sie vertiefen Ihre Kenntnisse über die Event-Verarbeitung und *Callback*-Funktionen in JavaScript um auf dieser Basis auch eine indirekte Kommunikation zwischen Bestandteilen Ihrer Anwendung zu ermöglichen.  
 
 **Die Live-Sitzung zu dieser Lektion findet am 13. Mai ab 10:00 Uhr per Stream über [Twitch.tv](https://twitch.tv/alexanderbazo) statt.**
 
