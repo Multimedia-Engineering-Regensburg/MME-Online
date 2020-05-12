@@ -45,19 +45,6 @@ Modul | Datei | Beschreibung | Komplexität | Abhängig von | Kooperiert mit
 
 Überlegen Sie sich jeweils, welche Informationen die Module für andere Komponenten bereitstellen und über was für eine Schnittstelle (z.B. exportierte Objekte oder Methoden) diese zugänglich gemacht werden. Die Angaben zu den Abhängigkeiten und Kooperationspartner sind nur als Vorschlag zu verstehen und müssen nicht zwangsläufig auch in Ihrer Lösung so umgesetzt werden.
 
-## Aufgabenstellung
-
-Versuchen Sie die die Aufgabenstellung gemeinsam mit einem Partner bzw. einer Partnerin zu lösen:
-
-1. Definieren Sie anhand der Modulbeschreibungen und -Abhängigkeiten eine Implementierungsreihenfolge. Legen Sie die Dateien für die notwendigen Module an und skizzieren Sie, vor dem Beginn der Implementierung, grob, welche Methoden oder *Events* aus dem jeweiligen Modul nach außen gegeben werden.
-
-2. Beginnen Sie mit der Implementierung der wenig komplexen Module. Arbeiten Sie dabei zusammen und entwickeln Sie eine gemeinsame Lösung zu den einzelnen Modulen.
-
-3. Beginnen Sie mit der Arbeit an den komplexeren Modulen und verwenden Sie dazu die simpleren Module bzw. Prototypen. Nutzen Sie dabei das zentrale Modul zum Testen einzelner Funktionen (z.B. *Generieren eines zufälligen Musters*, *Wiedergabe des Musters* oder *Korrekte Weitergabe der angeklickten Farben*) bevor Sie diese in den übergeordneten Spielablauf integrierten.
-
-4. Führen Sie am Ende alle Stränge der Anwendung im zentralen Modul (`index.js`) zusammen. Zentrale Phasen oder Ereignisse des Spiels (z.B. gewonnene oder verlorene Runden) werden von den zuständigen Komponenten durch *Events* kommuniziert, die hier abgefangen und verarbeitet werden. 
-
-
 ## Starterpaket und Lösung
 
 Ein vorbereitetes Starterpaket zur selbständigen Implementierung der Aufgabe sowie einen Lösungsvorschlag finden Sie auf [Github](https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-Simon-Says). Die Lösung findet sich im `master`-Branch des verlinkten Repositories. Das Starterpaket im `starter`-Branch.

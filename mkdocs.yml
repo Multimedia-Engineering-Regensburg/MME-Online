@@ -52,6 +52,7 @@ nav:
 #    - Pair Programming: MME/pair-programming.md
   - Demos:
     - Simple Color Clicker: Demos/simple-color-clicker.md
+    - Simon Says: Demos/simon-says.md
 #      - Übersicht: Demos/index.md
 #      - ToDo-Liste: Demos/todo-list.md
 #      - Kanban-Board: Demos/kanban-board.md
