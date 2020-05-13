@@ -8,7 +8,7 @@ Die Bearbeitung der Übungsaufgaben sowie das anfertigen eines Reviews zur Lösu
 
 Im **Sommersemester 2020** werden die Übungsaufgaben in den folgenden Zeiträumen bearbeitet:
 
-- **Aufgabe 1**: 1. Mai bis 10. Mai ([Handout](./SS20-01-Klopapierrechner), [Lösungsvorschlag](https://github.com/Multimedia-Engineering-Regensburg-Tasks/SS20-U01-Klopapier-Rechner-Starter))
+- **Aufgabe 1**: 1. Mai bis 10. Mai ([Handout](./SS20-01-Klopapierrechner), [Lösungsvorschlag](https://github.com/Multimedia-Engineering-Regensburg-Tasks/SS20-U01-Klopapier-Rechner))
 - **Aufgabe 2**: 15. Mai bis 24. Mai ([Handout](#))
 - **Aufgabe 3**: 29. Mai bis 7. Juni ([Handout](#))
 - **Aufgabe 4**: 12. Juni bis 21. Juni ([Handout](#))
