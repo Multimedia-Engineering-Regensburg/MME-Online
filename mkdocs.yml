@@ -36,6 +36,7 @@ nav:
     - 01 | Grundlagen der Webentwicklung mit Javascript: MME/01-Basics/index.md
     - 02 | Versionskontrolle in Softwareprojekten: MME/02-Version-Control/index.md
     - 03 | Anwendungen modularisieren: MME/03-Anwendungen-modularisieren/index.md
+    - 04 | Server-Client-Kommunikation: MME/04-Server-Client-Kommunikation/index.md
 #    - Versionskontrolle mit Git: MME/version-control.md
 #    - Progammatische Manipulation des DOM: MME/dom-introduction.md
 #    - Codequalität: MME/code-quality.md
@@ -53,6 +54,7 @@ nav:
   - Demos:
     - Simple Color Clicker: Demos/simple-color-clicker.md
     - Simon Says: Demos/simon-says.md
+    - Mensa App: Demos/mensa-app.md
 #      - Übersicht: Demos/index.md
 #      - ToDo-Liste: Demos/todo-list.md
 #      - Kanban-Board: Demos/kanban-board.md
