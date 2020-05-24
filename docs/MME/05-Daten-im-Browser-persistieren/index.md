@@ -2,7 +2,7 @@
 
 In der fünften Wochen beschäftigen wir uns mit unterschiedlichen Möglichkeiten, Informationen sitzungsübergreifend in Webanwendungen zu speichern. In einem ersten Schritt erhalten Sie dabei eine Übersicht über die APIs und Technologien, die eine persistente Speicherung von Anwendungsdaten im Browser selbst erlauben. Im weiteren Verlauf des Kurses, vor allem aber auch im Rahmen der Abschlussprojekte, sind ggf. auch Strategien notwendig, die eine Speicherung außerhalb des Browsers, z.B. auf einem Datenbank-Server erfordern. Zusätzlich werfen Sie einen Blick auf das Konzept der *Web Workers*, die eine Ausführung von JavaScript-Code parallel zum *UI Thread* Ihrer Anwendung erlauben. Dadurch können die komplexere Vorgänge oder dauerhafte Hintergrundoperationen implementieren, ohne die restlichen Teile Ihrer Anwendung zu blockieren. Ein Anwendungsfall dafür kann z.B. die Auslagerung komplexerer Datenbankanfragen bei der Verwendung der *IndexedDB*-API sein. 
 
-**Die Live-Sitzung zu dieser Lektion findet am 25. Mai ab 10:00 Uhr per Stream über [Twitch.tv](https://twitch.tv/alexanderbazo) statt.**
+**Die Live-Sitzung zu dieser Lektion findet am 27. Mai ab 10:00 Uhr per Stream über [Twitch.tv](https://twitch.tv/alexanderbazo) statt.**
 
 ## Ziele
 
