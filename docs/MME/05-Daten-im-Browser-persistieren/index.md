@@ -25,4 +25,4 @@ In der fünften Wochen beschäftigen wir uns mit unterschiedlichen Möglichkeite
 
 ## Zusätzliche Quellen, Tutorials und Hilfestellungen
 
-- [RaananW: "IndexedDB and Web-workers" (Performance Demo)](https://github.com/RaananW/WebWorkers-IndexedDB), Live-Demo [hier](https://raananw.github.io/WebWorkers-IndexedDB/)
+- [Raanan Weber: "IndexedDB and Web-workers" (Performance Demo)](https://github.com/RaananW/WebWorkers-IndexedDB), Live-Demo [hier](https://raananw.github.io/WebWorkers-IndexedDB/)
