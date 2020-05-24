@@ -37,6 +37,7 @@ nav:
     - 02 | Versionskontrolle in Softwareprojekten: MME/02-Version-Control/index.md
     - 03 | Anwendungen modularisieren: MME/03-Anwendungen-modularisieren/index.md
     - 04 | Server-Client-Kommunikation: MME/04-Server-Client-Kommunikation/index.md
+    - 05 | Daten im Browser persistieren: MME/05-Daten-im-Browser-persistieren/index.md
 #    - Versionskontrolle mit Git: MME/version-control.md
 #    - Progammatische Manipulation des DOM: MME/dom-introduction.md
 #    - Codequalität: MME/code-quality.md
@@ -52,9 +53,11 @@ nav:
 #    - Anforderungen erheben und dokumentieren: MME/requirements-for-student-projects.md
 #    - Pair Programming: MME/pair-programming.md
   - Demos:
+    - ToDo-Liste: Demos/todo-list.md
     - Simple Color Clicker: Demos/simple-color-clicker.md
     - Simon Says: Demos/simon-says.md
     - Mensa App: Demos/mensa-app.md
+    - ToDo-Liste mit Datenbank: Demos/todo-list-db.md
 #      - Übersicht: Demos/index.md
 #      - ToDo-Liste: Demos/todo-list.md
 #      - Kanban-Board: Demos/kanban-board.md

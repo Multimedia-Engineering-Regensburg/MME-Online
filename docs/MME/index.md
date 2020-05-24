@@ -13,7 +13,7 @@ Im **Sommersemester 2020** findet der MME-Kurs als reine Digitalveranstaltung st
 |2| 06.05.2020 | [Grundlagen der (kollaborativen) Versionsverwaltung](./02-Version-Control) | - | - | - |
 |3| 13.05.2020 | [Javascript-Anwendung modularisieren und strukturieren](./03-Anwendungen-modularisieren) | [Simon-Says](../Demos/simon-says.md) | [Zweite Übungsaufgabe](../Aufgaben/SS20-02-Birding-App) | - |
 |4| 20.05.2020 | [Dynamische Webanwendungen als Server-/Client-Lösung](./04-Server-Client-Kommunikation) | [Mensa-App](../Demos/mensa-app.md) | - | - |
-|5| 27.05.2020 | Sitzungsübergreifende Verwendung von Browseranwendungen | - | - | - |
+|5| 27.05.2020 | [Sitzungsübergreifende Verwendung von Browseranwendungen](./05-Daten-im-Browser-persistieren) | - | - | - |
 |6| 03.06.2020 | Multimedial Inhalte im Browser präsentieren | - | - | - |
 |7| 10.06.2020 | 2D-Animationen und Bildverarbeitung auf dem Canvas
 |8| 17.06.2020 | Softwaredesign und Entwurfsmuster | - | - | - |

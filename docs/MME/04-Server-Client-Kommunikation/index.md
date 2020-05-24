@@ -2,7 +2,7 @@
 
 In der vierten Woche lernen Sie, die funktionalität Ihrer Anwendungen zur Laufzeit durch die Kommunikation mit serverseitigen Komponenten zu erweitern. Sie frischen Ihre Kenntnisse über die HTTP-basierten Kommunikation zwischen Client- und Server-Anwendungen auf und lernen die verschiedenen Möglichkeiten kennen, entsprechende Anfragen programmatisch im JavaScript-Code zu implementieren. Durch den Einsatz dieser *Ajax*-Ansätze, können wir in unseren Anwendungen dynamisch Inhalte nachladen und integrieren, ohne die Anwendung selbst neu zustarten. Damit wird die Realisierung dynamsicher Webanwendungen möglich, die entweder auf Inhalten eigener Server zugreifen können oder Daten und Informationen aus externen Quellen, z.B. *REST-APIs* integrieren.
 
-**Die Live-Sitzung zu dieser Lektion findet am 20. Mai ab 10:00 Uhr per Stream über [Twitch.tv](https://twitch.tv/alexanderbazo) statt.**
+**Die Live-Sitzung zu dieser Lektion findet am 20. Mai ab 10:00 Uhr per Stream über [Twitch.tv](https://twitch.tv/alexanderbazo) statt.** Eine Beschreibung der dort vorgestellten Demo finden Sie [hier](../../Demos/mensa-app).
 
 ## Ziele
 
