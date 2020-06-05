@@ -214,6 +214,4 @@ Das folgende Video zeigt ein einfaches Anwendungsbeispiel für die oben beschrie
 
 ![Beispiel für Graustufen-Effekt im Video](img/canvas-effect-player.gif)
 
-<div class="mme-quiz-wrapper" data-url="../../quizzes/canvas-element.md.quiz"></div>
-
 [^1]: Zusätzlich unterstützt die [`drawImage`-Methode](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage) auch weitere, teils experimentelle Quellen
