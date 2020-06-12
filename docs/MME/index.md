@@ -14,8 +14,8 @@ Im **Sommersemester 2020** findet der MME-Kurs als reine Digitalveranstaltung st
 |3| 13.05.2020 | [Javascript-Anwendung modularisieren und strukturieren](./03-Anwendungen-modularisieren) | [Simon-Says](../Demos/simon-says.md) | [Zweite Übungsaufgabe](../Aufgaben/SS20-02-Birding-App) |
 |4| 20.05.2020 | [Dynamische Webanwendungen als Server-/Client-Lösung](./04-Server-Client-Kommunikation) | [Mensa-App](../Demos/mensa-app.md) | - |
 |5| 27.05.2020 | Code-Walkthrough durch die Birding-App | - | [Dritte Übungsaufgabe](../Aufgaben/SS20-03-Countdown) |
-|5| 03.06.2020 | [Sitzungsübergreifende Verwendung von Browseranwendungen](./05-Daten-im-Browser-persistieren) | - | - |
-|6| 10.06.2020 | [Video/Audio-API und der Canvas: Multimedial Inhalte im Browser präsentieren und bearbeiten](./06-Audio-Video-und-der-Canvas) | [AmbiPlayer](../Demos/ambi-player.md) | - |
+|5| 03.06.2020 | [Sitzungsübergreifende Verwendung von Browseranwendungen](./05-Daten-im-Browser-persistieren) | [ToDo-App mit Datenbank](../Demos/todo-list-db.md) | - |
+|6| 10.06.2020 | [Video/Audio-API und der Canvas: Multimedial Inhalte im Browser präsentieren und bearbeiten](./06-Audio-Video-und-der-Canvas) | [AmbiPlayer](../Demos/ambi-player.md) | [Vierte Übungsaufgabe](../Aufgaben/SS20-04-Video-Assistant) |
 |8| 17.06.2020 | Softwaredesign und Entwurfsmuster | - | - |
 |9| 24.06.2020 | Serverseitige Komponenten programmieren | - | - |
 |10| 01.07.2020 | Projektarbeit: Themenvorstellung und Feature-Pitch | - | - |
