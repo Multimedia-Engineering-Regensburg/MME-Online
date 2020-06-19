@@ -2,7 +2,7 @@
 
 # Writer-Online
 
-In dieser Demo implementieren Sie eine erweiterte Version der [Writer](../writer)-Anwendung. An Stelle des `localstorage` wird in dieser Variante eine Server-seitige Komponenten zur Speicherung der Dokumente verwendet. Diese Persistenzschicht sowie die Schnittstelle zwischen der lokalen Browser-Anwendung und dem Server-seitigen *Backend* wird mit der [Node.js](../MME/node-js)-Umgebung entwickelt. Dabei wird auf das [*express*](https://expressjs.com/)-*Framework* zugegriffen. Zusätzlich zu den genannten Aufgaben wird auch die Client-Anwendung selbst über den *Node.js*-Server bereitgestellt und nicht mehr aus dem lokalen Dateisystem heraus geöffnet.
+In dieser Demo implementieren Sie eine erweiterte Version der [Writer](../writer)-Anwendung. An Stelle des `localstorage` wird in dieser Variante eine Server-seitige Komponenten zur Speicherung der Dokumente verwendet. Diese Persistenzschicht sowie die Schnittstelle zwischen der lokalen Browser-Anwendung und dem Server-seitigen *Backend* wird mit der [Node.js](../MME/07-Javascript-ausserhalb-des-Browsers/node-js)-Umgebung entwickelt. Dabei wird auf das [*express*](https://expressjs.com/)-*Framework* zugegriffen. Zusätzlich zu den genannten Aufgaben wird auch die Client-Anwendung selbst über den *Node.js*-Server bereitgestellt und nicht mehr aus dem lokalen Dateisystem heraus geöffnet.
 
 
 !!! warning "Hinweis"

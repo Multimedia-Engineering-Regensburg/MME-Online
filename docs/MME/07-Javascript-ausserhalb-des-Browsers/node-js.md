@@ -134,21 +134,3 @@ log("Hello World"); // Gibt aus: 2019-01-11T10:59:40.617Z:       Hello World
 ```
 
 Natürlich können Sie auch mehr als ein Funktion aus einem Modul veröffentlichen, in dem Sie statt einer direkten Referenz auf eine einzelne Methode ein Objekt mit mehreren Methoden oder einen *function constructor* herausgegeben.
-
-## Übungsaufgaben
-
-### Hello World
-
-[Laden](https://nodejs.org/en/download/) Sie die passende Version von *Node.js* für Ihr Betriebssystem herunter und installieren Sie die Umgebung auf Ihrem Rechner. Erstellen Sie eine neue *Javascript*-Datei, die den String "Hello World" auf der Konsole ausgibt. Starten Sie die *Node.js Engine* und übergeben Sie die erstellte Datei als Parameter.
-
-### Parameter
-
-Schreiben Sie ein *Node.js*-Programm, das beim Aufruf zwei Zahlen (`Number`) als Parameter (Vgl.: [`process.argv`](https://nodejs.org/docs/latest/api/process.html#process_process_argv)) übergeben bekommt und die Summe, das Produkt sowie das Maximum der beiden Werte zurückgibt.
-
-### Textverarbeitung
-
-Schreiben Sie ein *Node.js*-Programm, das den Inhalt einer als Parameter übergebenen Textdatei einliest und ausgibt, wie viele Zeichen bzw. Wörter vorhanden sind sowie die 10 häufigsten Wörter der Datei geordnet auflistet.
-
-### Modularisierung
-
-Extrahieren Sie die Funktionalität aus der vorherigen Aufgabe ("Textverarbeitung") in ein separates Modul. Importieren Sie dieses anschließend über die `require`-Funktion in das ursprüngliche Programm.

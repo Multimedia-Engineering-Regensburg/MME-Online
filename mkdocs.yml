@@ -39,6 +39,7 @@ nav:
     - 04 | Server-Client-Kommunikation: MME/04-Server-Client-Kommunikation/index.md
     - 05 | Daten im Browser persistieren: MME/05-Daten-im-Browser-persistieren/index.md
     - 06 | Audio, Video und der Canvas: MME/06-Audio-Video-und-der-Canvas/index.md
+    - 07 | Javascript außerhalb des Browsers: MME/07-Javascript-ausserhalb-des-Browsers/index.md
 #    - Versionskontrolle mit Git: MME/version-control.md
 #    - Progammatische Manipulation des DOM: MME/dom-introduction.md
 #    - Codequalität: MME/code-quality.md
@@ -60,6 +61,8 @@ nav:
     - Mensa App: Demos/mensa-app.md
     - ToDo-Liste mit Datenbank: Demos/todo-list-db.md
     - Ambi Player: Demos/ambi-player.md
+    - Writer: Demos/writer.md
+    - Writer-Online: Demos/writer-online.md
 #      - Übersicht: Demos/index.md
 #      - ToDo-Liste: Demos/todo-list.md
 #      - Kanban-Board: Demos/kanban-board.md
