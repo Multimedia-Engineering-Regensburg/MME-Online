@@ -13,6 +13,10 @@ In dieser Woche beschäftigen wir uns mit den Anwendungsmöglichkeiten von Node.
 
 - [Einführung in die Verwendung von Node.js](./node-js)
 
+### Für die Übung
+
+- [Code-Kata](./code-kata.md)
+- [Repository mit Kata-Aufgaben](https://github.com/Multimedia-Engineering-Regensburg/Code-Kata)
 
 ## Weitere Materialien im Mozilla Developer Network
 
