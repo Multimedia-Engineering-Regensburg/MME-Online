@@ -12,7 +12,7 @@ Im **Sommersemester 2020** werden die Übungsaufgaben in den folgenden Zeiträum
 - **Aufgabe 2**: 15. Mai bis 24. Mai ([Handout](./SS20-02-Birding-App), [Lösungsvorschlag](https://github.com/Multimedia-Engineering-Regensburg-Tasks/SS20-U02-Birding-App))
 - **Aufgabe 3**: 29. Mai bis 7. Juni ([Handout](./SS20-03-Countdown), [Lösungsvorschlag](https://github.com/Multimedia-Engineering-Regensburg-Tasks/SS20-U03-Countdown))
 - **Aufgabe 4**: 12. Juni bis 21. Juni ([Handout](./SS20-04-Video-Assistant))
-- **Aufgabe 5**:  26. Juni bis 5. Juli ([Handout](#))
+- **Aufgabe 5**:  26. Juni bis 5. Juli ([Handout](./SS20-05-PomodoroTimer))
 
 Alle Informationen zu den individuellen Aufgaben finden zum Start der Bearbeitungszeit auf den verlinkten Seiten.
 
