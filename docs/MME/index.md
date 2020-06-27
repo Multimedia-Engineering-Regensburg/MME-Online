@@ -17,7 +17,7 @@ Im **Sommersemester 2020** findet der MME-Kurs als reine Digitalveranstaltung st
 |5| 03.06.2020 | [Sitzungsübergreifende Verwendung von Browseranwendungen](./05-Daten-im-Browser-persistieren) | [ToDo-App mit Datenbank](../Demos/todo-list-db.md) | - |
 |6| 10.06.2020 | [Video/Audio-API und der Canvas: Multimedial Inhalte im Browser präsentieren und bearbeiten](./06-Audio-Video-und-der-Canvas) | [AmbiPlayer](../Demos/ambi-player.md) | [Vierte Übungsaufgabe](../Aufgaben/SS20-04-Video-Assistant) |
 |8| 17.06.2020 | Softwaredesign und Entwurfsmuster (entfällt) | - | - |
-|9| 24.06.2020 | [Serverseitige Komponenten programmieren](./07-Javascript-ausserhalb-des-Browsers) | [Writer Online](../Demos/writer-online.md) | - |
+|9| 24.06.2020 | [Serverseitige Komponenten programmieren](./07-Javascript-ausserhalb-des-Browsers) | [Writer Online](../Demos/writer-online.md) | [fÜNFTE Übungsaufgabe](../Aufgaben/SS20-05-PomodoroTimer) |
 |10| 01.07.2020 | Projektarbeit: Themenvorstellung und Feature-Pitch | - | - |
 |11| 08.07.2020 | Projektarbeit: Software-Design | - | - |
 |12| 15.07.2020 | Projektarbeit: Fragen & Probleme | - | - |
