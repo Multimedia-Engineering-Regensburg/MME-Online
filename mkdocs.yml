@@ -78,9 +78,9 @@ nav:
 #      - Color Clicker: Demos/color-clicker.md
   - Aufgaben: 
       - Übersicht: Aufgaben/index.md
-#  - Projekte:
-#      - Übersicht: Projekte/index.md
-#      - Winter 2019: Projekte/winter-2019.md
+  - Projekte:
+      - Übersicht: Projekte/index.md
+      - Sommer 2020: Projekte/sommer-2020.md
   - Reader: Reader/index.md
   - Informationen:
     - Team: team.md

@@ -2,7 +2,7 @@
 
 Der MME-Kurs wird durch die Bearbeitung eines Abschlussprojekts abgeschlossen. Im Rahmen dieses Projektes entwerfen und implementieren Sie eine browserbasierte Webanwendung. Dazu nutzen Sie die im Kurs erworbenen Kompetenzen. Das Abschlussprojekt wird in der Regel als Gruppenarbeit in kleinen Teams von nicht mehr als drei Teilnehmern absolviert. Jeder der Teilnehmer muss gleichberechtigt an denjenigen Projektbereichen arbeiten, die durch die Kursinhalte vorbereitet wurden. Dazu gehören insbesondere die Generierung hochwertigen Quellcodes und die kollaborative Verwaltung und Dokumentation der gemeinsamen *Codebase* mittels *git*.
 
-Die Beschreibung des Rahmenthemas und einige Projektvorschläge für das aktuelle Semester finden Sie [hier](./winter-2019).
+Die Beschreibung des Rahmenthemas und einige Projektvorschläge für das aktuelle Semester finden Sie [hier](./sommer-2020).
 
 !!! danger "Projektabgabe"
 	Die Projekte müssen für das **Sommersemester bis zum 30. September** und für das **Wintersemester bis zum 31. März** abgegeben werden. Bewertet wird jeweils der letzte *Commit* des Abgabetags in den *Master*-Branch. 
@@ -44,6 +44,10 @@ Im Rahmen der letzten beiden Vorlesungswochen werden die Projekt vorbereitet. Di
 **Minimum viable product**: Bis spätestens vier Wochen vor Abgabe der Projekte müssen Sie ein [*minimum viable product*](https://en.wikipedia.org/wiki/Minimum_viable_product), also eine lauffähige Version Ihrer Anwendung mit minimalen Funktionsumfang zur Demonstration der Projektidee vorweisen können. Erstellen Sie dazu auf Basis des erreichten Standes ein [*Release*](https://help.github.com/en/articles/creating-releases). Sie erhalten auf Basis dieses Releases Feedback zum aktuellen Stand Ihres Projektes.
 
 **Abgabe**: Das fertige Projekt wird am Ende der Bearbeitungszeit eingereicht. Dazu wird der letzte *Commit* in den `master`-Branch berücksichtigt, den Sie am Abgabetag vornehmen. 
+
+!!! danger "Projektablauf im Sommer 2020"
+	Der Projektablauf im Sommer 2020 unterscheidet sich geringfügig von dem oben skizzierten Ablauf. Mehr Informationen dazu finde Sie bei den aktuellen [Projektthemen](./sommer-2020).
+
 
 ## Zeitlicher Aufwand
 

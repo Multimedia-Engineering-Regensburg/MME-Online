@@ -1,0 +1,10 @@
+#
+# Basic requirements file for python packages.
+#
+# Packages will be installed with their most up-to-date version
+# use command: pip install -r requirements.txt
+mkdocs
+pymdown-extensions
+mkdocs-git-revision-date-plugin
+mkdocs-bootswatch
+
